@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jan Hovancik</title>
+  <subtitle>software developer - guitar player - poetry lover</subtitle>
+  <id>http://hovancik.net/blog</id>
+  <link href="http://hovancik.net/blog"/>
+  <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
+  <updated>2016-04-11T14:02:00+02:00</updated>
+  <author>
+    <name>Jan Hovancik</name>
+  </author>
+  <entry>
+    <title>Free automated code reviews using Pronto</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto.html"/>
+    <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto.html</id>
+    <published>2016-04-11T14:02:00+02:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;Code style&lt;/h2&gt;
+
+&lt;p&gt;Officially or unofficially, every dev team has it&amp;rsquo;s &lt;a href="https://en.wikipedia.org/wiki/Programming_style"&gt;code style&lt;/a&gt;. And hopefully, the means to enforce it, as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;De facto&lt;/em&gt; standard way to enforce it is via pull requests where some other team member will check your code for violations so you can fix&amp;#39;em.&lt;/p&gt;
+
+&lt;p&gt;So the obvious questions come:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;is there any generally accepted code style?&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;can that be automated?&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Yes and yes. Depending on language used.&lt;/p&gt;
+
+&lt;h4&gt;Language&lt;/h4&gt;
+
+&lt;p&gt;Here, we will be talking about &lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;It does not have official guide, but there is community driven one at &lt;a href="https://github.com/bbatsov/ruby-style-guide"&gt;GitHub&lt;/a&gt;  documenting Ruby coding style and best practices.&lt;/p&gt;
+
+&lt;h4&gt;Tools&lt;/h4&gt;
+
+&lt;p&gt;There are some paid tools that we could use like &lt;a href="https://codacy.com/"&gt;Codacy&lt;/a&gt; or &lt;a href="https://houndci.com/"&gt;HoundCI&lt;/a&gt;, but as title says, we would like to use something free, so here comes &lt;a href="https://github.com/mmozuras/pronto"&gt;Pronto&lt;/a&gt;.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Pronto runs analysis quickly by checking only the relevant changes. Created to be used on pull requests, but also works locally. Perfect if want to find out quickly if branch introduces changes that conform to your styleguide, are DRY, don&amp;rsquo;t introduce security holes and more.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;Scenario&lt;/h3&gt;
+
+&lt;p&gt;For the sake of this article, let&amp;rsquo;s assume the following workflow:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create code locally (let&amp;rsquo;s say Rails app)&lt;/li&gt;
+&lt;li&gt;push code to Github&lt;/li&gt;
+&lt;li&gt;create pull request on Github&lt;/li&gt;
+&lt;li&gt;get some tests running via TravisCI or CircleCI&lt;/li&gt;
+&lt;li&gt;prosper&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;Getting ready&lt;/h2&gt;
+
+&lt;p&gt;Assuming we are on Rails, let&amp;rsquo;s create new branch and add the following gems to Gemfile.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;group :development, :test do
+  # Pronto
+  gem &amp;#39;pronto&amp;#39;
+  gem &amp;#39;pronto-rubocop&amp;#39;, require: false
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We need to add &lt;code&gt;pronto&lt;/code&gt; gem, so we can include some of its runners like &lt;code&gt;pronto-rubocop&lt;/code&gt;. Runners are various tools and libraries that actually check the code. &lt;a href="https://github.com/bbatsov/rubocop"&gt;Rubocop&lt;/a&gt; checks the usage of previously mentioned Ruby style.&lt;/p&gt;
+
+&lt;p&gt;We should not require them, as some of them might be using monkey-patching to do their job. As we wanna run them only locally and on CI only, the best practice is to add them to &lt;code&gt;group :development, :test&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Bad code.&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s write some bad code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Bad
+  def what
+    &amp;quot;Not&amp;quot;
+    &amp;#39;Cool&amp;#39;
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we can &lt;code&gt;pronto run&lt;/code&gt;  and see some recommendations from rubocop.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;bad.rb:1 I: Missing top-level class documentation comment.
+bad.rb:3 W: Literal `&amp;quot;Not&amp;quot;` used in void context.
+bad.rb:3 I: Prefer single-quoted strings when you don&amp;#39;t need string interpolation or special symbols.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Nice.&lt;/p&gt;
+
+&lt;h2&gt;Running on CI and Github&lt;/h2&gt;
+
+&lt;p&gt;Running locally is great, but we wanna comment on PRs, right?&lt;/p&gt;
+
+&lt;h3&gt;Neat-freak&lt;/h3&gt;
+
+&lt;p&gt;To be able to comment on PRs, we need to act as some person. We can either use some existing one, but I think that the best way is to create new one.&lt;/p&gt;
+
+&lt;p&gt;Once we have one, we will need its &lt;a href="https://github.com/settings/tokens"&gt;Personal Access Token&lt;/a&gt;. Generate one and paste it to ENV variable (or however you do it). Obviously it&amp;rsquo;s not something to share.&lt;/p&gt;
+
+&lt;p&gt;We will use it in config file &lt;code&gt;.pronto.yml&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;github:
+  slug: user-name/repo
+  access_token: ENV[&amp;quot;GITHUB_ACCESS_TOKEN&amp;quot;]
+  api_endpoint: https://api.github.com/
+  web_endpoint: https://github.com/
+max_warnings: 150
+verbose: false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next we add our new guy as contributor to &lt;code&gt;repo&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Sweet. Neat Freak can now comment on Github. (We should not forget to add this value to our CI service as well. )&lt;/p&gt;
+
+&lt;h3&gt;TravisCI&lt;/h3&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s configure good old Travis via &lt;code&gt;.travis.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;script:
+  - bundle exec rake test
+  - &amp;#39;PULL_REQUEST_ID=${TRAVIS_PULL_REQUEST} bundle exec pronto run -f github_pr&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We&amp;#39;e just told Travis to run pronto after tests. &lt;code&gt;TRAVIS_PULL_REQUEST&lt;/code&gt; is the same as GH&amp;rsquo;s pull request id, so we are cool.&lt;/p&gt;
+
+&lt;h3&gt;CircleCI&lt;/h3&gt;
+
+&lt;p&gt;In case you are using CircleCI, you will need to add something like this to &lt;code&gt;circle.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;test:
+  post:
+    - &amp;#39;PULL_REQUEST_ID=${CI_PULL_REQUEST##*/} bundle exec pronto run -f github_pr&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;CircleCI doesn&amp;rsquo;t store GH&amp;rsquo;s pull request id, so we used a bit of magic to get it from &lt;code&gt;CI_PULL_REQUEST&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3&gt;Once again&lt;/h3&gt;
+
+&lt;p&gt;Do not forget to add &lt;code&gt;GITHUB_ACCESS_TOKEN&lt;/code&gt; to your CI service.&lt;/p&gt;
+
+&lt;h2&gt;Push vs Pull Request&lt;/h2&gt;
+
+&lt;p&gt;In TravisCI, you can set whether you want to run your tests on pull requests and/or pushes.&lt;br&gt;
+Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVIS_PULL_REQUEST&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is little fix:  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;- &amp;#39;if [ &amp;quot;$TRAVIS_PULL_REQUEST&amp;quot; == false ]; then echo &amp;quot;TRAVIS_PULL_REQUEST is unset, skipping Pronto&amp;quot;; else PULL_REQUEST_ID=${TRAVIS_PULL_REQUEST} bundle exec pronto run -f github_pr; fi&amp;#39;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2&gt;Profit&lt;/h2&gt;
+
+&lt;p&gt;Now we can see comments in PR&amp;rsquo;s once code style problems are found. And of course we can configure style guide. To see how, just go see how runners/respective tools do it.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>So there was no alcohol last month</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month.html"/>
+    <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month.html</id>
+    <published>2016-03-05T19:18:00+01:00</published>
+    <updated>2016-06-28T21:24:20+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;And sweets as well.&lt;/h2&gt;
+
+&lt;p&gt;And it was interesting, indeed. I did keep the promise and during February (&lt;em&gt;the shortest month, right?&lt;/em&gt;) there was no alcohol and sweets for me.&lt;/p&gt;
+
+&lt;h3&gt;What did I expect?&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spend less money&lt;/li&gt;
+&lt;li&gt;loose weight&lt;/li&gt;
+&lt;li&gt;feel better overall&lt;/li&gt;
+&lt;li&gt;sleep better&lt;/li&gt;
+&lt;li&gt;have &lt;strong&gt;worse social life&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And stuff like that.&lt;/p&gt;
+
+&lt;h3&gt;What was the reality?&lt;/h3&gt;
+
+&lt;p&gt;Some things are obvious: I did spend less money. Same goes with other stuff: I slept better, I was not tired during workdays (before, I usually had to eat some sweet stuff afternoon, my body demanded it.). Eat more fruits!&lt;/p&gt;
+
+&lt;h4&gt;Weight.&lt;/h4&gt;
+
+&lt;p&gt;I went down to &lt;strong&gt;67kg from 71kg&lt;/strong&gt;. Nice.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s also because there were Christmas not that long ago, but anyway, it makes me happy. Loosing some weight was something that I wanted. And I was not changing any of my eating habits, except sugar. I might even ate more fast food than usually.&lt;/p&gt;
+
+&lt;h4&gt;Alcohol.&lt;/h4&gt;
+
+&lt;p&gt;I thought that this might be hard, but in the end, it wasn&amp;rsquo;t. I still did not drink anything, yet. Didn&amp;rsquo;t really had taste for beer or so.&lt;/p&gt;
+
+&lt;p&gt;Kinda strange.&lt;/p&gt;
+
+&lt;h4&gt;So.&lt;/h4&gt;
+
+&lt;p&gt;So social life: was OK, not that awkward. There were not that much parties, I was doing other stuff instead. Might see less people.&lt;/p&gt;
+
+&lt;h3&gt;Next?&lt;/h3&gt;
+
+&lt;p&gt;This experiment was great. Hopefully I will do more of this stuff in future. Like take a walk everyday, exercise in the morning and evening.. and so&amp;hellip;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Learning how to work with Heroku Buildpacks and Node app</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app.html"/>
+    <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app.html</id>
+    <published>2016-02-18T20:51:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Few days ago I started to work on new task: deployment of the front-end &lt;a href="https://nodejs.org/en/"&gt;Node&lt;/a&gt; app to &lt;a href="https://heroku.com/"&gt;Heroku&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I am not familiar with it, so what could go wrong? No worries, I have colleagues with more experience, so let&amp;rsquo;s call it &lt;em&gt;time to learn&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3&gt;First things first.&lt;/h3&gt;
+
+&lt;p&gt;I have some basic experience with Heroku and &lt;a href="https://www.ruby-lang.org/en/"&gt;Ruby&lt;/a&gt;, so I started with &lt;em&gt;getting-to-know&lt;/em&gt; questions. &lt;/p&gt;
+
+&lt;p&gt;What kind of app it is? How does the current deployment works? Are there any assets? How much does Heroku likes Node? &lt;em&gt;What the fuck?&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3&gt;Answers.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;var express = require(&amp;#39;express&amp;#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Seems like it&amp;rsquo;s an &lt;a href="http://expressjs.com/"&gt;Express&lt;/a&gt; app. No experience with that, but I would say that it&amp;rsquo;s something that wont complicate anything and I pretty much don&amp;rsquo;t need to care about what framework are we having here. So let&amp;rsquo;s move on. &lt;/p&gt;
+
+&lt;p&gt;I created app via Heroku dashboard and then added remote called &lt;code&gt;heroku&lt;/code&gt;.  &lt;code&gt;git push heroku feature/heroku:master&lt;/code&gt; and: &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-----&amp;gt; Node.js app detected
+-----&amp;gt; Creating runtime environment
+.
+.
+.
+-----&amp;gt; Discovering process types
+       Procfile declares types     -&amp;gt; (none)
+       Default types for buildpack -&amp;gt; web
+-----&amp;gt; Launching...
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But the app is not running. That would be too easy. &lt;/p&gt;
+
+&lt;h3&gt;Buildpacks&lt;/h3&gt;
+
+&lt;p&gt;Going back to app files and searching for deploy brought me to &lt;code&gt;Gruntfile.js&lt;/code&gt;. From their website I decided that &lt;a href="http://gruntjs.com/"&gt;Grunt&lt;/a&gt; is kinda like doing Rake task in Rails world.  Googling Grunt and Heroku brought me &lt;a href="https://devcenter.heroku.com/articles/buildpacks"&gt;buildpacks&lt;/a&gt;.  Those are basically collections of scripts that prepare your code to run on your app&amp;rsquo;s dyno. Nice thing is that you can fork the default ones that Heroku prepared and customize it for your app. Colleagues to help!&lt;/p&gt;
+
+&lt;p&gt;So I went with the first one containing word Grunt. Following the instructions[^1], I created grunt task called &lt;code&gt;heroku:production&lt;/code&gt;[^2] as that&amp;rsquo;s what will run when deploying app. &lt;/p&gt;
+
+&lt;p&gt;Deploy. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;-----&amp;gt; Found Gruntfile, running grunt build task
+Loading &amp;quot;Gruntfile.js&amp;quot; tasks...ERROR
+&amp;gt;&amp;gt; Error: Cannot find module &amp;#39;flat&amp;#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Where&amp;rsquo;s flat? In &lt;code&gt;devDependencies&lt;/code&gt;. Not really caring what it does, but at least now I know that Node makes difference between production and development dependencies and that they wont get installed on Heroku. But we know that we can fix that in buildpack, right? &lt;/p&gt;
+
+&lt;h3&gt;Forking.&lt;/h3&gt;
+
+&lt;p&gt;First thing I&amp;rsquo;ve tried was copying all the dev deps to production. (By doing that I also found out that I need &lt;a href="http://bower.io/"&gt;bower&lt;/a&gt; and &lt;a href="http://compass-style.org/"&gt;compass&lt;/a&gt;). Buildpacks that I tried didn&amp;rsquo;t work, so in the end I decided to combine partially working ones and fork it into new &lt;a href="https://github.com/6artisans/heroku-buildpack-nodejs-grunt-compass-bower"&gt;one&lt;/a&gt;. Then we can figure out how to install dev deps on Heroku. &lt;/p&gt;
+
+&lt;p&gt;To install bower I committed &lt;a href="https://github.com/6artisans/heroku-buildpack-nodejs-grunt-compass-bower/commit/ada3b2198e46a6b55e96df82cd68fffe957dcbf8"&gt;this&lt;/a&gt;. It seems that installing dev deps ain&amp;rsquo;t that &lt;a href="https://github.com/6artisans/heroku-buildpack-nodejs-grunt-compass-bower/commit/9ea92e7189f1064a579b8cd234c4f0cde8e64655"&gt;hard&lt;/a&gt;, too. &lt;/p&gt;
+
+&lt;h3&gt;&lt;em&gt;Yay!&lt;/em&gt; moment.&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;Done, without errors.
+Total 26.5s
+-----&amp;gt; Discovering process types
+       Procfile declares types -&amp;gt; web
+-----&amp;gt; Compressing... done, 70.1MB
+-----&amp;gt; Launching...
+       Released v20
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trial-Error took &lt;em&gt;only&lt;/em&gt; 20 deploys, mission completed. &lt;/p&gt;
+
+&lt;p&gt;Now I know more about buildpacks, node and Heroku, compass, Grunt, Bower and bash. &lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s not forget bash.  &lt;/p&gt;
+
+&lt;p&gt;[^1]: Sorry, I don&amp;rsquo;t remember which one it was.&lt;/p&gt;
+
+&lt;p&gt;[^2]: Task was the same as was used previously when deploying on custom server (building assets etc.), except things related to installing software on server.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Learning Elixir - Functional vs Object-oriented</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented.html"/>
+    <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented.html</id>
+    <published>2016-02-06T20:52:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;For the most of my dev life I&amp;rsquo;ve been doing &lt;a href="https://en.wikipedia.org/wiki/Object-oriented_programming"&gt;Object-oriented programming&lt;/a&gt; (OOP). But as I mentioned in my &lt;a href="https://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming.html"&gt;previous post&lt;/a&gt;, lately I started to learn Elixir language with my non-programmer &lt;a href="https://ontheshelf.github.io/"&gt;girlfriend&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s been a lot of fun so far. &lt;/p&gt;
+
+&lt;p&gt;In this post I would like to write about what I feel are the differences between OOP and &lt;a href="https://en.wikipedia.org/wiki/Functional_programming"&gt;functional programming&lt;/a&gt; (FP). I will be over-simplifying, as this post is meant to be for someone who is not faminliar with any of those concepts. &lt;/p&gt;
+
+&lt;h3&gt;OOP&lt;/h3&gt;
+
+&lt;p&gt;Let&amp;rsquo;s say we have a blueprint of car (&lt;em&gt;a class&lt;/em&gt;) so we can create an instance of car (&lt;em&gt;the object&lt;/em&gt;). That car would have 4 wheels, actual speed (&lt;em&gt;attributes&lt;/em&gt;) and means of speeding up or down (&lt;em&gt;methods&lt;/em&gt;) so we can do some weird stuff with it (&lt;em&gt;mutate&lt;/em&gt; it). &lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;fastie = Car.new     #creating new car
+fastie.actual_speed? #asking for actual speed  
+    &amp;gt; 0 km/h         #the answer
+fastie.speed_up!     #let&amp;#39;s rock and roll
+fastie.actual_speed?
+    &amp;gt; 100 km/h
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;FP&lt;/h3&gt;
+
+&lt;p&gt;FP is all about Math. We have mathematical expressions (&lt;em&gt;functions&lt;/em&gt;) that help us to do weird stuff to our data (&lt;em&gt;transforming&lt;/em&gt; them). &lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="ruby"&gt;speed = 0               #let&amp;#39;s say we are at 0          
+Speed.current(speed)    #asking for actual speed
+    &amp;gt; 0 km/h            #just adding km/h to value 
+speed1 = Speed.up(speed + 100)
+                        #speeding up
+Speed.current(speed1)
+    &amp;gt; 100 km/h              
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3&gt;In other words.&lt;/h3&gt;
+
+&lt;p&gt;In FP, we don&amp;rsquo;t change the data (like in OOP), we transform them into new data (&lt;em&gt;speed-&amp;gt;speed1&lt;/em&gt;). In other words, &lt;code&gt;fastie&lt;/code&gt; was changed/mutated, but on the other hand, &lt;code&gt;speed&lt;/code&gt; was not. &lt;/p&gt;
+
+&lt;p&gt;In FP we take similar functions and put them into modules, eg. &lt;code&gt;Speed&lt;/code&gt;. They do not change our data, they create new sets of data depending on what they are supposed to do. Same input have always same output. &lt;/p&gt;
+
+&lt;p&gt;In OOP, we have classes, that are something like blueprints, containing methods telling us how to change the state of object created from class. Same input does not need to mean that output will be same as well (there might be someone else doing some weird stuff with speed the same time as you do).&lt;/p&gt;
+
+&lt;h3&gt;None is better.&lt;/h3&gt;
+
+&lt;p&gt;In the end it always depends on what kind of problem you are trying to solve: &lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Always choose the best tool for the job.  &lt;/p&gt;
+&lt;/blockquote&gt;
+</content>
+  </entry>
+  <entry>
+    <title>There shall be no alcohol this month</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol.html"/>
+    <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol.html</id>
+    <published>2016-02-01T14:29:00+01:00</published>
+    <updated>2016-06-28T21:24:20+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;And sweets as well.&lt;/h2&gt;
+
+&lt;p&gt;So January was kinda weird: I did spend more on alcohol than on food. And I do not remember being drunk that much. There were some parties and so, but&amp;hellip;  &lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s not right. I mean, no headache? Just money spent? That for sure not right.&lt;/p&gt;
+
+&lt;h3&gt;So this month will be different.&lt;/h3&gt;
+
+&lt;p&gt;I wont drink any alcohol, and as bonus, no sweets as well.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s see how that works.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Learning Elixir or What is couple programming?</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming.html"/>
+    <id>http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming.html</id>
+    <published>2016-01-28T17:21:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;I&amp;rsquo;ll have to admit that I pretty much don&amp;rsquo;t remember why, but few days ago my
+girlfriend and I decided to start to learn &lt;a href="http://elixir-lang.org/"&gt;Elixir programming language&lt;/a&gt; together.&lt;/p&gt;
+
+&lt;p&gt;Probably because I&amp;rsquo;ve tried to do that alone some time ago, but I gave up after
+quite short time. I didn&amp;rsquo;t manage to force my self to keep learning and after
+a while I was &lt;em&gt;forgetting&lt;/em&gt; more that I was &lt;em&gt;learning&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;You see, learning something new is always a good thing, but one needs a motivation to keep up. And what&amp;rsquo;s better motivation than learning with someone else? Someone you have near you all the time?&lt;/p&gt;
+
+&lt;p&gt;That would be my girlfriend, right? I am software developer, she is not, this should be fun!&lt;/p&gt;
+
+&lt;h3&gt;The plan.&lt;/h3&gt;
+
+&lt;p&gt;The plan is rather simple. We bought &lt;a href="https://pragprog.com/book/elixir/programming-elixir"&gt;Elixir book&lt;/a&gt; and slowly we are going to read it.&lt;/p&gt;
+
+&lt;p&gt;She is not a software developer so we should both learn a lot. She, because she is doing something totally new, and me, because when trying to explain to her, I will need to look up a lot of stuff. At least I think so. I mean I&amp;rsquo;m pretty sure there&amp;rsquo;s a lot of things I can not explain because my understanding of them is very tiny.&lt;/p&gt;
+
+&lt;h3&gt;So.&lt;/h3&gt;
+
+&lt;p&gt;So I will be writing here. She will be writing as well. There &lt;a href="http://ontheshelf.github.io/"&gt;On the shelf&lt;/a&gt;. I hope you are going there right now and will make some comments.&lt;/p&gt;
+
+&lt;p&gt;Part of learning is &lt;em&gt;making mistakes&lt;/em&gt; and that&amp;rsquo;s where you can help us.&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>2016 Resolution - DiscoverBSD Talks</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks.html"/>
+    <id>http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks.html</id>
+    <published>2016-01-04T12:56:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;First things first.&lt;/h2&gt;
+
+&lt;p&gt;Do you make resolutions for New Year? &lt;strong&gt;I don&amp;rsquo;t.&lt;/strong&gt; &lt;/p&gt;
+
+&lt;p&gt;Except this year. Or last year. Depending when do you consider &amp;ldquo;when&amp;rdquo;. &lt;/p&gt;
+
+&lt;p&gt;Anyway, usually I don&amp;rsquo;t, because I think they never work, it&amp;rsquo;s stupid, and&amp;hellip;&lt;br&gt;
+And there&amp;rsquo;s not a thing I wanna change right then, usually. Because if I wanna 
+change something, I&amp;rsquo;m just gonna change it whenever it comes to my mind. 
+No need to wait till the end of a year.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Usually.&lt;/em&gt; &lt;/p&gt;
+
+&lt;p&gt;So basically, the fact that I have one for 2016, is just good timing: 
+It was during christmas break and I wanted to make something
+for my blog at &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://talks.discoverbsd.com"&gt;DiscoverBSD Talks&lt;/a&gt;.&lt;/h3&gt;
+
+&lt;p&gt;When I started the &lt;a href="https://discoverbsd.com"&gt;blog&lt;/a&gt;, idea was to learn more of
+BSDs. I&amp;rsquo;ve kinda learnt a lot, but I guess, one can always learn more.
+Like getting some books, going to conferences, attend meet-ups,
+online stuff, etc.. &lt;/p&gt;
+
+&lt;p&gt;Conferences are right now expensive for me, so I wanted another way to be 
+able to see what&amp;rsquo;s up.  &lt;/p&gt;
+
+&lt;h3&gt;And luckily, a lot of talks can be found online.&lt;/h3&gt;
+
+&lt;p&gt;Good for me right? &lt;/p&gt;
+
+&lt;p&gt;So right now the resolution is to watch one BSD-related conference
+(or not from conference) talk every 2 weeks. And for that reason I am building 
+&lt;a href="https://talks.discoverbsd.com"&gt;DiscoverBSD Talks&lt;/a&gt; website. 
+Sources are on &lt;a href="https://github.com/DiscoverBSD/Talks"&gt;GitHub&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;Because, you know, it makes it easier for me to keep the resolution. I mean 
+I needed to build it, it&amp;rsquo;s like my child and shit. And if some people join me, awesome.&lt;/p&gt;
+
+&lt;h3&gt;Because I can&amp;rsquo;t do this alone.&lt;/h3&gt;
+
+&lt;p&gt;Right now I hope it will become a community based website where
+people can watch and discuss videos, and thus &lt;em&gt;learn&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;I plan to release new video every two weeks. To join me, you might want 
+to subscribe to get notified when new video is released 
+(via &lt;a href="http://eepurl.com/bHOOKz"&gt;email&lt;/a&gt; or 
+&lt;a href="https://talks.discoverbsd.com/feed.xml"&gt;rss&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3&gt;And please comment on videos&lt;/h3&gt;
+
+&lt;p&gt;So we can all learn together. I am pretty sure that everyone will catch some different important detail.&lt;/p&gt;
+
+&lt;h3&gt;&lt;a href="https://talks.discoverbsd.com/2016/01/01/early-days-of-unix-and-design-of-sh.html"&gt;First video&lt;/a&gt; is already out and you can learn some interesting stuff.&lt;/h3&gt;
+
+&lt;p&gt;Like:  &lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Seventh edition #Unix release management: Utility owned by last person who touched it&lt;br&gt;&lt;/li&gt;
+&lt;li&gt;There were 40 system calls in Sixth edition #Unix 1975 &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Go &lt;a href="https://talks.discoverbsd.com/2016/01/01/early-days-of-unix-and-design-of-sh.html"&gt;watch&lt;/a&gt; to learn more!&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>TWiL 49</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/12/06/twil-49.html"/>
+    <id>http://hovancik.net/blog/2015/12/06/twil-49.html</id>
+    <published>2015-12-06T16:42:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;Or This Week I Learned&lt;/h2&gt;
+
+&lt;p&gt;This week we have been talking (home at &lt;a href="http://6artisans.cz"&gt;6artisans&lt;/a&gt;) about how to work better. You know, how to have more fun, learn more and do things better. &lt;/p&gt;
+
+&lt;p&gt;All the companies should. &lt;/p&gt;
+
+&lt;p&gt;Anyway, I&amp;rsquo;ve been reading a lot articles and so on: about testing, deploying, etc. Just wanna shout out one awesome &lt;a href="http://www.be9.io/2015/12/01/heroku-deployment/"&gt;article&lt;/a&gt;. Great inspiration if you are looking for way how to do your development (heroku, aws, migrations, jenkins, hubot, etc.).  &lt;/p&gt;
+
+&lt;p&gt;It goes into much details, so &lt;em&gt;yay!&lt;/em&gt;. &lt;/p&gt;
+
+&lt;h3&gt;And obligatory podcasts:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="http://www.samharris.org/podcast/item/on-the-maintenance-of-civilization/"&gt;On the Maintenance of Civilization: Sam Harris&lt;/a&gt; - In this episode of the Waking Up podcast, Sam Harris speaks with author Douglas Murray about Islamism, liberalism, civil society, and the migrant crisis in Europe.&lt;/li&gt;
+&lt;li&gt;some scifi and fantasy stories: &lt;a href="http://www.lightspeedmagazine.com/fiction/the-light-brigade/"&gt;The Light Brigade - Lightspeed Magazine&lt;/a&gt;, &lt;a href="http://www.drabblecast.org/2015/11/27/drabblecast-372-delicate-parts/"&gt;Drabblecast 372 - Delicate Parts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;And Christmas pics because it&amp;rsquo;s that time of year.&lt;/h2&gt;
+
+&lt;p&gt;And we made our flat look better with my amazing girlfriend. &lt;/p&gt;
+
+&lt;p&gt;&lt;img title="Christmas" alt="Christmas" src="/img/christmas_2015.jpg" /&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>TWiL 48/2015</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/11/29/twil-48-2015.html"/>
+    <id>http://hovancik.net/blog/2015/11/29/twil-48-2015.html</id>
+    <published>2015-11-29T16:20:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;Or This Week I Learned&lt;/h2&gt;
+
+&lt;h3&gt;Languages&lt;/h3&gt;
+
+&lt;p&gt;We speak them. &lt;/p&gt;
+
+&lt;p&gt;And then there&amp;rsquo;s that really &lt;a href="https://greatlanguagegame.com/"&gt;great game&lt;/a&gt; you should check out. It is fun. &lt;/p&gt;
+
+&lt;h3&gt;&lt;code&gt;python -m SimpleHTTPServer 5000&lt;/code&gt;&lt;/h3&gt;
+
+&lt;p&gt;This is the one you always use. But there is also one in ruby: &lt;code&gt;ruby -run -e httpd . -p 5000&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3&gt;Marihuana&lt;/h3&gt;
+
+&lt;p&gt;Ah, there is &lt;a href="http://healthland.time.com/2011/04/06/why-pot-smokers-are-paranoid/"&gt;a link&lt;/a&gt; between paranoia and marihuana usage. Not cool.&lt;br&gt;
+Is it the same with alcohol? I would like to know, but am lazy to search for it.  &lt;/p&gt;
+
+&lt;h3&gt;&amp;hellip; and some podcasts&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://soundcloud.com/startalk/the-science-of-family-guy-with-seth-macfarlane"&gt;StarTalk Radio: The Science of Family Guy with Seth MacFarlane&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.npr.org/sections/money/2015/11/20/456855788/episode-664-the-great-inflation"&gt;Planet Money: The Great Inflation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
+  <entry>
+    <title>TWiL 47/2015</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/11/22/twil-47-2015.html"/>
+    <id>http://hovancik.net/blog/2015/11/22/twil-47-2015.html</id>
+    <published>2015-11-22T15:54:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h2&gt;Or This Week I Learned&lt;/h2&gt;
+
+&lt;h3&gt;Laughing is not just for people.&lt;/h3&gt;
+
+&lt;p&gt;Some other animals laugh as well. Eg. &lt;em&gt;rats&lt;/em&gt;. Good for them. &lt;/p&gt;
+
+&lt;h3&gt;Laughing is making you do better at exams.&lt;/h3&gt;
+
+&lt;p&gt;At least &lt;a href="https://www.psychologytoday.com/articles/200001/laughing-succeed"&gt;some&lt;/a&gt; studies show, that people make better results in intelligence tests and creative tasks after listening some fun routine (eg. stand up comedian and so on.). If there is some funny part in yours teachers presentation, you are likely to remember up to 15% more.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve learnt this stuff while listening to &lt;a href="http://www.startalkradio.net/show/exploring-science-and-comedy-with-larry-wilmore/"&gt;Exploring Science and Comedy with Larry Wilmore&lt;/a&gt;. Go ahead and help yourself. &lt;/p&gt;
+
+&lt;h3&gt;So here comes the joke:&lt;/h3&gt;
+
+&lt;p&gt;Two men walk into bar. Both of them very successful. One dropped out of college, because it didn&amp;rsquo;t fit him. The other one stayed and made the college to fits him.   &lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Stoic Week 2015 - Day 7</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/11/08/stoic-week-2015-day-7.html"/>
+    <id>http://hovancik.net/blog/2015/11/08/stoic-week-2015-day-7.html</id>
+    <published>2015-11-08T11:55:00+01:00</published>
+    <updated>2016-06-28T21:24:09+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h3&gt;11.55AM&lt;/h3&gt;
+
+&lt;p&gt;Yay, today is the first day I am actually doing After Lunch excercise after lunch. &lt;/p&gt;
+
+&lt;p&gt;And the topic is: our place within nature as a whole. Good way to end this week, putting it all together and taking a look from the above. All starts to fit in, making sense as whole. The stoicism, I mean. &lt;/p&gt;
+
+&lt;p&gt;When we look from above, we can realize how small we are. But more importantly we can see that we are part of something bigger. The universe can be our moral inspiration. &lt;/p&gt;
+
+&lt;p&gt;How can universe be moral inspiration, you ask? Well, the qualities they attributed to the universe as a whole were order, structure and rationality. So pretty much the same attributes as they say we should have to live a happy life. I very like them taking inspiration from place where they are [The Universe]. &lt;/p&gt;
+
+&lt;p&gt;That makes much sense.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <!-- Use title if it's in the page YAML frontmatter -->
+        <title>BSDHistory</title>
+        <meta name="description" content="Jan Hovancik, software developer - guitar player - poetry lover">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:image" content='http://hovancik.net/img/wood-817459_1280.jpg'/>
+        <link href='//fonts.googleapis.com/css?family=Tienne:700,400|Poiret+One|Roboto:300' rel='stylesheet' type='text/css'>
+        <link href="http://hovancik.net/blog/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+        <link href="../../../../css/normalize.css" rel="stylesheet" />
+        <link href="../../../../css/main.css" rel="stylesheet" />
+        <link href="../../../../img/favicon.ico" rel="icon" type="image/ico" />
+        <script src="../../../../js/vendor/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
+        <![endif]-->
+
+
+            <div class="blog">
+      <div class="blog__nav">
+        <p>
+          <a href="/">hovancik.net</a>/<a href="/blog">blog</a>/
+        </p>
+      </div>
+        <article>
+    <div>
+      <h1>
+        <a href="">BSDHistory</a>
+      </h1>
+      <p>
+        <small>Posted under
+          <a href="/blog/tags/discoverbsd.html">discoverbsd</a>
+                    <a href="/blog/tags/bsdhistory.html">bsdhistory</a>
+           on
+          <time>Jul 25 2015</time>
+        </small>
+      </p>
+    </div>
+    <div class="center">
+      &middot;
+    </div>
+    <div class="article_text">
+    <h2>Or few lines about hot it was done.</h2>
+
+<h3>Idea.</h3>
+
+<p>I was thinking about how to tweet more from my <a href="https://twitter.com/_DiscoverBSD">DiscoverBSD</a> account. 
+Based on the name of that account, I came up with idea of the tweets about BSD History. People should like that. So I tried to write at least one fact a week.</p>
+
+<p>After few days, my mind came with idea to publish them also on website. You know, that kind where one can see one sentence in the middle of screen, with big letters. And link to share it.  </p>
+
+<p>So comes <a href="https://BSDHistory.DiscoverBSD.com">#BSDHistory</a>.</p>
+
+<h3>How it works.</h3>
+
+<p>Code is on <a href="https://github.com/DiscoverBSD/BSDHistory">GitHub</a>. I have and organization account for DiscoverBSD, so I put it there.</p>
+
+<p>Site itself is hosted on <a href="https://pages.github.com">github pages</a>. I use <a href="https://www.cloudflare.com/">CloudFlare</a> for DNS. </p>
+
+<p>I try to use only basic stuff, so it&rsquo;s written in HTML, CSS, JavaScript. Starting point is basic HTML5 template from <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>. Fonts are from Google - <a href="https://www.google.com/fonts/specimen/Philosopher">Philosopher</a>.</p>
+
+<p>Probably it doesn&rsquo;t make sense to go deep into what files I have, so let&rsquo;s just say the main ideas:   </p>
+
+<ul>
+<li>I wanna have one file with facts</li>
+<li>Fact should have text (twitte-sized) and link to the source </li>
+<li>With JS we are gonna read the file, pick random fact and show it</li>
+<li>People can refresh site and see different fact</li>
+<li>People can also add their own facts</li>
+<li>We can share current fact on Twitter</li>
+</ul>
+
+<h4>data.json</h4>
+
+<p>Here is how JSON data looks like.</p>
+
+<pre><code class="json">
+{
+  &quot;bsdhistory&quot;: [
+    {
+      &quot;text&quot;: &quot;#BSDHistory : #MirOS BSD started on 29. August 2002, combining OpenBSD (-current) and NetBSD (-current) at that time&quot;,
+      &quot;link&quot;:&quot;https://www.mirbsd.org/history.htm&quot;
+    },
+    {
+      &quot;text&quot;: &quot;#BSDHistory : #ARM port of #NetBSD was added in NetBSD 1.2 (Oct 1996)&quot;,
+      &quot;link&quot;: &quot;https://www.netbsd.org/releases/formal-1.2/&quot;
+    }
+  ]
+}
+</code></pre>
+
+<p>What I do next is picking a random fact and filling the data on page with data from it (text, link to source,twitter share). For twitter to work I need to <code>twitter_link = twitter_link.replace(/#/gi, &quot;%23&quot;);</code>, so I get the hashtags right.  </p>
+
+<h4>contribute via github</h4>
+
+<p>I&rsquo;ve created readme <a href="https://github.com/DiscoverBSD/BSDHistory#contribute">here</a>, so it should not be so hard to contribute if anyone would like to.</p>
+
+<h3>Plans.</h3>
+
+<p>I will add some more stuff probably. Anyone is very welcome to come up with ideas. It would made me very happy. </p>
+
+<p>Official DiscoverBSD announcement can be found <a href="https://www.discoverbsd.com/2015/07/introducing-bsdhistory.html">here</a>.</p>
+
+    </div>
+    <div class="center">
+      &middot;
+    </div>
+    <p class="social">
+      Did you enjoy this? Copy-paste the link from the address bar
+      to your favourite social network to share. Subscribe
+      <a href="//feeds.feedburner.com/JanHovancik">here</a>.
+    </p>
+    <div class="center">
+      &middot;
+    </div>
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+//<![CDATA[
+                  var disqus_shortname = 'hovancik';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    <div class="center">
+      &middot;
+    </div>
+  </article>
+
+    </div>
+    <footer>
+      <p class="footer__name"><a href="/">Jan Hovancik</a> 2014+</p>
+      <p class="footer__desc">
+        software developer - guitar player - poetry lover
+      </p>
+    </footer>
+    <div class="center">
+      &middot;
+    </div>
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script>
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-45739616-1', 'auto');
+          ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+        </script>
+    </body>
+</html>
