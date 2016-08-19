@@ -11,10 +11,10 @@
   </author>
   <entry>
     <title>Free automated code reviews using Pronto</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto.html"/>
-    <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
+    <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -164,10 +164,10 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
   </entry>
   <entry>
     <title>So there was no alcohol last month</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month.html"/>
-    <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
+    <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
     <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-06-28T21:24:20+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -214,10 +214,10 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
   </entry>
   <entry>
     <title>Learning how to work with Heroku Buildpacks and Node app</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app.html"/>
-    <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/"/>
+    <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/</id>
     <published>2016-02-18T20:51:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -298,10 +298,10 @@ Total 26.5s
   </entry>
   <entry>
     <title>Learning Elixir - Functional vs Object-oriented</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented.html"/>
-    <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/"/>
+    <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/</id>
     <published>2016-02-06T20:52:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -355,10 +355,10 @@ Speed.current(speed1)
   </entry>
   <entry>
     <title>There shall be no alcohol this month</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol.html"/>
-    <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/"/>
+    <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/</id>
     <published>2016-02-01T14:29:00+01:00</published>
-    <updated>2016-06-28T21:24:20+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -377,10 +377,10 @@ Speed.current(speed1)
   </entry>
   <entry>
     <title>Learning Elixir or What is couple programming?</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming.html"/>
-    <id>http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/"/>
+    <id>http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/</id>
     <published>2016-01-28T17:21:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -410,10 +410,10 @@ a while I was &lt;em&gt;forgetting&lt;/em&gt; more that I was &lt;em&gt;learning
   </entry>
   <entry>
     <title>2016 Resolution - DiscoverBSD Talks</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks.html"/>
-    <id>http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/"/>
+    <id>http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/</id>
     <published>2016-01-04T12:56:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -484,10 +484,10 @@ to subscribe to get notified when new video is released
   </entry>
   <entry>
     <title>TWiL 49</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2015/12/06/twil-49.html"/>
-    <id>http://hovancik.net/blog/2015/12/06/twil-49.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/12/06/twil-49/"/>
+    <id>http://hovancik.net/blog/2015/12/06/twil-49/</id>
     <published>2015-12-06T16:42:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -517,10 +517,10 @@ to subscribe to get notified when new video is released
   </entry>
   <entry>
     <title>TWiL 48/2015</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2015/11/29/twil-48-2015.html"/>
-    <id>http://hovancik.net/blog/2015/11/29/twil-48-2015.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/11/29/twil-48-2015/"/>
+    <id>http://hovancik.net/blog/2015/11/29/twil-48-2015/</id>
     <published>2015-11-29T16:20:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -551,10 +551,10 @@ Is it the same with alcohol? I would like to know, but am lazy to search for it.
   </entry>
   <entry>
     <title>TWiL 47/2015</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2015/11/22/twil-47-2015.html"/>
-    <id>http://hovancik.net/blog/2015/11/22/twil-47-2015.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/11/22/twil-47-2015/"/>
+    <id>http://hovancik.net/blog/2015/11/22/twil-47-2015/</id>
     <published>2015-11-22T15:54:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -577,10 +577,10 @@ Is it the same with alcohol? I would like to know, but am lazy to search for it.
   </entry>
   <entry>
     <title>Stoic Week 2015 - Day 7</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2015/11/08/stoic-week-2015-day-7.html"/>
-    <id>http://hovancik.net/blog/2015/11/08/stoic-week-2015-day-7.html</id>
+    <link rel="alternate" href="http://hovancik.net/blog/2015/11/08/stoic-week-2015-day-7/"/>
+    <id>http://hovancik.net/blog/2015/11/08/stoic-week-2015-day-7/</id>
     <published>2015-11-08T11:55:00+01:00</published>
-    <updated>2016-06-28T21:24:09+02:00</updated>
+    <updated>2016-08-19T18:15:16+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>

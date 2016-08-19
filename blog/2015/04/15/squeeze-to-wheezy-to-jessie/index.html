@@ -1,0 +1,133 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Squeeze to Wheezy to Jessie</title>
+      <meta name="description" content="Jan Hovancik, software developer - guitar player - poetry lover">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta property="og:image" content='http://hovancik.net/img/wood-817459_1280.jpg'/>
+      <link href='//fonts.googleapis.com/css?family=Tienne:700,400|Poiret+One|Roboto:300' rel='stylesheet' type='text/css'>
+      <link href="http://hovancik.net/blog/feed.xml" rel="alternate" title="RSS" type="application/rss+xml" />
+      <link href="../../../../../css/normalize.css" rel="stylesheet" />
+      <link href="../../../../../css/main.css" rel="stylesheet" />
+      <link href="../../../../../img/favicon.ico" rel="icon" type="image/ico" />
+  </head>
+  <body>
+
+          <div class="blog">
+      <div class="blog__nav">
+        <p>
+          <a href="/">hovancik.net</a>/<a href="/blog">blog</a>/
+        </p>
+      </div>
+        <article>
+    <div>
+      <h1>
+        <a href="">Squeeze to Wheezy to Jessie</a>
+      </h1>
+      <p>
+        <small>Posted under
+          <a href="/blog/tags/debian/">debian</a>
+                    <a href="/blog/tags/linux/">linux</a>
+                    <a href="/blog/tags/getles/">getles</a>
+                    <a href="/blog/tags/lowendspirit/">lowendspirit</a>
+           on
+          <time>Apr 15 2015</time>
+        </small>
+      </p>
+    </div>
+    <div class="center">
+      &middot;
+    </div>
+    <div class="article_text">
+    <h2>Or Dah Boo Dah Hou</h2>
+
+<p>Not really much to say here: I have a <a href="http://LowEndSpirit.com">LowEndSpirit</a> server to have <a href="https:/getles.tk">getles.tk</a> sitting on it.   </p>
+
+<p>And it had Debian Squeeze. So I upgraded it. To Wheezy.</p>
+
+<h3>Boring.</h3>
+
+<p>Well, in fact I was a bit scared, because dist-upgrade usually isn&rsquo;t something going too well, but after realizing that only thing there is nginx and some sec stuff, I went for it. </p>
+
+<p>So I edited sources list and <code>apt-get update &amp;&amp; apt-get upgrade &amp;&amp; apt-get dist-upgrade</code>. </p>
+
+<p>No troubles at all.<br>
+Except: <code>libncurses5 libncursesw5</code> being kept back. They have some weird version:</p>
+
+<pre><code>libncurses5:  
+  Installed: 5.7+20100313-5  
+  Candidate: 5.9-10  
+  Version table:  
+     5.9-10 0  
+        500 http://ftp.de.debian.org/debian/ wheezy/main i386 Packages  
+ *** 5.7+20100313-5 0  
+        100 /var/lib/dpkg/status  
+</code></pre>
+
+<p>I guess should be safe to force their upgrade, I&rsquo;ll do it went I am bored and report back.  </p>
+
+<p><strong>Or not.</strong> </p>
+
+<h3>Update.</h3>
+
+<p>Debian 8 aka Jessie was released. So I upgraded as well. As before, no problems.   </p>
+
+<p>Very sweet.  </p>
+
+    </div>
+    <div class="center">
+      &middot;
+    </div>
+    <p class="social">
+      Did you enjoy this? Copy-paste the link from the address bar
+      to your favourite social network to share. Subscribe
+      <a href="//feeds.feedburner.com/JanHovancik">here</a>.
+    </p>
+    <div class="center">
+      &middot;
+    </div>
+    <div id='disqus_thread'></div>
+<script type='text/javascript'>
+//<![CDATA[
+                  var disqus_shortname = 'hovancik';
+          
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+//]]>
+</script>
+<noscript>Please enable JavaScript to view the <a href='http://disqus.com/?ref_noscript'>comments powered by Disqus.</a></noscript>
+<a href='http://disqus.com' class='dsq-brlink'>comments powered by <span class='logo-disqus'>Disqus</span></a>
+
+    <div class="center">
+      &middot;
+    </div>
+  </article>
+
+    </div>
+    <footer>
+      <p class="footer__name"><a href="/">Jan Hovancik</a> 2014+</p>
+      <p class="footer__desc">
+        software developer - guitar player - poetry lover
+      </p>
+    </footer>
+    <div class="center">
+      &middot;
+    </div>
+
+
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-45739616-1', 'auto');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+      </script>
+  </body>
+</html>
