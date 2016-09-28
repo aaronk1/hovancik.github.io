@@ -5,16 +5,39 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2016-09-07T02:00:00+02:00</updated>
+  <updated>2016-09-28T15:58:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly v0.1.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
+    <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
+    <published>2016-09-28T15:58:00+02:00</published>
+    <updated>2016-09-28T16:11:00+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Good news everyone, version 0.1.0 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;What&amp;rsquo;s new?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rename strechly to stretchly (grammar, yay!)&lt;/li&gt;
+&lt;li&gt;allows only one instance of app&lt;/li&gt;
+&lt;li&gt;settings for microbreak (duration, interval)&lt;/li&gt;
+&lt;li&gt;5 color schemes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Unfortunately, there is some problem with Linux packages. When I tried on Ubuntu, app did not start. I&amp;rsquo;m working on it.  &lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Introducing stretchly - break time reminder app</title>
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
     <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
     <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -83,7 +106,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
     <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -236,7 +259,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
     <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
     <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -286,7 +309,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/"/>
     <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/</id>
     <published>2016-02-18T20:51:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -370,7 +393,7 @@ Total 26.5s
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/"/>
     <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/</id>
     <published>2016-02-06T20:52:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -427,7 +450,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/"/>
     <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/</id>
     <published>2016-02-01T14:29:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -449,7 +472,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/"/>
     <id>http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/</id>
     <published>2016-01-28T17:21:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -482,7 +505,7 @@ a while I was &lt;em&gt;forgetting&lt;/em&gt; more that I was &lt;em&gt;learning
     <link rel="alternate" href="http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/"/>
     <id>http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/</id>
     <published>2016-01-04T12:56:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -556,7 +579,7 @@ to subscribe to get notified when new video is released
     <link rel="alternate" href="http://hovancik.net/blog/2015/12/06/twil-49/"/>
     <id>http://hovancik.net/blog/2015/12/06/twil-49/</id>
     <published>2015-12-06T16:42:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -589,7 +612,7 @@ to subscribe to get notified when new video is released
     <link rel="alternate" href="http://hovancik.net/blog/2015/11/29/twil-48-2015/"/>
     <id>http://hovancik.net/blog/2015/11/29/twil-48-2015/</id>
     <published>2015-11-29T16:20:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
+    <updated>2016-09-28T16:11:00+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -616,32 +639,6 @@ Is it the same with alcohol? I would like to know, but am lazy to search for it.
 &lt;li&gt;&lt;a href="https://soundcloud.com/startalk/the-science-of-family-guy-with-seth-macfarlane"&gt;StarTalk Radio: The Science of Family Guy with Seth MacFarlane&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.npr.org/sections/money/2015/11/20/456855788/episode-664-the-great-inflation"&gt;Planet Money: The Great Inflation&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>TWiL 47/2015</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2015/11/22/twil-47-2015/"/>
-    <id>http://hovancik.net/blog/2015/11/22/twil-47-2015/</id>
-    <published>2015-11-22T15:54:00+01:00</published>
-    <updated>2016-09-10T15:58:31+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h2&gt;Or This Week I Learned&lt;/h2&gt;
-
-&lt;h3&gt;Laughing is not just for people.&lt;/h3&gt;
-
-&lt;p&gt;Some other animals laugh as well. Eg. &lt;em&gt;rats&lt;/em&gt;. Good for them. &lt;/p&gt;
-
-&lt;h3&gt;Laughing is making you do better at exams.&lt;/h3&gt;
-
-&lt;p&gt;At least &lt;a href="https://www.psychologytoday.com/articles/200001/laughing-succeed"&gt;some&lt;/a&gt; studies show, that people make better results in intelligence tests and creative tasks after listening some fun routine (eg. stand up comedian and so on.). If there is some funny part in yours teachers presentation, you are likely to remember up to 15% more.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve learnt this stuff while listening to &lt;a href="http://www.startalkradio.net/show/exploring-science-and-comedy-with-larry-wilmore/"&gt;Exploring Science and Comedy with Larry Wilmore&lt;/a&gt;. Go ahead and help yourself. &lt;/p&gt;
-
-&lt;h3&gt;So here comes the joke:&lt;/h3&gt;
-
-&lt;p&gt;Two men walk into bar. Both of them very successful. One dropped out of college, because it didn&amp;rsquo;t fit him. The other one stayed and made the college to fits him.   &lt;/p&gt;
 </content>
   </entry>
 </feed>
