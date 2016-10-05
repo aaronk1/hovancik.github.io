@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -35,11 +35,34 @@ is pretty much self-explaining and easy:&lt;/p&gt;
 </content>
   </entry>
   <entry>
+    <title>stretchly v0.1.1 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/"/>
+    <id>http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/</id>
+    <published>2016-10-04T15:58:00+02:00</published>
+    <updated>2016-10-05T20:17:51+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Good news everyone, version 0.1.1 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.1"&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;What&amp;rsquo;s new? (also with v0.1.0)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rename strechly to stretchly (grammar, yay!)&lt;/li&gt;
+&lt;li&gt;allows only one instance of app&lt;/li&gt;
+&lt;li&gt;settings for microbreak (duration, interval)&lt;/li&gt;
+&lt;li&gt;5 color schemes&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src="/img/stretchly-settings.png" alt="stretchly" width="100%"/&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>stretchly v0.1.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
     <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
     <published>2016-09-28T15:58:00+02:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -56,7 +79,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src="/img/stretchly-settings.png" alt="stretchly" width="100%"/&gt;&lt;/p&gt;
 
-&lt;p&gt;Unfortunately, there is some problem with Linux packages. When I tried on Ubuntu, app did not start. I&amp;rsquo;m working on it.  &lt;/p&gt;
+&lt;p&gt;Unfortunately, there is some problem with Linux packages, so download version &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.1"&gt;v0.1.1&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -64,7 +87,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
     <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
     <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -133,7 +156,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
     <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -286,7 +309,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
     <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
     <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -336,7 +359,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/"/>
     <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/</id>
     <published>2016-02-18T20:51:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -420,7 +443,7 @@ Total 26.5s
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/"/>
     <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/</id>
     <published>2016-02-06T20:52:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -477,7 +500,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/"/>
     <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/</id>
     <published>2016-02-01T14:29:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -499,7 +522,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/"/>
     <id>http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/</id>
     <published>2016-01-28T17:21:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -532,7 +555,7 @@ a while I was &lt;em&gt;forgetting&lt;/em&gt; more that I was &lt;em&gt;learning
     <link rel="alternate" href="http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/"/>
     <id>http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/</id>
     <published>2016-01-04T12:56:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
+    <updated>2016-10-05T20:17:51+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -599,39 +622,6 @@ to subscribe to get notified when new video is released
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Go &lt;a href="https://talks.discoverbsd.com/2016/01/01/early-days-of-unix-and-design-of-sh.html"&gt;watch&lt;/a&gt; to learn more!&lt;/strong&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>TWiL 49</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2015/12/06/twil-49/"/>
-    <id>http://hovancik.net/blog/2015/12/06/twil-49/</id>
-    <published>2015-12-06T16:42:00+01:00</published>
-    <updated>2016-10-05T20:07:41+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h2&gt;Or This Week I Learned&lt;/h2&gt;
-
-&lt;p&gt;This week we have been talking (home at &lt;a href="http://6artisans.cz"&gt;6artisans&lt;/a&gt;) about how to work better. You know, how to have more fun, learn more and do things better. &lt;/p&gt;
-
-&lt;p&gt;All the companies should. &lt;/p&gt;
-
-&lt;p&gt;Anyway, I&amp;rsquo;ve been reading a lot articles and so on: about testing, deploying, etc. Just wanna shout out one awesome &lt;a href="http://www.be9.io/2015/12/01/heroku-deployment/"&gt;article&lt;/a&gt;. Great inspiration if you are looking for way how to do your development (heroku, aws, migrations, jenkins, hubot, etc.).  &lt;/p&gt;
-
-&lt;p&gt;It goes into much details, so &lt;em&gt;yay!&lt;/em&gt;. &lt;/p&gt;
-
-&lt;h3&gt;And obligatory podcasts:&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.samharris.org/podcast/item/on-the-maintenance-of-civilization/"&gt;On the Maintenance of Civilization: Sam Harris&lt;/a&gt; - In this episode of the Waking Up podcast, Sam Harris speaks with author Douglas Murray about Islamism, liberalism, civil society, and the migrant crisis in Europe.&lt;/li&gt;
-&lt;li&gt;some scifi and fantasy stories: &lt;a href="http://www.lightspeedmagazine.com/fiction/the-light-brigade/"&gt;The Light Brigade - Lightspeed Magazine&lt;/a&gt;, &lt;a href="http://www.drabblecast.org/2015/11/27/drabblecast-372-delicate-parts/"&gt;Drabblecast 372 - Delicate Parts&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;And Christmas pics because it&amp;rsquo;s that time of year.&lt;/h2&gt;
-
-&lt;p&gt;And we made our flat look better with my amazing girlfriend. &lt;/p&gt;
-
-&lt;p&gt;&lt;img title="Christmas" alt="Christmas" src="/img/christmas_2015.jpg" /&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
