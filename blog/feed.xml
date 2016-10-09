@@ -5,16 +5,43 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2016-10-05T12:59:00+02:00</updated>
+  <updated>2016-10-09T15:12:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly v0.2.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
+    <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
+    <published>2016-10-09T15:12:00+02:00</published>
+    <updated>2016-10-09T15:27:49+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there guys, version 0.2.0 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.2.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;What&amp;rsquo;s new?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;sounds at the end of microbreak&lt;/li&gt;
+&lt;li&gt;settings for sounds&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src="/img/stretchly-settings-sounds.png" alt="stretchly" width="100%"/&gt;&lt;/p&gt;
+
+&lt;p&gt;This release is based on feedback from &lt;em&gt;stretchly&lt;/em&gt; user, so thanks for ideas! (More of your feedback will be implemented.)&lt;/p&gt;
+
+&lt;p&gt;Also, thanks to the authors of sounds. Full credits can be found at &lt;a href="https://github.com/hovancik/stretchly#sounds-credits"&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you like stretchly, please, spread the word and like it at &lt;a href="https://alternativeto.net/software/stretchly/"&gt;alternativeTo&lt;/a&gt;, where more people can find it.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Mobile browsers, Let's Encrypt and Heroku</title>
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -39,7 +66,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/</id>
     <published>2016-10-04T15:58:00+02:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -62,7 +89,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
     <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
     <published>2016-09-28T15:58:00+02:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -87,7 +114,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
     <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
     <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -156,7 +183,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
     <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -309,7 +336,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
     <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
     <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -359,7 +386,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/"/>
     <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/</id>
     <published>2016-02-18T20:51:00+01:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -443,7 +470,7 @@ Total 26.5s
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/"/>
     <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/</id>
     <published>2016-02-06T20:52:00+01:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -500,7 +527,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/"/>
     <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/</id>
     <published>2016-02-01T14:29:00+01:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -522,7 +549,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/"/>
     <id>http://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming/</id>
     <published>2016-01-28T17:21:00+01:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
+    <updated>2016-10-09T15:27:49+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -548,80 +575,6 @@ a while I was &lt;em&gt;forgetting&lt;/em&gt; more that I was &lt;em&gt;learning
 &lt;p&gt;So I will be writing here. She will be writing as well. There &lt;a href="http://ontheshelf.github.io/"&gt;On the shelf&lt;/a&gt;. I hope you are going there right now and will make some comments.&lt;/p&gt;
 
 &lt;p&gt;Part of learning is &lt;em&gt;making mistakes&lt;/em&gt; and that&amp;rsquo;s where you can help us.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>2016 Resolution - DiscoverBSD Talks</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/"/>
-    <id>http://hovancik.net/blog/2016/01/04/2016-resolution-discoverbsd-talks/</id>
-    <published>2016-01-04T12:56:00+01:00</published>
-    <updated>2016-10-05T20:17:51+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h2&gt;First things first.&lt;/h2&gt;
-
-&lt;p&gt;Do you make resolutions for New Year? &lt;strong&gt;I don&amp;rsquo;t.&lt;/strong&gt; &lt;/p&gt;
-
-&lt;p&gt;Except this year. Or last year. Depending when do you consider &amp;ldquo;when&amp;rdquo;. &lt;/p&gt;
-
-&lt;p&gt;Anyway, usually I don&amp;rsquo;t, because I think they never work, it&amp;rsquo;s stupid, and&amp;hellip;&lt;br&gt;
-And there&amp;rsquo;s not a thing I wanna change right then, usually. Because if I wanna 
-change something, I&amp;rsquo;m just gonna change it whenever it comes to my mind. 
-No need to wait till the end of a year.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Usually.&lt;/em&gt; &lt;/p&gt;
-
-&lt;p&gt;So basically, the fact that I have one for 2016, is just good timing: 
-It was during christmas break and I wanted to make something
-for my blog at &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3&gt;&lt;a href="https://talks.discoverbsd.com"&gt;DiscoverBSD Talks&lt;/a&gt;.&lt;/h3&gt;
-
-&lt;p&gt;When I started the &lt;a href="https://discoverbsd.com"&gt;blog&lt;/a&gt;, idea was to learn more of
-BSDs. I&amp;rsquo;ve kinda learnt a lot, but I guess, one can always learn more.
-Like getting some books, going to conferences, attend meet-ups,
-online stuff, etc.. &lt;/p&gt;
-
-&lt;p&gt;Conferences are right now expensive for me, so I wanted another way to be 
-able to see what&amp;rsquo;s up.  &lt;/p&gt;
-
-&lt;h3&gt;And luckily, a lot of talks can be found online.&lt;/h3&gt;
-
-&lt;p&gt;Good for me right? &lt;/p&gt;
-
-&lt;p&gt;So right now the resolution is to watch one BSD-related conference
-(or not from conference) talk every 2 weeks. And for that reason I am building 
-&lt;a href="https://talks.discoverbsd.com"&gt;DiscoverBSD Talks&lt;/a&gt; website. 
-Sources are on &lt;a href="https://github.com/DiscoverBSD/Talks"&gt;GitHub&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;Because, you know, it makes it easier for me to keep the resolution. I mean 
-I needed to build it, it&amp;rsquo;s like my child and shit. And if some people join me, awesome.&lt;/p&gt;
-
-&lt;h3&gt;Because I can&amp;rsquo;t do this alone.&lt;/h3&gt;
-
-&lt;p&gt;Right now I hope it will become a community based website where
-people can watch and discuss videos, and thus &lt;em&gt;learn&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;I plan to release new video every two weeks. To join me, you might want 
-to subscribe to get notified when new video is released 
-(via &lt;a href="http://eepurl.com/bHOOKz"&gt;email&lt;/a&gt; or 
-&lt;a href="https://talks.discoverbsd.com/feed.xml"&gt;rss&lt;/a&gt;).&lt;/p&gt;
-
-&lt;h3&gt;And please comment on videos&lt;/h3&gt;
-
-&lt;p&gt;So we can all learn together. I am pretty sure that everyone will catch some different important detail.&lt;/p&gt;
-
-&lt;h3&gt;&lt;a href="https://talks.discoverbsd.com/2016/01/01/early-days-of-unix-and-design-of-sh.html"&gt;First video&lt;/a&gt; is already out and you can learn some interesting stuff.&lt;/h3&gt;
-
-&lt;p&gt;Like:  &lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Seventh edition #Unix release management: Utility owned by last person who touched it&lt;br&gt;&lt;/li&gt;
-&lt;li&gt;There were 40 system calls in Sixth edition #Unix 1975 &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Go &lt;a href="https://talks.discoverbsd.com/2016/01/01/early-days-of-unix-and-design-of-sh.html"&gt;watch&lt;/a&gt; to learn more!&lt;/strong&gt;&lt;/p&gt;
 </content>
   </entry>
 </feed>
