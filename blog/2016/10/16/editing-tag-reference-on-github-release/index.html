@@ -2,7 +2,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>stretchly v0.1.1 released</title>
+      <title>Editing tag reference on Github release</title>
       <meta name="description" content="Jan Hovancik, software developer - guitar player - poetry lover">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta property="og:image" content='http://hovancik.net/img/wood-817459_1280.jpg'/>
@@ -23,13 +23,16 @@
         <article>
     <div>
       <h1>
-        <a href="">stretchly v0.1.1 released</a>
+        <a href="">Editing tag reference on Github release</a>
       </h1>
       <p>
         <small>Posted under
-          <a href="/blog/tags/stretchly/">stretchly</a>
+          <a href="/blog/tags/github/">github</a>
+                    <a href="/blog/tags/tag/">tag</a>
+                    <a href="/blog/tags/release/">release</a>
+                    <a href="/blog/tags/git/">git</a>
            on
-          <time>Oct  4 2016</time>
+          <time>Oct 16 2016</time>
         </small>
       </p>
     </div>
@@ -37,18 +40,28 @@
       &middot;
     </div>
     <div class="article_text">
-    <p>Good news everyone, version 0.1.1 of <a href="/stretchly"><em>stretchly</em></a> is now available to be downloaded from <a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.1">github</a>.</p>
-
-<h2>What&rsquo;s new? (also with v0.1.0)</h2>
+    <p>To release my <a href="/stretchly">stretchly</a> app I use Github releases. And my workflow is similar to this:</p>
 
 <ul>
-<li>rename strechly to stretchly (grammar, yay!)</li>
-<li>allows only one instance of app</li>
-<li>settings for microbreak (duration, interval)</li>
-<li>5 color schemes</li>
+<li>create feature branch and PR for that branch</li>
+<li>make draft release and upload executables there</li>
+<li>test executables</li>
+<li>merge PR</li>
+<li>publish release</li>
 </ul>
 
-<p><img src="../../../../../img/stretchly-settings.png" alt="stretchly" width="100%"/></p>
+<p>Two last steps should be in sequence, as Github&rsquo;s release mechanism will use master as reference for the new tag it&rsquo;s about to create.</p>
+
+<p>But today I somehow messed up and I released version before merging it first. (Nope, I don&rsquo;t have CI do this for me, yet.)</p>
+
+<p>If you go ahead and try to edit the release, all Github let you do is edit tag name, description and so on, but not the tag reference. But as it turns out, and it always turns out that way, the fix is pretty simple with good old command line.</p>
+
+<ul>
+<li><code>git fetch origin</code> to fetch tag from Github</li>
+<li><code>git push origin :refs/tags/&lt;tagname&gt;</code> to delete the tag from github</li>
+</ul>
+
+<p>Now your release is in draft stage again and you can edit the tag reference.</p>
 
     </div>
     <div class="center">

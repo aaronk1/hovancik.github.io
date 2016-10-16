@@ -5,20 +5,76 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2016-10-11T11:21:00+02:00</updated>
+  <updated>2016-10-16T11:08:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly v0.3.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/"/>
+    <id>http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/</id>
+    <published>2016-10-16T11:08:00+02:00</published>
+    <updated>2016-10-16T11:32:01+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.3.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.3.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3&gt;What&amp;rsquo;s been added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;possibility to pause reminders for different times&lt;/li&gt;
+&lt;li&gt;autostart for Windows and macOS&lt;/li&gt;
+&lt;li&gt;check for the latest version on About page, on app start&lt;/li&gt;
+&lt;li&gt;remind new version via notification and tray menu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src="/img/stretchly_tray_030.png" alt="stretchly" width="100%"/&gt;&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>Editing tag reference on Github release</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/"/>
+    <id>http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/</id>
+    <published>2016-10-16T10:50:00+02:00</published>
+    <updated>2016-10-16T11:32:01+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;To release my &lt;a href="/stretchly"&gt;stretchly&lt;/a&gt; app I use Github releases. And my workflow is similar to this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create feature branch and PR for that branch&lt;/li&gt;
+&lt;li&gt;make draft release and upload executables there&lt;/li&gt;
+&lt;li&gt;test executables&lt;/li&gt;
+&lt;li&gt;merge PR&lt;/li&gt;
+&lt;li&gt;publish release&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Two last steps should be in sequence, as Github&amp;rsquo;s release mechanism will use master as reference for the new tag it&amp;rsquo;s about to create.&lt;/p&gt;
+
+&lt;p&gt;But today I somehow messed up and I released version before merging it first. (Nope, I don&amp;rsquo;t have CI do this for me, yet.)&lt;/p&gt;
+
+&lt;p&gt;If you go ahead and try to edit the release, all Github let you do is edit tag name, description and so on, but not the tag reference. But as it turns out, and it always turns out that way, the fix is pretty simple with good old command line.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git fetch origin&lt;/code&gt; to fetch tag from Github&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;git push origin :refs/tags/&amp;lt;tagname&amp;gt;&lt;/code&gt; to delete the tag from github&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now your release is in draft stage again and you can edit the tag reference.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly v0.2.1 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/</id>
     <published>2016-10-11T11:21:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
-    <content type="html">&lt;p&gt;Hi there guys, bugfix release 0.2.1 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.2.1"&gt;github&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Hi there guys, bugfix release 0.2.1 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.2.1"&gt;github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;What&amp;rsquo;s fixed?&lt;/h2&gt;
 
@@ -34,11 +90,11 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
     <published>2016-10-09T15:12:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
-    <content type="html">&lt;p&gt;Hi there guys, version 0.2.0 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.2.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Hi there guys, version 0.2.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.2.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;What&amp;rsquo;s new?&lt;/h2&gt;
 
@@ -61,7 +117,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -86,11 +142,11 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/</id>
     <published>2016-10-04T15:58:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
-    <content type="html">&lt;p&gt;Good news everyone, version 0.1.1 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.1"&gt;github&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Good news everyone, version 0.1.1 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.1"&gt;github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;What&amp;rsquo;s new? (also with v0.1.0)&lt;/h2&gt;
 
@@ -109,11 +165,11 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
     <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
     <published>2016-09-28T15:58:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
-    <content type="html">&lt;p&gt;Good news everyone, version 0.1.0 of &lt;em&gt;stretchly&lt;/em&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
+    <content type="html">&lt;p&gt;Good news everyone, version 0.1.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt; is now available to be downloaded from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2&gt;What&amp;rsquo;s new?&lt;/h2&gt;
 
@@ -134,7 +190,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
     <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
     <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -154,7 +210,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
 
 &lt;h2&gt;stretchly&lt;/h2&gt;
 
-&lt;p&gt;To remind myself to take breaks, I created &lt;em&gt;&lt;a href="https://hovancik.net/stretchly"&gt;stretchly&lt;/a&gt; - break time reminder app&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;To remind myself to take breaks, I created &lt;em&gt;&lt;a href="/stretchly"&gt;stretchly&lt;/a&gt; - break time reminder app&lt;/em&gt;.&lt;/p&gt;
 
 &lt;p&gt;Right now (v0.0.1) it&amp;rsquo;s showing reminder every 10 minutes that is open for 20 seconds and contains random break idea:&lt;/p&gt;
 
@@ -174,7 +230,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
 
 &lt;h2&gt;Future&lt;/h2&gt;
 
-&lt;p&gt;As you can say by version, &lt;em&gt;stretchly&lt;/em&gt; is far from 1.0 and there is lot of work to do.&lt;/p&gt;
+&lt;p&gt;As you can say by version, &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt; is far from 1.0 and there is lot of work to do.&lt;/p&gt;
 
 &lt;p&gt;I already have some ideas what to do next:&lt;/p&gt;
 
@@ -203,7 +259,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
     <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -356,7 +412,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
     <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
     <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -406,7 +462,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/"/>
     <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/</id>
     <published>2016-02-18T20:51:00+01:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
+    <updated>2016-10-16T11:32:01+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -483,85 +539,6 @@ Total 26.5s
 &lt;p&gt;[^1]: Sorry, I don&amp;rsquo;t remember which one it was.&lt;/p&gt;
 
 &lt;p&gt;[^2]: Task was the same as was used previously when deploying on custom server (building assets etc.), except things related to installing software on server.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Learning Elixir - Functional vs Object-oriented</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/"/>
-    <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/</id>
-    <published>2016-02-06T20:52:00+01:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;For the most of my dev life I&amp;rsquo;ve been doing &lt;a href="https://en.wikipedia.org/wiki/Object-oriented_programming"&gt;Object-oriented programming&lt;/a&gt; (OOP). But as I mentioned in my &lt;a href="https://hovancik.net/blog/2016/01/28/learning-elixir-or-what-is-couple-programming.html"&gt;previous post&lt;/a&gt;, lately I started to learn Elixir language with my non-programmer &lt;a href="https://ontheshelf.github.io/"&gt;girlfriend&lt;/a&gt;. &lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s been a lot of fun so far. &lt;/p&gt;
-
-&lt;p&gt;In this post I would like to write about what I feel are the differences between OOP and &lt;a href="https://en.wikipedia.org/wiki/Functional_programming"&gt;functional programming&lt;/a&gt; (FP). I will be over-simplifying, as this post is meant to be for someone who is not faminliar with any of those concepts. &lt;/p&gt;
-
-&lt;h3&gt;OOP&lt;/h3&gt;
-
-&lt;p&gt;Let&amp;rsquo;s say we have a blueprint of car (&lt;em&gt;a class&lt;/em&gt;) so we can create an instance of car (&lt;em&gt;the object&lt;/em&gt;). That car would have 4 wheels, actual speed (&lt;em&gt;attributes&lt;/em&gt;) and means of speeding up or down (&lt;em&gt;methods&lt;/em&gt;) so we can do some weird stuff with it (&lt;em&gt;mutate&lt;/em&gt; it). &lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="ruby"&gt;fastie = Car.new     #creating new car
-fastie.actual_speed? #asking for actual speed  
-    &amp;gt; 0 km/h         #the answer
-fastie.speed_up!     #let&amp;#39;s rock and roll
-fastie.actual_speed?
-    &amp;gt; 100 km/h
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;FP&lt;/h3&gt;
-
-&lt;p&gt;FP is all about Math. We have mathematical expressions (&lt;em&gt;functions&lt;/em&gt;) that help us to do weird stuff to our data (&lt;em&gt;transforming&lt;/em&gt; them). &lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="ruby"&gt;speed = 0               #let&amp;#39;s say we are at 0          
-Speed.current(speed)    #asking for actual speed
-    &amp;gt; 0 km/h            #just adding km/h to value 
-speed1 = Speed.up(speed + 100)
-                        #speeding up
-Speed.current(speed1)
-    &amp;gt; 100 km/h              
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3&gt;In other words.&lt;/h3&gt;
-
-&lt;p&gt;In FP, we don&amp;rsquo;t change the data (like in OOP), we transform them into new data (&lt;em&gt;speed-&amp;gt;speed1&lt;/em&gt;). In other words, &lt;code&gt;fastie&lt;/code&gt; was changed/mutated, but on the other hand, &lt;code&gt;speed&lt;/code&gt; was not. &lt;/p&gt;
-
-&lt;p&gt;In FP we take similar functions and put them into modules, eg. &lt;code&gt;Speed&lt;/code&gt;. They do not change our data, they create new sets of data depending on what they are supposed to do. Same input have always same output. &lt;/p&gt;
-
-&lt;p&gt;In OOP, we have classes, that are something like blueprints, containing methods telling us how to change the state of object created from class. Same input does not need to mean that output will be same as well (there might be someone else doing some weird stuff with speed the same time as you do).&lt;/p&gt;
-
-&lt;h3&gt;None is better.&lt;/h3&gt;
-
-&lt;p&gt;In the end it always depends on what kind of problem you are trying to solve: &lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Always choose the best tool for the job.  &lt;/p&gt;
-&lt;/blockquote&gt;
-</content>
-  </entry>
-  <entry>
-    <title>There shall be no alcohol this month</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/"/>
-    <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/</id>
-    <published>2016-02-01T14:29:00+01:00</published>
-    <updated>2016-10-16T11:30:09+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h2&gt;And sweets as well.&lt;/h2&gt;
-
-&lt;p&gt;So January was kinda weird: I did spend more on alcohol than on food. And I do not remember being drunk that much. There were some parties and so, but&amp;hellip;  &lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s not right. I mean, no headache? Just money spent? That for sure not right.&lt;/p&gt;
-
-&lt;h3&gt;So this month will be different.&lt;/h3&gt;
-
-&lt;p&gt;I wont drink any alcohol, and as bonus, no sweets as well.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s see how that works.&lt;/p&gt;
 </content>
   </entry>
 </feed>
