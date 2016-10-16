@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/</id>
     <published>2016-10-11T11:21:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -34,7 +34,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
     <published>2016-10-09T15:12:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -61,7 +61,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -86,7 +86,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/</id>
     <published>2016-10-04T15:58:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -109,7 +109,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
     <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
     <published>2016-09-28T15:58:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -134,7 +134,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
     <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
     <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -203,7 +203,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
     <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -356,7 +356,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
     <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
     <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -406,7 +406,7 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/"/>
     <id>http://hovancik.net/blog/2016/02/18/learning-how-to-work-with-heroku-buildpacks-and-node-app/</id>
     <published>2016-02-18T20:51:00+01:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -490,7 +490,7 @@ Total 26.5s
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/"/>
     <id>http://hovancik.net/blog/2016/02/06/learning-elixir-functional-vs-object-oriented/</id>
     <published>2016-02-06T20:52:00+01:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -547,7 +547,7 @@ Speed.current(speed1)
     <link rel="alternate" href="http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/"/>
     <id>http://hovancik.net/blog/2016/02/01/there-shall-be-no-alcohol/</id>
     <published>2016-02-01T14:29:00+01:00</published>
-    <updated>2016-10-11T14:00:14+02:00</updated>
+    <updated>2016-10-16T11:30:09+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
