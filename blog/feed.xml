@@ -5,16 +5,45 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2016-11-08T18:35:00+01:00</updated>
+  <updated>2016-12-01T19:53:00+01:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly v0.5.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/"/>
+    <id>http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/</id>
+    <published>2016-12-01T19:53:00+01:00</published>
+    <updated>2016-12-01T20:16:30+01:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.5.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.5.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/stretchly-break-0.5.0.png" alt="stretchly" width="100%"/&gt;&lt;/p&gt;
+
+&lt;h3&gt;Added&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;strict mode - breaks/microbreaks can&amp;rsquo;t be finished early&lt;/li&gt;
+&lt;li&gt;build for ia32 and x64&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Fixed&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;wrong window placement when on Linux and more displays&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly v0.4.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/"/>
     <id>http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/</id>
     <published>2016-11-08T18:35:00+01:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -54,7 +83,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/</id>
     <published>2016-10-16T11:08:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -79,7 +108,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/"/>
     <id>http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/</id>
     <published>2016-10-16T10:50:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -112,7 +141,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/</id>
     <published>2016-10-11T11:21:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -134,7 +163,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
     <published>2016-10-09T15:12:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -163,7 +192,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -188,7 +217,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/</id>
     <published>2016-10-04T15:58:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -213,7 +242,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
     <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
     <published>2016-09-28T15:58:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -240,7 +269,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
     <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
     <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -309,7 +338,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/"/>
     <id>http://hovancik.net/blog/2016/04/11/free-automated-code-reviews-using-pronto/</id>
     <published>2016-04-11T14:02:00+02:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
+    <updated>2016-12-01T20:16:30+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -455,56 +484,6 @@ Obviously, with pushes you will get errors because there is no &lt;code&gt;TRAVI
 &lt;h2&gt;Profit&lt;/h2&gt;
 
 &lt;p&gt;Now we can see comments in PR&amp;rsquo;s once code style problems are found. And of course we can configure style guide. To see how, just go see how runners/respective tools do it.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>So there was no alcohol last month</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/"/>
-    <id>http://hovancik.net/blog/2016/03/05/so-there-was-no-alcohol-last-month/</id>
-    <published>2016-03-05T19:18:00+01:00</published>
-    <updated>2016-11-08T20:45:59+01:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h2&gt;And sweets as well.&lt;/h2&gt;
-
-&lt;p&gt;And it was interesting, indeed. I did keep the promise and during February (&lt;em&gt;the shortest month, right?&lt;/em&gt;) there was no alcohol and sweets for me.&lt;/p&gt;
-
-&lt;h3&gt;What did I expect?&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Spend less money&lt;/li&gt;
-&lt;li&gt;loose weight&lt;/li&gt;
-&lt;li&gt;feel better overall&lt;/li&gt;
-&lt;li&gt;sleep better&lt;/li&gt;
-&lt;li&gt;have &lt;strong&gt;worse social life&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And stuff like that.&lt;/p&gt;
-
-&lt;h3&gt;What was the reality?&lt;/h3&gt;
-
-&lt;p&gt;Some things are obvious: I did spend less money. Same goes with other stuff: I slept better, I was not tired during workdays (before, I usually had to eat some sweet stuff afternoon, my body demanded it.). Eat more fruits!&lt;/p&gt;
-
-&lt;h4&gt;Weight.&lt;/h4&gt;
-
-&lt;p&gt;I went down to &lt;strong&gt;67kg from 71kg&lt;/strong&gt;. Nice.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s also because there were Christmas not that long ago, but anyway, it makes me happy. Loosing some weight was something that I wanted. And I was not changing any of my eating habits, except sugar. I might even ate more fast food than usually.&lt;/p&gt;
-
-&lt;h4&gt;Alcohol.&lt;/h4&gt;
-
-&lt;p&gt;I thought that this might be hard, but in the end, it wasn&amp;rsquo;t. I still did not drink anything, yet. Didn&amp;rsquo;t really had taste for beer or so.&lt;/p&gt;
-
-&lt;p&gt;Kinda strange.&lt;/p&gt;
-
-&lt;h4&gt;So.&lt;/h4&gt;
-
-&lt;p&gt;So social life: was OK, not that awkward. There were not that much parties, I was doing other stuff instead. Might see less people.&lt;/p&gt;
-
-&lt;h3&gt;Next?&lt;/h3&gt;
-
-&lt;p&gt;This experiment was great. Hopefully I will do more of this stuff in future. Like take a walk everyday, exercise in the morning and evening.. and so&amp;hellip;&lt;/p&gt;
 </content>
   </entry>
 </feed>
