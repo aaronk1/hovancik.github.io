@@ -40,16 +40,16 @@
       &middot;
     </div>
     <div class="article_text">
-    <p>When you start working with SSL and Heroku, (and with Heroku in general), their dashboard
+    <p>When you start working with SSL and Heroku, (and with Heroku in general), their dashboard<br />
 is pretty much self-explaining and easy:</p>
 
 <blockquote>
-<p>Paste server certificate here, private cert there, change DNS and you are ready.</p>
+  <p>Paste server certificate here, private cert there, change DNS and you are ready.</p>
 </blockquote>
 
 <p>So what you do is go to where your cert files are and copy <code>cert.pem</code>  and then <code>privkey.pem</code>.</p>
 
-<p>At least that&rsquo;s what I did, and I was wrong. Desktop browser were working fine, and accepting this setup, but <em>mobile Chrome wasn&rsquo;t trusting my site</em>.</p>
+<p>At least that's what I did, and I was wrong. Desktop browser were working fine, and accepting this setup, but <em>mobile Chrome wasn't trusting my site</em>.</p>
 
 <p>As it turns out, the solution is very easy: one should use <code>fullchain.pem</code>, not <code>cert.pem</code>.</p>
 

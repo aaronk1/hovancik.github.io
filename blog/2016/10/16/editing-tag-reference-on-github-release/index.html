@@ -43,22 +43,22 @@
     <p>To release my <a href="/stretchly">stretchly</a> app I use Github releases. And my workflow is similar to this:</p>
 
 <ul>
-<li>create feature branch and PR for that branch</li>
-<li>make draft release and upload executables there</li>
-<li>test executables</li>
-<li>merge PR</li>
-<li>publish release</li>
+  <li>create feature branch and PR for that branch</li>
+  <li>make draft release and upload executables there</li>
+  <li>test executables</li>
+  <li>merge PR</li>
+  <li>publish release</li>
 </ul>
 
-<p>Two last steps should be in sequence, as Github&rsquo;s release mechanism will use master as reference for the new tag it&rsquo;s about to create.</p>
+<p>Two last steps should be in sequence, as Github's release mechanism will use master as reference for the new tag it's about to create.</p>
 
-<p>But today I somehow messed up and I released version before merging it first. (Nope, I don&rsquo;t have CI do this for me, yet.)</p>
+<p>But today I somehow messed up and I released version before merging it first. (Nope, I don't have CI do this for me, yet.)</p>
 
 <p>If you go ahead and try to edit the release, all Github let you do is edit tag name, description and so on, but not the tag reference. But as it turns out, and it always turns out that way, the fix is pretty simple with good old command line.</p>
 
 <ul>
-<li><code>git fetch origin</code> to fetch tag from Github</li>
-<li><code>git push origin :refs/tags/&lt;tagname&gt;</code> to delete the tag from github</li>
+  <li><code>git fetch origin</code> to fetch tag from Github</li>
+  <li><code>git push origin :refs/tags/&lt;tagname&gt;</code> to delete the tag from github</li>
 </ul>
 
 <p>Now your release is in draft stage again and you can edit the tag reference.</p>

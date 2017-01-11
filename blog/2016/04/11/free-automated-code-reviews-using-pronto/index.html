@@ -41,55 +41,50 @@
       &middot;
     </div>
     <div class="article_text">
-    <h2>Code style</h2>
+    <h2 id="code-style">Code style</h2>
+<p>Officially or unofficially, every dev team has it's <a href="https://en.wikipedia.org/wiki/Programming_style">code style</a>. And hopefully, the means to enforce it, as well.</p>
 
-<p>Officially or unofficially, every dev team has it&rsquo;s <a href="https://en.wikipedia.org/wiki/Programming_style">code style</a>. And hopefully, the means to enforce it, as well.</p>
-
-<p><em>De facto</em> standard way to enforce it is via pull requests where some other team member will check your code for violations so you can fix&#39;em.</p>
+<p><em>De facto</em> standard way to enforce it is via pull requests where some other team member will check your code for violations so you can fix'em.</p>
 
 <p>So the obvious questions come:</p>
 
 <ul>
-<li><strong>is there any generally accepted code style?</strong></li>
-<li><strong>can that be automated?</strong></li>
+  <li><strong>is there any generally accepted code style?</strong></li>
+  <li><strong>can that be automated?</strong></li>
 </ul>
 
 <p>Yes and yes. Depending on language used.</p>
 
-<h4>Language</h4>
-
+<h4 id="language">Language</h4>
 <p>Here, we will be talking about <a href="https://www.ruby-lang.org/en/">Ruby</a>.</p>
 
 <p>It does not have official guide, but there is community driven one at <a href="https://github.com/bbatsov/ruby-style-guide">GitHub</a>  documenting Ruby coding style and best practices.</p>
 
-<h4>Tools</h4>
-
+<h4 id="tools">Tools</h4>
 <p>There are some paid tools that we could use like <a href="https://codacy.com/">Codacy</a> or <a href="https://houndci.com/">HoundCI</a>, but as title says, we would like to use something free, so here comes <a href="https://github.com/mmozuras/pronto">Pronto</a>.</p>
 
 <blockquote>
-<p>Pronto runs analysis quickly by checking only the relevant changes. Created to be used on pull requests, but also works locally. Perfect if want to find out quickly if branch introduces changes that conform to your styleguide, are DRY, don&rsquo;t introduce security holes and more.</p>
+  <p>Pronto runs analysis quickly by checking only the relevant changes. Created to be used on pull requests, but also works locally. Perfect if want to find out quickly if branch introduces changes that conform to your styleguide, are DRY, don't introduce security holes and more.</p>
 </blockquote>
 
-<h3>Scenario</h3>
-
-<p>For the sake of this article, let&rsquo;s assume the following workflow:</p>
+<h3 id="scenario">Scenario</h3>
+<p>For the sake of this article, let's assume the following workflow:</p>
 
 <ul>
-<li>create code locally (let&rsquo;s say Rails app)</li>
-<li>push code to Github</li>
-<li>create pull request on Github</li>
-<li>get some tests running via TravisCI or CircleCI</li>
-<li>prosper</li>
+  <li>create code locally (let's say Rails app)</li>
+  <li>push code to Github</li>
+  <li>create pull request on Github</li>
+  <li>get some tests running via TravisCI or CircleCI</li>
+  <li>prosper</li>
 </ul>
 
-<h2>Getting ready</h2>
-
-<p>Assuming we are on Rails, let&rsquo;s create new branch and add the following gems to Gemfile.</p>
+<h2 id="getting-ready">Getting ready</h2>
+<p>Assuming we are on Rails, let's create new branch and add the following gems to Gemfile.</p>
 
 <pre><code>group :development, :test do
   # Pronto
-  gem &#39;pronto&#39;
-  gem &#39;pronto-rubocop&#39;, require: false
+  gem 'pronto'
+  gem 'pronto-rubocop', require: false
 end
 </code></pre>
 
@@ -97,14 +92,14 @@ end
 
 <p>We should not require them, as some of them might be using monkey-patching to do their job. As we wanna run them only locally and on CI only, the best practice is to add them to <code>group :development, :test</code>.</p>
 
-<h3>Bad code.</h3>
+<h3 id="bad-code">Bad code.</h3>
 
-<p>Let&rsquo;s write some bad code.</p>
+<p>Let's write some bad code.</p>
 
 <pre><code>class Bad
   def what
-    &quot;Not&quot;
-    &#39;Cool&#39;
+    "Not"
+    'Cool'
   end
 end
 </code></pre>
@@ -112,27 +107,25 @@ end
 <p>Now we can <code>pronto run</code>  and see some recommendations from rubocop.</p>
 
 <pre><code>bad.rb:1 I: Missing top-level class documentation comment.
-bad.rb:3 W: Literal `&quot;Not&quot;` used in void context.
-bad.rb:3 I: Prefer single-quoted strings when you don&#39;t need string interpolation or special symbols.
+bad.rb:3 W: Literal `"Not"` used in void context.
+bad.rb:3 I: Prefer single-quoted strings when you don't need string interpolation or special symbols.
 </code></pre>
-
 <p>Nice.</p>
 
-<h2>Running on CI and Github</h2>
+<h2 id="running-on-ci-and-github">Running on CI and Github</h2>
 
 <p>Running locally is great, but we wanna comment on PRs, right?</p>
 
-<h3>Neat-freak</h3>
-
+<h3 id="neat-freak">Neat-freak</h3>
 <p>To be able to comment on PRs, we need to act as some person. We can either use some existing one, but I think that the best way is to create new one.</p>
 
-<p>Once we have one, we will need its <a href="https://github.com/settings/tokens">Personal Access Token</a>. Generate one and paste it to ENV variable (or however you do it). Obviously it&rsquo;s not something to share.</p>
+<p>Once we have one, we will need its <a href="https://github.com/settings/tokens">Personal Access Token</a>. Generate one and paste it to ENV variable (or however you do it). Obviously it's not something to share.</p>
 
 <p>We will use it in config file <code>.pronto.yml</code></p>
 
 <pre><code>github:
   slug: user-name/repo
-  access_token: ENV[&quot;GITHUB_ACCESS_TOKEN&quot;]
+  access_token: ENV["GITHUB_ACCESS_TOKEN"]
   api_endpoint: https://api.github.com/
   web_endpoint: https://github.com/
 max_warnings: 150
@@ -143,46 +136,43 @@ verbose: false
 
 <p>Sweet. Neat Freak can now comment on Github. (We should not forget to add this value to our CI service as well. )</p>
 
-<h3>TravisCI</h3>
+<h3 id="travisci">TravisCI</h3>
 
-<p>Now let&rsquo;s configure good old Travis via <code>.travis.yml</code>.</p>
+<p>Now let's configure good old Travis via <code>.travis.yml</code>.</p>
 
 <pre><code>script:
   - bundle exec rake test
-  - &#39;PULL_REQUEST_ID=${TRAVIS_PULL_REQUEST} bundle exec pronto run -f github_pr&#39;
+  - 'PULL_REQUEST_ID=${TRAVIS_PULL_REQUEST} bundle exec pronto run -f github_pr'
 </code></pre>
 
-<p>We&#39;e just told Travis to run pronto after tests. <code>TRAVIS_PULL_REQUEST</code> is the same as GH&rsquo;s pull request id, so we are cool.</p>
+<p>We'e just told Travis to run pronto after tests. <code>TRAVIS_PULL_REQUEST</code> is the same as GH's pull request id, so we are cool.</p>
 
-<h3>CircleCI</h3>
+<h3 id="circleci">CircleCI</h3>
 
 <p>In case you are using CircleCI, you will need to add something like this to <code>circle.yml</code>.</p>
 
 <pre><code>test:
   post:
-    - &#39;PULL_REQUEST_ID=${CI_PULL_REQUEST##*/} bundle exec pronto run -f github_pr&#39;
+    - 'PULL_REQUEST_ID=${CI_PULL_REQUEST##*/} bundle exec pronto run -f github_pr'
 </code></pre>
 
-<p>CircleCI doesn&rsquo;t store GH&rsquo;s pull request id, so we used a bit of magic to get it from <code>CI_PULL_REQUEST</code>.</p>
+<p>CircleCI doesn't store GH's pull request id, so we used a bit of magic to get it from <code>CI_PULL_REQUEST</code>.</p>
 
-<h3>Once again</h3>
-
+<h3 id="once-again">Once again</h3>
 <p>Do not forget to add <code>GITHUB_ACCESS_TOKEN</code> to your CI service.</p>
 
-<h2>Push vs Pull Request</h2>
-
-<p>In TravisCI, you can set whether you want to run your tests on pull requests and/or pushes.<br>
+<h2 id="push-vs-pull-request">Push vs Pull Request</h2>
+<p>In TravisCI, you can set whether you want to run your tests on pull requests and/or pushes.  <br />
 Obviously, with pushes you will get errors because there is no <code>TRAVIS_PULL_REQUEST</code>.</p>
 
-<p>Here is little fix:  </p>
+<p>Here is little fix:</p>
 
-<pre><code>- &#39;if [ &quot;$TRAVIS_PULL_REQUEST&quot; == false ]; then echo &quot;TRAVIS_PULL_REQUEST is unset, skipping Pronto&quot;; else PULL_REQUEST_ID=${TRAVIS_PULL_REQUEST} bundle exec pronto run -f github_pr; fi&#39;
+<pre><code>- 'if [ "$TRAVIS_PULL_REQUEST" == false ]; then echo "TRAVIS_PULL_REQUEST is unset, skipping Pronto"; else PULL_REQUEST_ID=${TRAVIS_PULL_REQUEST} bundle exec pronto run -f github_pr; fi'
 
 </code></pre>
 
-<h2>Profit</h2>
-
-<p>Now we can see comments in PR&rsquo;s once code style problems are found. And of course we can configure style guide. To see how, just go see how runners/respective tools do it.</p>
+<h2 id="profit">Profit</h2>
+<p>Now we can see comments in PR's once code style problems are found. And of course we can configure style guide. To see how, just go see how runners/respective tools do it.</p>
 
     </div>
     <div class="center">

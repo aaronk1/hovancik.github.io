@@ -38,64 +38,62 @@
       &middot;
     </div>
     <div class="article_text">
-    <h2>Or few lines about hot it was done.</h2>
+    <h2 id="or-few-lines-about-hot-it-was-done">Or few lines about hot it was done.</h2>
 
-<h3>Idea.</h3>
-
-<p>I was thinking about how to tweet more from my <a href="https://twitter.com/_DiscoverBSD">DiscoverBSD</a> account. 
+<h3 id="idea">Idea.</h3>
+<p>I was thinking about how to tweet more from my <a href="https://twitter.com/_DiscoverBSD">DiscoverBSD</a> account.<br />
 Based on the name of that account, I came up with idea of the tweets about BSD History. People should like that. So I tried to write at least one fact a week.</p>
 
-<p>After few days, my mind came with idea to publish them also on website. You know, that kind where one can see one sentence in the middle of screen, with big letters. And link to share it.  </p>
+<p>After few days, my mind came with idea to publish them also on website. You know, that kind where one can see one sentence in the middle of screen, with big letters. And link to share it.</p>
 
 <p>So comes <a href="https://BSDHistory.DiscoverBSD.com">#BSDHistory</a>.</p>
 
-<h3>How it works.</h3>
-
+<h3 id="how-it-works">How it works.</h3>
 <p>Code is on <a href="https://github.com/DiscoverBSD/BSDHistory">GitHub</a>. I have and organization account for DiscoverBSD, so I put it there.</p>
 
-<p>Site itself is hosted on <a href="https://pages.github.com">github pages</a>. I use <a href="https://www.cloudflare.com/">CloudFlare</a> for DNS. </p>
+<p>Site itself is hosted on <a href="https://pages.github.com">github pages</a>. I use <a href="https://www.cloudflare.com/">CloudFlare</a> for DNS.</p>
 
-<p>I try to use only basic stuff, so it&rsquo;s written in HTML, CSS, JavaScript. Starting point is basic HTML5 template from <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>. Fonts are from Google - <a href="https://www.google.com/fonts/specimen/Philosopher">Philosopher</a>.</p>
+<p>I try to use only basic stuff, so it's written in HTML, CSS, JavaScript. Starting point is basic HTML5 template from <a href="http://getbootstrap.com/getting-started/">Bootstrap</a>. Fonts are from Google - <a href="https://www.google.com/fonts/specimen/Philosopher">Philosopher</a>.</p>
 
-<p>Probably it doesn&rsquo;t make sense to go deep into what files I have, so let&rsquo;s just say the main ideas:   </p>
+<p>Probably it doesn't make sense to go deep into what files I have, so let's just say the main ideas:</p>
 
 <ul>
-<li>I wanna have one file with facts</li>
-<li>Fact should have text (twitte-sized) and link to the source </li>
-<li>With JS we are gonna read the file, pick random fact and show it</li>
-<li>People can refresh site and see different fact</li>
-<li>People can also add their own facts</li>
-<li>We can share current fact on Twitter</li>
+  <li>I wanna have one file with facts</li>
+  <li>Fact should have text (twitte-sized) and link to the source</li>
+  <li>With JS we are gonna read the file, pick random fact and show it</li>
+  <li>People can refresh site and see different fact</li>
+  <li>People can also add their own facts</li>
+  <li>We can share current fact on Twitter</li>
 </ul>
 
-<h4>data.json</h4>
+<h4 id="datajson">data.json</h4>
 
 <p>Here is how JSON data looks like.</p>
 
-<pre><code class="json">
+<pre><code class="language-json">
 {
-  &quot;bsdhistory&quot;: [
+  "bsdhistory": [
     {
-      &quot;text&quot;: &quot;#BSDHistory : #MirOS BSD started on 29. August 2002, combining OpenBSD (-current) and NetBSD (-current) at that time&quot;,
-      &quot;link&quot;:&quot;https://www.mirbsd.org/history.htm&quot;
+      "text": "#BSDHistory : #MirOS BSD started on 29. August 2002, combining OpenBSD (-current) and NetBSD (-current) at that time",
+      "link":"https://www.mirbsd.org/history.htm"
     },
     {
-      &quot;text&quot;: &quot;#BSDHistory : #ARM port of #NetBSD was added in NetBSD 1.2 (Oct 1996)&quot;,
-      &quot;link&quot;: &quot;https://www.netbsd.org/releases/formal-1.2/&quot;
+      "text": "#BSDHistory : #ARM port of #NetBSD was added in NetBSD 1.2 (Oct 1996)",
+      "link": "https://www.netbsd.org/releases/formal-1.2/"
     }
   ]
 }
 </code></pre>
 
-<p>What I do next is picking a random fact and filling the data on page with data from it (text, link to source,twitter share). For twitter to work I need to <code>twitter_link = twitter_link.replace(/#/gi, &quot;%23&quot;);</code>, so I get the hashtags right.  </p>
+<p>What I do next is picking a random fact and filling the data on page with data from it (text, link to source,twitter share). For twitter to work I need to <code>twitter_link = twitter_link.replace(/#/gi, "%23");</code>, so I get the hashtags right.</p>
 
-<h4>contribute via github</h4>
+<h4 id="contribute-via-github">contribute via github</h4>
 
-<p>I&rsquo;ve created readme <a href="https://github.com/DiscoverBSD/BSDHistory#contribute">here</a>, so it should not be so hard to contribute if anyone would like to.</p>
+<p>I've created readme <a href="https://github.com/DiscoverBSD/BSDHistory#contribute">here</a>, so it should not be so hard to contribute if anyone would like to.</p>
 
-<h3>Plans.</h3>
+<h3 id="plans">Plans.</h3>
 
-<p>I will add some more stuff probably. Anyone is very welcome to come up with ideas. It would made me very happy. </p>
+<p>I will add some more stuff probably. Anyone is very welcome to come up with ideas. It would made me very happy.</p>
 
 <p>Official DiscoverBSD announcement can be found <a href="https://www.discoverbsd.com/2015/07/introducing-bsdhistory.html">here</a>.</p>
 
