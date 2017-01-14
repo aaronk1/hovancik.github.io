@@ -5,16 +5,84 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2016-12-07T14:21:00+01:00</updated>
+  <updated>2017-01-14T10:28:00+01:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Still looking for 2017's resolution? Try some online cleaning.</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
+    <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
+    <published>2017-01-14T10:28:00+01:00</published>
+    <updated>2017-01-14T17:22:54+01:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Don't know about you, but I have rather &lt;em&gt;uncountable&lt;/em&gt; amount of online presence (subscriptions, accounts, etc.).&lt;/p&gt;
+
+&lt;h3 id="how-does-it-happen-and-why-its-bad"&gt;How does it happen and why it's bad?&lt;/h3&gt;
+
+&lt;p&gt;It happens mainly because we trade our data (email, personal details, phone number) for cheaper and/or &lt;em&gt;free&lt;/em&gt; services. Companies then can trade that information to the other parties, sell advertisement and so on. As that's often their primary business model, it leads to the vicious circle that forces companies to ask for more and more data.&lt;/p&gt;
+
+&lt;p&gt;And we are humans, after all:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;we create accounts to check out the services that we'll never use&lt;/li&gt;
+  &lt;li&gt;we give info in hope of winning some give-away or competition&lt;/li&gt;
+  &lt;li&gt;we stop using services and not bother to delete them&lt;/li&gt;
+  &lt;li&gt;we subscribe to newsletters and mailing lists&lt;/li&gt;
+  &lt;li&gt;we use same password everywhere&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We leave a lot of trails and we should care, as those trails can be dangerous for both our personal and professional life. Services can get hacked and our private data released.&lt;/p&gt;
+
+&lt;h3 id="how-to-find-them"&gt;How to find them?&lt;/h3&gt;
+
+&lt;p&gt;There are many ways you can figure out what's out there:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;password manager (you might have one in your browser, phone or as an app)&lt;/li&gt;
+  &lt;li&gt;emails (search for: &lt;code&gt;unsubscribe&lt;/code&gt;, &lt;code&gt;verify&lt;/code&gt;, &lt;code&gt;welcome&lt;/code&gt;, &lt;code&gt;account&lt;/code&gt;, &lt;code&gt;login&lt;/code&gt;, &lt;code&gt;subscription&lt;/code&gt;, &lt;code&gt;newsletter&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;spam folder (seriously, a lot of stuff gets there)&lt;/li&gt;
+  &lt;li&gt;search engines (search for nicknames/logins/emails you use when signing up)&lt;/li&gt;
+  &lt;li&gt;applications (both mobile and desktop)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="what-to-clean"&gt;What to clean?&lt;/h3&gt;
+
+&lt;p&gt;It might sounds hard to decide, but it's not. Few simple questions can help you out:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;are you using a service often enough? (every day, once a month, never?)&lt;/li&gt;
+  &lt;li&gt;does it make some kind of financial/commercial/personal reason to keep it?&lt;/li&gt;
+  &lt;li&gt;does it bring joy? (or annoyance?)&lt;/li&gt;
+  &lt;li&gt;can you find alternative that does not require sharing your data? (eg. viewing newsletter online, anonymous forums…)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don't forget that if you'll ever need a particular account, you can always create a new one.&lt;/p&gt;
+
+&lt;h3 id="how-to-delete-them"&gt;How to delete them?&lt;/h3&gt;
+
+&lt;p&gt;Obvious way is to go one by one, and delete/unsubscribe. But it's not always that easy, or even recommended. Make sure you always &lt;em&gt;delete data first&lt;/em&gt; (eg. uploaded images, notes) and other data that could identify you (deleting &lt;strong&gt;account&lt;/strong&gt; might not mean deleting &lt;strong&gt;data&lt;/strong&gt;). If it's not possible, write to support.&lt;/p&gt;
+
+&lt;p&gt;Then you should be good with deleting an account. And as with previous, ask the support do it for you if not possible from an interface.&lt;/p&gt;
+
+&lt;p&gt;And when contacting support wont help (there is none, or they ignore you), at least change/delete as much data as possible (email, name, etc..).&lt;/p&gt;
+
+&lt;h3 id="final-thoughts-and-tips"&gt;Final thoughts and tips&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;when asked for email to get something (eg. download data or show page) use 10minutes emails (search for it)&lt;/li&gt;
+  &lt;li&gt;create fake email to use when wanting to try a service&lt;/li&gt;
+  &lt;li&gt;be mindful about what information you share&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly v0.5.1 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/"/>
     <id>http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/</id>
     <published>2016-12-07T14:21:00+01:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -38,7 +106,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/"/>
     <id>http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/</id>
     <published>2016-12-01T19:53:00+01:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -65,7 +133,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/"/>
     <id>http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/</id>
     <published>2016-11-08T18:35:00+01:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -102,7 +170,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/</id>
     <published>2016-10-16T11:08:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -126,7 +194,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/"/>
     <id>http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/</id>
     <published>2016-10-16T10:50:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -159,7 +227,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/</id>
     <published>2016-10-11T11:21:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -180,7 +248,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
     <published>2016-10-09T15:12:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -208,7 +276,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -233,7 +301,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/04/stretchly-v0-1-1-released/</id>
     <published>2016-10-04T15:58:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -257,7 +325,7 @@ is pretty much self-explaining and easy:&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/"/>
     <id>http://hovancik.net/blog/2016/09/28/stretchly-v0-1-0-released/</id>
     <published>2016-09-28T15:58:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
+    <updated>2017-01-14T17:22:54+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -276,77 +344,6 @@ is pretty much self-explaining and easy:&lt;/p&gt;
 &lt;p&gt;&lt;img src="/img/stretchly-settings.png" alt="stretchly" width="100%" /&gt;&lt;/p&gt;
 
 &lt;p&gt;Unfortunately, there is some problem with Linux packages, so download version &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.1.1"&gt;v0.1.1&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Introducing stretchly - break time reminder app</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/"/>
-    <id>http://hovancik.net/blog/2016/09/07/introducing-stretchly-break-time-reminder-app/</id>
-    <published>2016-09-07T02:00:00+02:00</published>
-    <updated>2017-01-11T19:34:29+01:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h2 id="motivation"&gt;Motivation&lt;/h2&gt;
-
-&lt;p&gt;I work with computer more than 8 hours a day. And it's definitely not piece of  cake: just look into my eyes…&lt;/p&gt;
-
-&lt;h4 id="enter-resting"&gt;Enter resting&lt;/h4&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Rest is a key component in ensuring the performance of the musculoskeletal system. Frequent breaks can decrease the duration of a task and help lower the exposure to ergonomic injury risk. &lt;sup&gt;&lt;a href="https://web.stanford.edu/dept/EHS/prod/general/ergo/microbreaks.html"&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Right? But how do I make myself rest?&lt;/p&gt;
-
-&lt;p&gt;As it turns out, it's not that easy: &lt;em&gt;I'll just write this, send that email, finish the idea…&lt;/em&gt;. We've all been there.&lt;/p&gt;
-
-&lt;h2 id="stretchly"&gt;stretchly&lt;/h2&gt;
-
-&lt;p&gt;To remind myself to take breaks, I created &lt;em&gt;&lt;a href="/stretchly"&gt;stretchly&lt;/a&gt; - break time reminder app&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Right now (v0.0.1) it's showing reminder every 10 minutes that is open for 20 seconds and contains random break idea:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/img/stretchly.png" alt="stretchly" width="100%" /&gt;&lt;/p&gt;
-
-&lt;p&gt;Some of the other ides are:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Stand from chair and stretch.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Refocus eyes on an object at least 20 meters away.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;Take a moment to think about something you appreciate.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It runs in your tray and you can pause/resume breaks.&lt;/p&gt;
-
-&lt;h2 id="future"&gt;Future&lt;/h2&gt;
-
-&lt;p&gt;As you can say by version, &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt; is far from 1.0 and there is lot of work to do.&lt;/p&gt;
-
-&lt;p&gt;I already have some ideas what to do next:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;longer breaks every 30 minutes&lt;/li&gt;
-  &lt;li&gt;color schemes&lt;/li&gt;
-  &lt;li&gt;app autostart and hotkeys&lt;/li&gt;
-  &lt;li&gt;setting and config&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;To make it even more interesting, I was thinking about some mechanism to check how many breaks you skipped and be more &lt;em&gt;offensive&lt;/em&gt; in making you to take one.&lt;/p&gt;
-
-&lt;p&gt;I &lt;em&gt;desperately&lt;/em&gt; need that.&lt;/p&gt;
-
-&lt;h2 id="and-i-need-your-help"&gt;And I need your help&lt;/h2&gt;
-
-&lt;p&gt;This release is kind of alfa. I am trying to set-up stage for further development, so it would be awesome if you could help me with testing. On my mac it seems to work fine, but hard to say about Linux, Win or FreeBSD. You can download it &lt;a href="https://github.com/hovancik/stretchly/releases"&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you could try and let me know the results (here, or on &lt;a href="https://github.com/hovancik/stretchly/issues"&gt;github&lt;/a&gt;), that would be very helpful.&lt;/p&gt;
-
-&lt;p&gt;Thanks!&lt;/p&gt;
 </content>
   </entry>
 </feed>
