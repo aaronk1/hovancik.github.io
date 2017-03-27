@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/"/>
     <id>http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/</id>
     <published>2017-03-08T08:27:00+01:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -50,7 +50,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/"/>
     <id>http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/</id>
     <published>2017-01-22T12:31:00+01:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -87,7 +87,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
     <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
     <published>2017-01-14T10:28:00+01:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -119,6 +119,7 @@ const settingsFile = `${dir}/config.json`
   &lt;li&gt;spam folder (seriously, a lot of stuff gets there)&lt;/li&gt;
   &lt;li&gt;search engines (search for nicknames/logins/emails you use when signing up)&lt;/li&gt;
   &lt;li&gt;applications (both mobile and desktop)&lt;/li&gt;
+  &lt;li&gt;password reset form (if you're not sure whether you have account there)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id="what-to-clean"&gt;What to clean?&lt;/h3&gt;
@@ -136,7 +137,7 @@ const settingsFile = `${dir}/config.json`
 
 &lt;h3 id="how-to-delete-them"&gt;How to delete them?&lt;/h3&gt;
 
-&lt;p&gt;Obvious way is to go one by one, and delete/unsubscribe. But it's not always that easy, or even recommended. Make sure you always &lt;em&gt;delete data first&lt;/em&gt; (eg. uploaded images, notes) and other data that could identify you (deleting &lt;strong&gt;account&lt;/strong&gt; might not mean deleting &lt;strong&gt;data&lt;/strong&gt;). If it's not possible, write to support.&lt;/p&gt;
+&lt;p&gt;Obvious way is to go one by one, and delete/unsubscribe. But it's not always that easy, or even recommended. Make sure you always &lt;em&gt;delete data first&lt;/em&gt; (eg. uploaded images, notes) and other data that could identify you (deleting &lt;strong&gt;account&lt;/strong&gt; might not mean deleting &lt;strong&gt;data&lt;/strong&gt;). If it's not possible, write to support. It's also good idea to change your login/email and password. As I said, they'll probably put your account as &lt;code&gt;inactive&lt;/code&gt;, rather then deleting it.&lt;/p&gt;
 
 &lt;p&gt;Then you should be good with deleting an account. And as with previous, ask the support do it for you if not possible from an interface.&lt;/p&gt;
 
@@ -155,7 +156,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/"/>
     <id>http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/</id>
     <published>2016-12-07T14:21:00+01:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -179,7 +180,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/"/>
     <id>http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/</id>
     <published>2016-12-01T19:53:00+01:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -206,7 +207,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/"/>
     <id>http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/</id>
     <published>2016-11-08T18:35:00+01:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -243,7 +244,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/</id>
     <published>2016-10-16T11:08:00+02:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -267,7 +268,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/"/>
     <id>http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/</id>
     <published>2016-10-16T10:50:00+02:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -300,7 +301,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/</id>
     <published>2016-10-11T11:21:00+02:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -321,7 +322,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
     <published>2016-10-09T15:12:00+02:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -349,7 +350,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2017-03-08T08:38:28+01:00</updated>
+    <updated>2017-03-27T18:26:31+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
