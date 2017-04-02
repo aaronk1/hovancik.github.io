@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/"/>
     <id>http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/</id>
     <published>2017-03-08T08:27:00+01:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -50,7 +50,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/"/>
     <id>http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/</id>
     <published>2017-01-22T12:31:00+01:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -87,7 +87,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
     <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
     <published>2017-01-14T10:28:00+01:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -156,7 +156,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/"/>
     <id>http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/</id>
     <published>2016-12-07T14:21:00+01:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -180,7 +180,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/"/>
     <id>http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/</id>
     <published>2016-12-01T19:53:00+01:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -207,7 +207,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/"/>
     <id>http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/</id>
     <published>2016-11-08T18:35:00+01:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -244,7 +244,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/</id>
     <published>2016-10-16T11:08:00+02:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -268,7 +268,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/"/>
     <id>http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/</id>
     <published>2016-10-16T10:50:00+02:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -301,7 +301,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/"/>
     <id>http://hovancik.net/blog/2016/10/11/stretchly-v0-2-1-released/</id>
     <published>2016-10-11T11:21:00+02:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -322,7 +322,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/09/stretchly-v0-2-0-released/</id>
     <published>2016-10-09T15:12:00+02:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -350,7 +350,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/"/>
     <id>http://hovancik.net/blog/2016/10/05/mobile-browsers-let-s-encrypt-and-heroku/</id>
     <published>2016-10-05T12:59:00+02:00</published>
-    <updated>2017-03-27T18:26:31+02:00</updated>
+    <updated>2017-04-02T17:34:24+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
