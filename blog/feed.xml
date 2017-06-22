@@ -5,16 +5,105 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2017-05-18T09:32:00+02:00</updated>
+  <updated>2017-06-22T11:18:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Introducing mina-supervisord gem</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/"/>
+    <id>http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/</id>
+    <published>2017-06-22T11:18:00+02:00</published>
+    <updated>2017-06-22T11:35:14+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there,&lt;/p&gt;
+
+&lt;p&gt;I'm happy to announce the first release of gem &lt;a href="https://github.com/hovancik/mina-supervisord"&gt;mina-supervisord&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Mina::Supervisord is a &lt;a href="http://supervisord.org/"&gt;Supervisor&lt;/a&gt; (process control system) wrapper for &lt;a href="https://github.com/mina-deploy/mina"&gt;mina&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Add this line to your application's Gemfile:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;gem 'mina-supervisord', require: false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And then execute:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ bundle
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or install it yourself as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ gem install mina-supervisord
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;To restart your app during deploy you might add this to &lt;code&gt;deloy.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;require 'mina/supervisord'
+
+task deploy: :environment do
+  deploy do
+    ...
+    on :launch do
+      invoke :'supervisord:restart', 'puma'
+    end
+  end
+end
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;To call it as mina task, eg. to start your puma, you would run this from command line:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;bundle exec mina supervisord:start['puma']
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;puma&lt;/code&gt; is a supervisord &lt;a href="http://supervisord.org/running.html#adding-a-program"&gt;program&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="supported-tasks"&gt;Supported tasks&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:restart&lt;/code&gt;- to restart a program (eg. &lt;code&gt;bundle exec mina supervisord:restart['program']&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:start&lt;/code&gt;- to start a program (eg. &lt;code&gt;bundle exec mina supervisord:start['program']&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:stop&lt;/code&gt;- to stop a program (eg. &lt;code&gt;bundle exec mina supervisord:stop['program']&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:status&lt;/code&gt;- to get status of a program (eg. &lt;code&gt;bundle exec mina supervisord:status['program']&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:signal&lt;/code&gt;- to send a signal to a program (eg. &lt;code&gt;bundle exec mina supervisord:signal['program,signal']&lt;/code&gt;)
+    &lt;h4 id="extra-tasks"&gt;Extra tasks&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:signal:or_start&lt;/code&gt;- to send a signal to a program, or start it if not running (eg. &lt;code&gt;bundle exec mina supervisord:signal:or_start['program,signal']&lt;/code&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;supervisord:restart:or_start&lt;/code&gt;- to restart a program, or start it if not running (eg. &lt;code&gt;bundle exec mina supervisord:restart:or_start['program']&lt;/code&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You might find these extra tasks useful when you are not sure whether your program is running.&lt;/p&gt;
+
+&lt;p&gt;Eg. when we do our deploy, we want our &lt;code&gt;puma&lt;/code&gt; server to be restarted or started if not running already. To do that, we have following in our &lt;code&gt;deploy.rb&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-ruby"&gt;desc "Phased restart of the application"
+task :phased_restart =&amp;gt; :environment do
+  invoke :'supervisord:signal:or_start', fetch(:application_supervisor_file), "SIGUSR1"
+end
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id="contributing"&gt;Contributing&lt;/h2&gt;
+
+&lt;p&gt;Bug reports and pull requests are welcome on GitHub at https://github.com/hovancik/mina-supervisord. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the &lt;a href="http://contributor-covenant.org"&gt;Contributor Covenant&lt;/a&gt; code of conduct.&lt;/p&gt;
+
+&lt;p&gt;Development of this gem is sponsored by &lt;a href="http://mix.it"&gt;Mix.it&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id="license"&gt;License&lt;/h2&gt;
+
+&lt;p&gt;The gem is available as open source under the terms of the &lt;a href="http://opensource.org/licenses/MIT"&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.9.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/"/>
     <id>http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/</id>
     <published>2017-05-18T09:32:00+02:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -62,7 +151,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/"/>
     <id>http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/</id>
     <published>2017-04-27T14:22:00+02:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -90,7 +179,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/"/>
     <id>http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/</id>
     <published>2017-04-09T11:41:00+02:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -117,7 +206,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/"/>
     <id>http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/</id>
     <published>2017-03-08T08:27:00+01:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -153,7 +242,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/"/>
     <id>http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/</id>
     <published>2017-01-22T12:31:00+01:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -190,7 +279,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
     <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
     <published>2017-01-14T10:28:00+01:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -259,7 +348,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/"/>
     <id>http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/</id>
     <published>2016-12-07T14:21:00+01:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -283,7 +372,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/"/>
     <id>http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/</id>
     <published>2016-12-01T19:53:00+01:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -310,7 +399,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/"/>
     <id>http://hovancik.net/blog/2016/11/08/stretchly-v0-4-0-released/</id>
     <published>2016-11-08T18:35:00+01:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -347,7 +436,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/"/>
     <id>http://hovancik.net/blog/2016/10/16/stretchly-v0-3-0-released/</id>
     <published>2016-10-16T11:08:00+02:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
+    <updated>2017-06-22T11:35:14+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -364,39 +453,6 @@ const settingsFile = `${dir}/config.json`
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;img src="/img/stretchly_tray_030.png" alt="stretchly" width="100%" /&gt;&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Editing tag reference on Github release</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/"/>
-    <id>http://hovancik.net/blog/2016/10/16/editing-tag-reference-on-github-release/</id>
-    <published>2016-10-16T10:50:00+02:00</published>
-    <updated>2017-05-18T09:41:24+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;To release my &lt;a href="/stretchly"&gt;stretchly&lt;/a&gt; app I use Github releases. And my workflow is similar to this:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;create feature branch and PR for that branch&lt;/li&gt;
-  &lt;li&gt;make draft release and upload executables there&lt;/li&gt;
-  &lt;li&gt;test executables&lt;/li&gt;
-  &lt;li&gt;merge PR&lt;/li&gt;
-  &lt;li&gt;publish release&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Two last steps should be in sequence, as Github's release mechanism will use master as reference for the new tag it's about to create.&lt;/p&gt;
-
-&lt;p&gt;But today I somehow messed up and I released version before merging it first. (Nope, I don't have CI do this for me, yet.)&lt;/p&gt;
-
-&lt;p&gt;If you go ahead and try to edit the release, all Github let you do is edit tag name, description and so on, but not the tag reference. But as it turns out, and it always turns out that way, the fix is pretty simple with good old command line.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;git fetch origin&lt;/code&gt; to fetch tag from Github&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;git push origin :refs/tags/&amp;lt;tagname&amp;gt;&lt;/code&gt; to delete the tag from github&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Now your release is in draft stage again and you can edit the tag reference.&lt;/p&gt;
 </content>
   </entry>
 </feed>
