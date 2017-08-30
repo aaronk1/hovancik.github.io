@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
     <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
     <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-08-30T08:53:04+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -49,7 +49,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/"/>
     <id>http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/</id>
     <published>2017-07-02T14:30:00+02:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-08-30T09:02:28+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -147,30 +147,31 @@ services:
 
 &lt;p&gt;The app running right now is ready to run Vue.js code, but our container is not. Let's change that.&lt;/p&gt;
 
-&lt;p&gt;To make things easier, we will add &lt;a href="https://github.com/ddollar/foreman"&gt;Foreman&lt;/a&gt; first. For dev environment, we can have &lt;code&gt;Procfile.dev&lt;/code&gt;, to say what we want to run when app starts.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;web: bundle exec rails s -p 3000 -b '0.0.0.0'
-webpacker: bundle exec bin/webpack-dev-server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Fot this to work we need to update &lt;code&gt;docker-compose.yml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;To make things easier, we will add new service in our &lt;code&gt;docker-compose&lt;/code&gt; running webpacker in &lt;a href="https://github.com/rails/webpacker#developing-with-webpacker"&gt;development&lt;/a&gt; enviroment.&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;version: '3'
 services:
   db:
     image: postgres
+  webpacker:
+    build: .
+    command: bundle exec bin/webpack-dev-server
+    volumes:
+      - .:/fancyapp
+    ports:
+      - "8080:8080"
   web:
     build: .
-    command: bundle exec foreman start -f Procfile.dev
+    command: bundle exec rails s -p 3000 -b '0.0.0.0'
     volumes:
-      - .:/titbitoutfit
+      - .:/fancyapp
     ports:
       - "3000:3000"
-      - "8080:8080"
     depends_on:
       - db
+      - webpacker
 &lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;We now have new command to run Foreman and we added port 8080 for webpack-dev-server. You can do &lt;code&gt;docker-compose build &amp;amp;&amp;amp; docker-compose run&lt;/code&gt; to test it out.&lt;/p&gt;
+&lt;p&gt;You might need to run &lt;code&gt;docker-compose run web yarn install&lt;/code&gt; to get node packages installed. That's one part I haven't figured out yet.&lt;/p&gt;
 
 &lt;p&gt;All that is left now is adding some Vue.js code.&lt;/p&gt;
 
@@ -202,7 +203,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/"/>
     <id>http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/</id>
     <published>2017-06-22T11:18:00+02:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-06-22T11:34:45+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -291,7 +292,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/"/>
     <id>http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/</id>
     <published>2017-05-18T09:32:00+02:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-05-18T09:40:57+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -339,7 +340,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/"/>
     <id>http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/</id>
     <published>2017-04-27T14:22:00+02:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-28T09:43:53+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -367,7 +368,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/"/>
     <id>http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/</id>
     <published>2017-04-09T11:41:00+02:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -394,7 +395,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/"/>
     <id>http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/</id>
     <published>2017-03-08T08:27:00+01:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -430,7 +431,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/"/>
     <id>http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/</id>
     <published>2017-01-22T12:31:00+01:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -467,7 +468,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
     <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
     <published>2017-01-14T10:28:00+01:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -536,7 +537,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/"/>
     <id>http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/</id>
     <published>2016-12-07T14:21:00+01:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -560,7 +561,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/"/>
     <id>http://hovancik.net/blog/2016/12/01/stretchly-v0-5-0-released/</id>
     <published>2016-12-01T19:53:00+01:00</published>
-    <updated>2017-08-23T19:20:41+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
