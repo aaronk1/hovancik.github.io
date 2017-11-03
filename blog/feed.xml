@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/"/>
     <id>http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/</id>
     <published>2017-09-10T10:44:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-10-31T14:57:32+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -35,7 +35,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
     <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
     <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-08-30T08:53:04+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -70,7 +70,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/"/>
     <id>http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/</id>
     <published>2017-07-02T14:30:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-08-30T09:02:28+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -224,7 +224,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/"/>
     <id>http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/</id>
     <published>2017-06-22T11:18:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-06-22T11:34:45+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -313,7 +313,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/"/>
     <id>http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/</id>
     <published>2017-05-18T09:32:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-05-18T09:40:57+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -361,7 +361,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/"/>
     <id>http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/</id>
     <published>2017-04-27T14:22:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-04-28T09:43:53+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -389,7 +389,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/"/>
     <id>http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/</id>
     <published>2017-04-09T11:41:00+02:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -416,7 +416,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/"/>
     <id>http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/</id>
     <published>2017-03-08T08:27:00+01:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -452,7 +452,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/"/>
     <id>http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/</id>
     <published>2017-01-22T12:31:00+01:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -489,7 +489,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
     <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
     <published>2017-01-14T10:28:00+01:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -558,7 +558,7 @@ const settingsFile = `${dir}/config.json`
     <link rel="alternate" href="http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/"/>
     <id>http://hovancik.net/blog/2016/12/07/stretchly-v0-5-1-released/</id>
     <published>2016-12-07T14:21:00+01:00</published>
-    <updated>2017-09-10T11:17:24+02:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
