@@ -5,16 +5,55 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2017-11-05T16:00:00+01:00</updated>
+  <updated>2017-12-11T10:29:00+01:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Shocking size of electron apps</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
+    <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
+    <published>2017-12-11T10:29:00+01:00</published>
+    <updated>2017-12-12T10:27:49+01:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;strong&gt;&lt;em&gt;Trigger Warning: Rape&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Last week I received this email:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;from: U884862107693 &amp;lt;gKdeNUHMYr@protonmail.ch&amp;gt;
+subject: Stretchly
+
+Hello.
+
+Your small program (Stretchly) has a very shocking size (108 MB). Do you think that this is the normal size for such a low-functionality program?
+
+You're not a programmer. You are fucking idiot. You need to work as a waiter in McDonalds, not write a programs.
+
+If you do not rewrite your program so that it does not have such a large size, I will come to you and fuck you. I'll fuck you till you love me.
+
+
+Bye.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Few things:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;even thought he is right about the size of the app (because of electron), there's no way of making it smaller by being vulgar&lt;/li&gt;
+  &lt;li&gt;by being vulgar he made my day&lt;/li&gt;
+  &lt;li&gt;I guess better not to answer (but I swear I have like 100 ideas + (100 from my girlfriend) how to answer him - that would be fun)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Anyway… I might do it…&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.12.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/"/>
     <id>http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/</id>
     <published>2017-11-05T16:00:00+01:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-12-11T10:28:16+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -46,7 +85,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/"/>
     <id>http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/</id>
     <published>2017-09-10T10:44:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-10-31T14:57:32+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -67,7 +106,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
     <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
     <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-08-30T08:53:04+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -102,7 +141,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/"/>
     <id>http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/</id>
     <published>2017-07-02T14:30:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-08-30T09:02:28+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -256,7 +295,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/"/>
     <id>http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/</id>
     <published>2017-06-22T11:18:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-06-22T11:34:45+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -345,7 +384,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/"/>
     <id>http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/</id>
     <published>2017-05-18T09:32:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-05-18T09:40:57+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -393,7 +432,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/"/>
     <id>http://hovancik.net/blog/2017/04/27/stretchly-0-8-1-released/</id>
     <published>2017-04-27T14:22:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-04-28T09:43:53+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -421,7 +460,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/"/>
     <id>http://hovancik.net/blog/2017/04/09/stretchly-0-8-0-released/</id>
     <published>2017-04-09T11:41:00+02:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -448,7 +487,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/"/>
     <id>http://hovancik.net/blog/2017/03/08/stretchly-0-7-0-released/</id>
     <published>2017-03-08T08:27:00+01:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -484,7 +523,7 @@ end
     <link rel="alternate" href="http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/"/>
     <id>http://hovancik.net/blog/2017/01/22/stretchly-0-6-0-released/</id>
     <published>2017-01-22T12:31:00+01:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
+    <updated>2017-04-27T14:17:46+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -514,75 +553,6 @@ const settingsFile = `${dir}/config.json`
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Then change &lt;code&gt;useIdeasFromSettings: false,&lt;/code&gt; to &lt;code&gt;useIdeasFromSettings: true,&lt;/code&gt; and edit &lt;code&gt;breakIdeas&lt;/code&gt; and &lt;code&gt;microbreakIdeas&lt;/code&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Still looking for 2017's resolution? Try some online cleaning.</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/"/>
-    <id>http://hovancik.net/blog/2017/01/14/still-looking-for-2017-s-resolution-try-some-online-cleaning/</id>
-    <published>2017-01-14T10:28:00+01:00</published>
-    <updated>2017-11-05T16:30:51+01:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Don't know about you, but I have rather &lt;em&gt;uncountable&lt;/em&gt; amount of online presence (subscriptions, accounts, etc.).&lt;/p&gt;
-
-&lt;h3 id="how-does-it-happen-and-why-its-bad"&gt;How does it happen and why it's bad?&lt;/h3&gt;
-
-&lt;p&gt;It happens mainly because we trade our data (email, personal details, phone number) for cheaper and/or &lt;em&gt;free&lt;/em&gt; services. Companies then can trade that information to the other parties, sell advertisement and so on. As that's often their primary business model, it leads to the vicious circle that forces companies to ask for more and more data.&lt;/p&gt;
-
-&lt;p&gt;And we are humans, after all:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;we create accounts to check out the services that we'll never use&lt;/li&gt;
-  &lt;li&gt;we give info in hope of winning some give-away or competition&lt;/li&gt;
-  &lt;li&gt;we stop using services and not bother to delete them&lt;/li&gt;
-  &lt;li&gt;we subscribe to newsletters and mailing lists&lt;/li&gt;
-  &lt;li&gt;we use same password everywhere&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;We leave a lot of trails and we should care, as those trails can be dangerous for both our personal and professional life. Services can get hacked and our private data released.&lt;/p&gt;
-
-&lt;h3 id="how-to-find-them"&gt;How to find them?&lt;/h3&gt;
-
-&lt;p&gt;There are many ways you can figure out what's out there:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;password manager (you might have one in your browser, phone or as an app)&lt;/li&gt;
-  &lt;li&gt;emails (search for: &lt;code&gt;unsubscribe&lt;/code&gt;, &lt;code&gt;verify&lt;/code&gt;, &lt;code&gt;welcome&lt;/code&gt;, &lt;code&gt;account&lt;/code&gt;, &lt;code&gt;login&lt;/code&gt;, &lt;code&gt;subscription&lt;/code&gt;, &lt;code&gt;newsletter&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;spam folder (seriously, a lot of stuff gets there)&lt;/li&gt;
-  &lt;li&gt;search engines (search for nicknames/logins/emails you use when signing up)&lt;/li&gt;
-  &lt;li&gt;applications (both mobile and desktop)&lt;/li&gt;
-  &lt;li&gt;password reset form (if you're not sure whether you have account there)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="what-to-clean"&gt;What to clean?&lt;/h3&gt;
-
-&lt;p&gt;It might sounds hard to decide, but it's not. Few simple questions can help you out:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;are you using a service often enough? (every day, once a month, never?)&lt;/li&gt;
-  &lt;li&gt;does it make some kind of financial/commercial/personal reason to keep it?&lt;/li&gt;
-  &lt;li&gt;does it bring joy? (or annoyance?)&lt;/li&gt;
-  &lt;li&gt;can you find alternative that does not require sharing your data? (eg. viewing newsletter online, anonymous forums…)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Don't forget that if you'll ever need a particular account, you can always create a new one.&lt;/p&gt;
-
-&lt;h3 id="how-to-delete-them"&gt;How to delete them?&lt;/h3&gt;
-
-&lt;p&gt;Obvious way is to go one by one, and delete/unsubscribe. But it's not always that easy, or even recommended. Make sure you always &lt;em&gt;delete data first&lt;/em&gt; (eg. uploaded images, notes) and other data that could identify you (deleting &lt;strong&gt;account&lt;/strong&gt; might not mean deleting &lt;strong&gt;data&lt;/strong&gt;). If it's not possible, write to support. It's also good idea to change your login/email and password. As I said, they'll probably put your account as &lt;code&gt;inactive&lt;/code&gt;, rather then deleting it.&lt;/p&gt;
-
-&lt;p&gt;Then you should be good with deleting an account. And as with previous, ask the support do it for you if not possible from an interface.&lt;/p&gt;
-
-&lt;p&gt;And when contacting support wont help (there is none, or they ignore you), at least change/delete as much data as possible (email, name, etc..).&lt;/p&gt;
-
-&lt;h3 id="final-thoughts-and-tips"&gt;Final thoughts and tips&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;when asked for email to get something (eg. download data or show page) use 10minutes emails (search for it)&lt;/li&gt;
-  &lt;li&gt;create fake email to use when wanting to try a service&lt;/li&gt;
-  &lt;li&gt;be mindful about what information you share&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
