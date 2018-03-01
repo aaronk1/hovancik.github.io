@@ -5,16 +5,60 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2018-02-20T14:22:00+01:00</updated>
+  <updated>2018-03-01T11:27:00+01:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Updating certificates for Heroku with Cloudflare</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
+    <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
+    <published>2018-03-01T11:27:00+01:00</published>
+    <updated>2018-03-01T12:25:33+01:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Do you have a app on Heroku, DNS on Cloudflare and your SSL certificate is automatically managed by Heroku?&lt;/p&gt;
+
+&lt;p&gt;I do. And yesterday I received email like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Hi,
+
+Automated Certificate Management
+has failed for the following domains:
+
+Domain 	              Reason
+domain.sk 	
+www.domain.sk 	
+
+You should be able to find specific information
+to correct the above noted errors at:
+https://devcenter.heroku.com/articles/automated-certificate-management#troubleshooting
+
+Happy coding,
+
+Heroku
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Yep, no reason, obviously.&lt;/p&gt;
+
+&lt;p&gt;Following the link gave me something useful (as my DNS records were fine):&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;ACM is not available if your app is behind a CDN such as Cloudflare or Fastly.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So I check my DNS again and I see that I use 'DNS and HTTP proxy (CDN)'.&lt;/p&gt;
+
+&lt;p&gt;Setting it do 'DNS only' and running &lt;code&gt;heroku certs:auto:refresh --app=myapp&lt;/code&gt; did the trick.&lt;/p&gt;
+
+&lt;p&gt;My certificate is OK and I can set 'DNS and HTTP proxy (CDN)' again.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.15.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -52,7 +96,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -78,7 +122,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -116,7 +160,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
     <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
     <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -140,7 +184,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
     <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
     <published>2017-12-11T10:29:00+01:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -179,7 +223,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/"/>
     <id>http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/</id>
     <published>2017-11-05T16:00:00+01:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -211,7 +255,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/"/>
     <id>http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/</id>
     <published>2017-09-10T10:44:00+02:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -232,7 +276,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
     <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
     <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -267,7 +311,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/"/>
     <id>http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/</id>
     <published>2017-07-02T14:30:00+02:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -421,7 +465,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/"/>
     <id>http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/</id>
     <published>2017-06-22T11:18:00+02:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
+    <updated>2018-03-01T12:25:33+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -503,54 +547,6 @@ end
 &lt;h2 id="license"&gt;License&lt;/h2&gt;
 
 &lt;p&gt;The gem is available as open source under the terms of the &lt;a href="http://opensource.org/licenses/MIT"&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.9.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/"/>
-    <id>http://hovancik.net/blog/2017/05/18/stretchly-0-9-0-released/</id>
-    <published>2017-05-18T09:32:00+02:00</published>
-    <updated>2018-02-25T17:15:23+01:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.9.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.9.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="/img/stretchly-0.8.0.png" alt="stretchly" width="100%" /&gt;&lt;/p&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Tooltip shows information about:
-    &lt;ul&gt;
-      &lt;li&gt;time left till next (micro)break&lt;/li&gt;
-      &lt;li&gt;time left in pause till breaks resume&lt;/li&gt;
-      &lt;li&gt;number of microbreaks until next break&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;version checker erroneous 'a new version is available' messages&lt;/li&gt;
-  &lt;li&gt;Run breaks after resetting breaks&lt;/li&gt;
-  &lt;li&gt;Scheduler timeLeft based on actual setTimeout start time&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;do not play sound on Pause when break is in progress&lt;/li&gt;
-  &lt;li&gt;cosmetic style changes&lt;/li&gt;
-  &lt;li&gt;do not hide macOS dock icon, so we can have tray tooltip&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="known-issues"&gt;Known issues&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;tray tooltip does not work correctly on macOS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks a lot goes to Sean Manton, who implemented some of those features!&lt;/p&gt;
 </content>
   </entry>
 </feed>
