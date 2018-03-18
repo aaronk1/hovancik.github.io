@@ -5,16 +5,50 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2018-03-01T11:27:00+01:00</updated>
+  <updated>2018-03-17T15:14:00+01:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly 0.16.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
+    <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
+    <published>2018-03-17T15:14:00+01:00</published>
+    <updated>2018-03-18T09:02:56+01:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.16.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://hovancik.net/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
+
+&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Russian translations for interface&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;upper limit of microbreak duration set to 60 seconds&lt;/li&gt;
+  &lt;li&gt;download link from github's releases to hovancik.net/stretchly/downloads&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;notifications not working on latest Windows 10&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to everyone for support and contributions!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Updating certificates for Heroku with Cloudflare</title>
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
     <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
     <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -58,7 +92,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -96,7 +130,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -122,7 +156,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -160,7 +194,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
     <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
     <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -184,7 +218,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
     <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
     <published>2017-12-11T10:29:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -223,7 +257,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/"/>
     <id>http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/</id>
     <published>2017-11-05T16:00:00+01:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -255,7 +289,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/"/>
     <id>http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/</id>
     <published>2017-09-10T10:44:00+02:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -276,7 +310,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
     <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
     <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -311,7 +345,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/"/>
     <id>http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/</id>
     <published>2017-07-02T14:30:00+02:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
+    <updated>2018-03-18T09:02:56+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -458,95 +492,6 @@ services:
 &lt;p&gt;The &lt;code&gt;rails new&lt;/code&gt; generated example Vue.js stuff for us, but that's just the start.&lt;/p&gt;
 
 &lt;p&gt;As I am not familiar with Vue.js, my next step is doing exactly that. Then I will need to learn more about webpacker. With that knowledge I hope to be able to fully use all the goods that this setup is giving me.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Introducing mina-supervisord gem</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/"/>
-    <id>http://hovancik.net/blog/2017/06/22/introducing-mina-supervisord-gem/</id>
-    <published>2017-06-22T11:18:00+02:00</published>
-    <updated>2018-03-16T09:39:22+01:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there,&lt;/p&gt;
-
-&lt;p&gt;I'm happy to announce the first release of gem &lt;a href="https://github.com/hovancik/mina-supervisord"&gt;mina-supervisord&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Mina::Supervisord is a &lt;a href="http://supervisord.org/"&gt;Supervisor&lt;/a&gt; (process control system) wrapper for &lt;a href="https://github.com/mina-deploy/mina"&gt;mina&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="installation"&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;Add this line to your application's Gemfile:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-ruby"&gt;gem 'mina-supervisord', require: false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And then execute:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ bundle
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Or install it yourself as:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ gem install mina-supervisord
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="usage"&gt;Usage&lt;/h2&gt;
-
-&lt;p&gt;To restart your app during deploy you might add this to &lt;code&gt;deloy.rb&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-ruby"&gt;require 'mina/supervisord'
-
-task deploy: :environment do
-  deploy do
-    ...
-    on :launch do
-      invoke :'supervisord:restart', 'puma'
-    end
-  end
-end
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;To call it as mina task, eg. to start your puma, you would run this from command line:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-ruby"&gt;bundle exec mina supervisord:start['puma']
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;puma&lt;/code&gt; is a supervisord &lt;a href="http://supervisord.org/running.html#adding-a-program"&gt;program&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="supported-tasks"&gt;Supported tasks&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:restart&lt;/code&gt;- to restart a program (eg. &lt;code&gt;bundle exec mina supervisord:restart['program']&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:start&lt;/code&gt;- to start a program (eg. &lt;code&gt;bundle exec mina supervisord:start['program']&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:stop&lt;/code&gt;- to stop a program (eg. &lt;code&gt;bundle exec mina supervisord:stop['program']&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:status&lt;/code&gt;- to get status of a program (eg. &lt;code&gt;bundle exec mina supervisord:status['program']&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:signal&lt;/code&gt;- to send a signal to a program (eg. &lt;code&gt;bundle exec mina supervisord:signal['program,signal']&lt;/code&gt;)
-    &lt;h4 id="extra-tasks"&gt;Extra tasks&lt;/h4&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:signal:or_start&lt;/code&gt;- to send a signal to a program, or start it if not running (eg. &lt;code&gt;bundle exec mina supervisord:signal:or_start['program,signal']&lt;/code&gt;)&lt;/li&gt;
-  &lt;li&gt;&lt;code&gt;supervisord:restart:or_start&lt;/code&gt;- to restart a program, or start it if not running (eg. &lt;code&gt;bundle exec mina supervisord:restart:or_start['program']&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;You might find these extra tasks useful when you are not sure whether your program is running.&lt;/p&gt;
-
-&lt;p&gt;Eg. when we do our deploy, we want our &lt;code&gt;puma&lt;/code&gt; server to be restarted or started if not running already. To do that, we have following in our &lt;code&gt;deploy.rb&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-ruby"&gt;desc "Phased restart of the application"
-task :phased_restart =&amp;gt; :environment do
-  invoke :'supervisord:signal:or_start', fetch(:application_supervisor_file), "SIGUSR1"
-end
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="contributing"&gt;Contributing&lt;/h2&gt;
-
-&lt;p&gt;Bug reports and pull requests are welcome on GitHub at https://github.com/hovancik/mina-supervisord. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the &lt;a href="http://contributor-covenant.org"&gt;Contributor Covenant&lt;/a&gt; code of conduct.&lt;/p&gt;
-
-&lt;p&gt;Development of this gem is sponsored by &lt;a href="http://mix.it"&gt;Mix.it&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id="license"&gt;License&lt;/h2&gt;
-
-&lt;p&gt;The gem is available as open source under the terms of the &lt;a href="http://opensource.org/licenses/MIT"&gt;MIT License&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
