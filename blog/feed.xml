@@ -5,16 +5,51 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2018-03-17T15:14:00+01:00</updated>
+  <updated>2018-05-06T12:54:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly 0.17.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/"/>
+    <id>http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/</id>
+    <published>2018-05-06T12:54:00+02:00</published>
+    <updated>2018-05-06T13:40:50+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.17.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://hovancik.net/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
+
+&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Ukrainian translations for interface&lt;/li&gt;
+  &lt;li&gt;Spanish translations for interface&lt;/li&gt;
+  &lt;li&gt;Romanian translations for interface&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;upper limit of microbreak duration set to 300 seconds (5 minutes)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;closes running break window when skipping to the another one&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.16.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
     <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
     <published>2018-03-17T15:14:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -48,7 +83,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
     <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
     <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -92,7 +127,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -130,7 +165,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -156,7 +191,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -194,7 +229,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
     <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
     <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -218,7 +253,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
     <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
     <published>2017-12-11T10:29:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -257,7 +292,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/"/>
     <id>http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/</id>
     <published>2017-11-05T16:00:00+01:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -289,7 +324,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/"/>
     <id>http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/</id>
     <published>2017-09-10T10:44:00+02:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -310,7 +345,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
     <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
     <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
+    <updated>2018-05-06T13:40:50+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -338,160 +373,6 @@ Bye.
   &lt;li&gt;get active settings when changing Settings window pages&lt;/li&gt;
 &lt;/ul&gt;
 
-</content>
-  </entry>
-  <entry>
-    <title>Creating new Rails and Vue.js app with Docker</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/"/>
-    <id>http://hovancik.net/blog/2017/07/02/creating-new-rails-and-vue-js-app-with-docker/</id>
-    <published>2017-07-02T14:30:00+02:00</published>
-    <updated>2018-03-18T09:02:56+01:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;The most of Rails and Docker tutorials either show how to &lt;a href="https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application"&gt;dockerize&lt;/a&gt; your existing app, or how to create new Rails app by &lt;a href="https://blog.codeship.com/running-rails-development-environment-docker/"&gt;installing Rails&lt;/a&gt; locally and then adding Docker as second step.&lt;/p&gt;
-
-&lt;p&gt;It works but it have always struck me as weird idea: &lt;em&gt;why installing Ruby first&lt;/em&gt;? Isn't the point of Docker, at least in part, that I do not need Ruby locally?&lt;/p&gt;
-
-&lt;p&gt;I am not that familiar with Docker so I decided to figure this out. &lt;a href="https://vuejs.org/"&gt;Vue.js&lt;/a&gt; included, as it's something I want to try out and there's not a lot of stuff about it out there.&lt;/p&gt;
-
-&lt;p&gt;The result should be &lt;strong&gt;basic example of Vue.js and Rails app running inside Docker container&lt;/strong&gt;. And for that, I'd like to use &lt;a href="https://github.com/rails/webpacker"&gt;webpacker&lt;/a&gt; gem. One more thing: no &lt;a href="http://coffeescript.org/"&gt;CoffeeScript&lt;/a&gt; (which is default for Rails).&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I recommend to familiarize yourself with Docker and webpacker, if not already. I am not gonna talk about them a lot.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id="no-local-ruby-and-rails"&gt;No local Ruby and Rails&lt;/h2&gt;
-
-&lt;p&gt;As it turns out, it's not that hard.&lt;/p&gt;
-
-&lt;p&gt;All I needed to do is go to the official Docker's &lt;a href="https://docs.docker.com/compose/rails/#define-the-project"&gt;Rails example&lt;/a&gt;. The document shows how to create new Rails app with PostgreSQL database without need to have Rails or Ruby installed on local machine.&lt;/p&gt;
-
-&lt;p&gt;Adding Vue.js to the mix changes steps a bit and that's what I will be writing about.&lt;/p&gt;
-
-&lt;h2 id="docker-container"&gt;Docker container&lt;/h2&gt;
-
-&lt;p&gt;To be able to create new app, we first need to prepare Docker container that can run &lt;code&gt;rails new fancyapp --force --database=postgresql --webpack=vue --skip-coffee&lt;/code&gt; command. For that we need to have Rails so feel free to initialize your git repo and create basic &lt;code&gt;Gemfile&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language-ruby"&gt;source 'https://rubygems.org'
-ruby '2.4.1'
-gem 'rails', '~&amp;gt; 5.1', '&amp;gt;= 5.1.1'
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;Gemfile.lock&lt;/code&gt; is empty at this point.&lt;/p&gt;
-
-&lt;p&gt;Now let's install other dependencies via &lt;code&gt;Dockerfile&lt;/code&gt;.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;FROM ruby:2.4.1
-
-RUN apt-get update -qq &amp;amp;&amp;amp; apt-get install -y build-essential libpq-dev
-
-# Node.js
-RUN curl -sL https://deb.nodesource.com/setup_7.x | bash - \
-&amp;amp;&amp;amp; apt-get install -y nodejs
-
-RUN apt-get update &amp;amp;&amp;amp; apt-get install -y curl apt-transport-https wget &amp;amp;&amp;amp; \
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - &amp;amp;&amp;amp; \
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list &amp;amp;&amp;amp; \
-apt-get update &amp;amp;&amp;amp; apt-get install -y yarn
-
-RUN mkdir /fancyapp
-WORKDIR /fancyapp
-
-ADD Gemfile /fancyapp/Gemfile
-ADD Gemfile.lock /fancyapp/Gemfile.lock
-
-RUN bundle install
-
-ADD . /fancyapp
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;This is pretty straightforward: we install PostgreSQL lib, Node.js and yarn. Then we create directory for our fancy app and add &lt;code&gt;Gemfile&lt;/code&gt; and &lt;code&gt;Gemfile.lock&lt;/code&gt; there. Bundle will install Rails so we can use it to create new app.&lt;/p&gt;
-
-&lt;p&gt;Think about your app name here, and name the folder accordingly. Rails app will get name from it.&lt;/p&gt;
-
-&lt;p&gt;One last thing is &lt;code&gt;docker-compose.yml&lt;/code&gt;. We will use &lt;code&gt;docker-compose&lt;/code&gt; to run Docker commands.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;version: '3'
-services:
-  db:
-    image: postgres
-  web:
-    build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
-    volumes:
-      - .:/fancyapp
-    ports:
-      - "3000:3000"
-    depends_on:
-      - db
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id="rails-new-fancyapp"&gt;rails new fancyapp&lt;/h2&gt;
-
-&lt;p&gt;Now that we are all ready, we need to call &lt;code&gt;docker-compose build&lt;/code&gt;. Rails and all deps will get installed, so we can &lt;code&gt;docker-compose run web rails new . --force --database=postgresql --webpack=vue --skip-coffee&lt;/code&gt; to create new app.&lt;/p&gt;
-
-&lt;p&gt;We do not set application name in &lt;code&gt;rails new&lt;/code&gt; command, as we are calling it from inside our app directory. In our case the app will be called &lt;em&gt;fancyapp&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;The command mentioned will generate new app with example Vue.js code that we will use later. If you're running on Linux, the newly created files might be owned by root. To be able to work with them, run this:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;sudo chown -R $USER:$USER .
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Then every time when you create files with &lt;code&gt;docker-compose run ...&lt;/code&gt;, do it again.&lt;/p&gt;
-
-&lt;p&gt;Do not forget to add &lt;code&gt;ruby '2.4.1'&lt;/code&gt; to Gemfile again. It gets removed when using &lt;code&gt;--force&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now you can run &lt;code&gt;docker-compose build&lt;/code&gt; again and &lt;code&gt;docker-compose up&lt;/code&gt;. Your app is available at &lt;code&gt;localhost:3000&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id="adding-vuejs"&gt;Adding Vue.js&lt;/h2&gt;
-
-&lt;p&gt;The app running right now is ready to run Vue.js code, but our container is not. Let's change that.&lt;/p&gt;
-
-&lt;p&gt;To make things easier, we will add new service in our &lt;code&gt;docker-compose&lt;/code&gt; running webpacker in &lt;a href="https://github.com/rails/webpacker#developing-with-webpacker"&gt;development&lt;/a&gt; enviroment.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;version: '3'
-services:
-  db:
-    image: postgres
-  webpacker:
-    build: .
-    command: bundle exec bin/webpack-dev-server
-    volumes:
-      - .:/fancyapp
-    ports:
-      - "8080:8080"
-  web:
-    build: .
-    command: bundle exec rails s -p 3000 -b '0.0.0.0'
-    volumes:
-      - .:/fancyapp
-    ports:
-      - "3000:3000"
-    depends_on:
-      - db
-      - webpacker
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;You might need to run &lt;code&gt;docker-compose run web yarn install&lt;/code&gt; to get node packages installed. That's one part I haven't figured out yet.&lt;/p&gt;
-
-&lt;p&gt;All that is left now is adding some Vue.js code.&lt;/p&gt;
-
-&lt;p&gt;The easiest way is to add simple page via Rails generator: &lt;code&gt;docker-compose run web bundle exec rails g controller home index&lt;/code&gt;. We will only change the Index view by adding example Vue.js code generated in the beginning via &lt;code&gt;javascript_pack_tag&lt;/code&gt; that will execute code in &lt;code&gt;app/javascript/packs/hello_vue.js&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&amp;lt;%= javascript_pack_tag 'hello_vue' %&amp;gt;&amp;lt;/h1&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Go &lt;code&gt;up&lt;/code&gt; with your container and you should see &lt;em&gt;Hello Vue!&lt;/em&gt; in your browser.&lt;/p&gt;
-
-&lt;p&gt;Congratz, you have Rails with Vue.js app!&lt;/p&gt;
-
-&lt;h2 id="debugging"&gt;Debugging&lt;/h2&gt;
-
-&lt;p&gt;If you run into any issue (eg. container wont start), it might be helpful to try to run commands not via &lt;code&gt;docker-compose up&lt;/code&gt;, but via &lt;code&gt;docker-compose run ...&lt;/code&gt;. This way you may get better error output.&lt;/p&gt;
-
-&lt;p&gt;One might &lt;code&gt;docker-compose run web bundle exec rails s -p 3000 -b '0.0.0.0'&lt;/code&gt; to check whether there is something wrong with Rails starting up.&lt;/p&gt;
-
-&lt;p&gt;I had to do that to figure out that pid file of my Rails app was not deleted when container went down.&lt;/p&gt;
-&lt;h2 id="next-steps"&gt;Next steps&lt;/h2&gt;
-
-&lt;p&gt;The &lt;code&gt;rails new&lt;/code&gt; generated example Vue.js stuff for us, but that's just the start.&lt;/p&gt;
-
-&lt;p&gt;As I am not familiar with Vue.js, my next step is doing exactly that. Then I will need to learn more about webpacker. With that knowledge I hope to be able to fully use all the goods that this setup is giving me.&lt;/p&gt;
 </content>
   </entry>
 </feed>
