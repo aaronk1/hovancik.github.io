@@ -5,16 +5,85 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2018-05-06T12:54:00+02:00</updated>
+  <updated>2018-06-08T11:01:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>I'm burning out, I figure</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/"/>
+    <id>http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/</id>
+    <published>2018-06-08T11:01:00+02:00</published>
+    <updated>2018-06-11T15:02:36+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Last week was the last one at my old job.&lt;/p&gt;
+
+&lt;p&gt;After 2 years of doing mixed work of web developer and project manager, I decided it's time to figure out which direction to go and take some time off to relax. And I would finally have some time to visit my family and friends.&lt;/p&gt;
+
+&lt;p&gt;To my boss I said: "I need some time without PC" and this is the story I've been telling to everyone and to myself.&lt;/p&gt;
+
+&lt;p&gt;But it's not true.&lt;/p&gt;
+
+&lt;h2 id="realization"&gt;Realization&lt;/h2&gt;
+
+&lt;p&gt;Today, I have received notification from Github:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@hovancik ping.
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It's from one of few opened PRs on my open-source projects. This PR is from March 27 and it's not the oldest one. That would be from Jul 5, 2017, almost a year ago.&lt;/p&gt;
+
+&lt;p&gt;And it's also not the only PR that someone is inquiring about.&lt;/p&gt;
+
+&lt;p&gt;Thinking about it I realized something that I didn't want to admit: the true reason for my "time off" is to find time to finish what I never managed to do in last months: opened PRs, bugs, unpublished projects.&lt;/p&gt;
+
+&lt;h2 id="guilt"&gt;Guilt&lt;/h2&gt;
+
+&lt;p&gt;I don't know how to describe it, but there is a kind of guilt behind it: I'm failing my projects, my users, I'm not doing "my work". Problems at my day-to-day work had part in what I am going through as well.&lt;/p&gt;
+
+&lt;p&gt;And I know it sounds ridiculous, but it's here and it's having consequences.&lt;/p&gt;
+
+&lt;p&gt;It's hard to explain, but even when writing this I feel that hard-to-describe feeling of my head going to break at any moment, without-any-reason stress that you can feel physically, notion that you are stuck without any possible way out. It's sometimes hard to do anything at all, mind racing here and there.&lt;/p&gt;
+
+&lt;p&gt;And yes, I've become less careful and ended up screwing up stuff that costed me a lot of time and effort, resulting in more bad things happening.&lt;/p&gt;
+
+&lt;p&gt;Looking back, how many nights did I come back from work not able to talk to anyone, just quietly sitting for an hour or two? Or getting drunk so I can feel relaxed next day?&lt;/p&gt;
+
+&lt;p&gt;I should have known then.&lt;/p&gt;
+
+&lt;p&gt;But as this is rather day by day change, it's hard to see that one goes in the wrong direction.&lt;/p&gt;
+
+&lt;h2 id="the-beginning-of-the-end"&gt;The beginning of the end&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;In here, I wanted to write when, where and how I went wrong. Unfortunately, I don't know.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id="going-forward"&gt;Going forward&lt;/h2&gt;
+
+&lt;p&gt;Even though I should take the "time off" I was telling everyone I'm taking, I still want to do some unfinished work. There are few PRs I need to close as RGSoC is starting soon. And if it goes well, I might do some other ideas as well.&lt;/p&gt;
+
+&lt;p&gt;But I also want to take care of myself.&lt;/p&gt;
+
+&lt;p&gt;This means incorporating few changes to my life:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;coming back to exercising in the morning - it makes me energized&lt;/li&gt;
+  &lt;li&gt;more meditating and mindfulness - so I can see when my mind goes in wrong direction&lt;/li&gt;
+  &lt;li&gt;spending less time in front of PC&lt;/li&gt;
+  &lt;li&gt;more time in park with good book&lt;/li&gt;
+  &lt;li&gt;more time with friends&lt;/li&gt;
+  &lt;li&gt;making my life and work more organized to keep my mind free of worries&lt;/li&gt;
+  &lt;li&gt;figuring out how to find balance with my open-source apps - learning to tell people I have a life, too ;]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let's see how it goes.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.17.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/"/>
     <id>http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/</id>
     <published>2018-05-06T12:54:00+02:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -49,7 +118,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
     <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
     <published>2018-03-17T15:14:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -83,7 +152,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
     <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
     <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -127,7 +196,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -165,7 +234,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -191,7 +260,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -229,7 +298,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
     <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
     <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -253,7 +322,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
     <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
     <published>2017-12-11T10:29:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -292,7 +361,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/"/>
     <id>http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/</id>
     <published>2017-11-05T16:00:00+01:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -324,7 +393,7 @@ Bye.
     <link rel="alternate" href="http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/"/>
     <id>http://hovancik.net/blog/2017/09/10/stretchly-0-11-0-released/</id>
     <published>2017-09-10T10:44:00+02:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
+    <updated>2018-06-11T15:02:36+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -336,41 +405,6 @@ Bye.
 &lt;ul&gt;
   &lt;li&gt;option to not show break ideas&lt;/li&gt;
   &lt;li&gt;option to show notification 30 seconds before break starts&lt;/li&gt;
-&lt;/ul&gt;
-
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.10.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/"/>
-    <id>http://hovancik.net/blog/2017/08/23/stretchly-0-10-0-released/</id>
-    <published>2017-08-23T18:55:00+02:00</published>
-    <updated>2018-06-08T10:57:53+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.10.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.10.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;code&gt;Ctrl/Cmd + d&lt;/code&gt; shortcut in About window to show debug information&lt;/li&gt;
-  &lt;li&gt;monitoring suspend/resume (alfa, electron has bugs)&lt;/li&gt;
-  &lt;li&gt;link to my.stretchly.net in menu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;break is not skippable via shortcut in strict mode&lt;/li&gt;
-  &lt;li&gt;macOS tooltip works without dock icon (after packaging)&lt;/li&gt;
-  &lt;li&gt;close break windows on &lt;code&gt;Reset breaks&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;rewrite break management using Events&lt;/li&gt;
-  &lt;li&gt;get active settings when changing Settings window pages&lt;/li&gt;
 &lt;/ul&gt;
 
 </content>
