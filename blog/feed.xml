@@ -5,16 +5,73 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2018-06-29T15:43:00+02:00</updated>
+  <updated>2018-07-28T16:28:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Revamp of DiscoverBSD.com</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/"/>
+    <id>http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/</id>
+    <published>2018-07-28T16:28:00+02:00</published>
+    <updated>2018-07-28T21:45:07+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;It's been a long time since 2013, when I first started blogging at DiscoverBSD.com, motivation being to learn more about BSD family of operating systems.&lt;/p&gt;
+
+&lt;p&gt;Years has passed and I haven't had a time to keep doing it, so recently I have decided that it's time to do something about it.&lt;/p&gt;
+
+&lt;h2 id="welcome-to-the-new-discoverbsd"&gt;Welcome to the new DiscoverBSD&lt;/h2&gt;
+
+&lt;p&gt;Let's keep this short and sweet, so here is what's changing:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;blog that was at &lt;a href="https://discoverbsd.com"&gt;https://discoverbsd.com&lt;/a&gt; is moving to &lt;a href="https://discoverbsd.blogspot.com"&gt;https://discoverbsd.blogspot.com&lt;/a&gt; (was not able to make blog.discoverbsd.com with blogger)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://discoverbsd.com"&gt;https://discoverbsd.com&lt;/a&gt; is becoming &lt;em&gt;The BSD community linklog&lt;/em&gt;, the new app that I built&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://twitter.com/_DiscoverBSD"&gt;Twitter&lt;/a&gt; posts will be tweeted automatically by new app&lt;/li&gt;
+  &lt;li&gt;newsletter that was associated with old blog is paused&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="what-does-it-mean-non-required-reading"&gt;What does it mean? (Non-required reading)&lt;/h3&gt;
+
+&lt;p&gt;First of all, there will be bunch of new dead-links over internet (old DiscoverBSD links). Content of posts will still be available on new blog location, and 404 page of new DiscoverBSD will have mention of it.&lt;/p&gt;
+
+&lt;p&gt;Secondly, let's go check the new &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt; now. It is pretty much self-explanatory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My hope is that new DiscoverBSD will become place where people come to look for interesting BSD-related articles.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here is how it works:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;anyone can authenticate via Twitter and add link to the interesting article, tutorial, whatever&lt;/li&gt;
+  &lt;li&gt;admin will check the link and can approve or deny it&lt;/li&gt;
+  &lt;li&gt;approved article will appear on page and will be automatically tweeted&lt;/li&gt;
+  &lt;li&gt;we will all be happy to find interesting content&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The application itself is open-source and hosted on &lt;a href="https://github.com/DiscoverBSD/DiscoverBSD"&gt;Github&lt;/a&gt;. In the beginning, I will be administrating the content by myself, so it might take few hours until the content is approved.&lt;/p&gt;
+
+&lt;h3 id="you-can-help"&gt;You can help&lt;/h3&gt;
+
+&lt;p&gt;I am looking for someone who can help me with TOS and Privacy Policy. I've created some, but I am not a lawyer.&lt;/p&gt;
+
+&lt;p&gt;Also help with creating logo would be much appreciated.&lt;/p&gt;
+
+&lt;p&gt;You can become a patron on &lt;a href="https://patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and support my efforts.&lt;/p&gt;
+
+&lt;p&gt;I am also looking for hosting company that can host Ruby on Rails app and have BSD hosting, in exchange for a bit of an ad on DiscoverBSD. Ask your BSD-hosting provider to help.&lt;/p&gt;
+
+&lt;p&gt;And the most of all, &lt;strong&gt;please submit awesome BSD content&lt;/strong&gt; that you have found!&lt;/p&gt;
+
+&lt;p&gt;I'll see you there …&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Have you read stretchly newsletter, yet?</title>
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/"/>
     <id>http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/</id>
     <published>2018-06-29T15:43:00+02:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -85,7 +142,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/"/>
     <id>http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/</id>
     <published>2018-06-08T11:01:00+02:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -154,7 +211,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/"/>
     <id>http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/</id>
     <published>2018-05-06T12:54:00+02:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -189,7 +246,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
     <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
     <published>2018-03-17T15:14:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -223,7 +280,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
     <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
     <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -267,7 +324,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -305,7 +362,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -331,7 +388,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -369,7 +426,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
     <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
     <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -393,7 +450,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
     <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
     <published>2017-12-11T10:29:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
+    <updated>2018-07-28T21:45:07+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -425,38 +482,6 @@ Bye.
 &lt;/ul&gt;
 
 &lt;p&gt;Anyway… I might do it…&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.12.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/"/>
-    <id>http://hovancik.net/blog/2017/11/05/stretchly-0-12-0-released/</id>
-    <published>2017-11-05T16:00:00+01:00</published>
-    <updated>2018-06-29T15:46:47+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.12.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.12.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;error with second instance on Windows&lt;/li&gt;
-  &lt;li&gt;breaks wont resume with indefinite pause after system resume&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;monitoring of system idle time for natural breaks (when user leaves and after return idle time is greater then break duration, &lt;em&gt;stretchly&lt;/em&gt; will reset breaks)&lt;/li&gt;
-  &lt;li&gt;menu link to Patreon&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;microbreak notifications are 10 seconds before and can be disabled&lt;/li&gt;
-&lt;/ul&gt;
-
 </content>
   </entry>
 </feed>
