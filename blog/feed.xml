@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/"/>
     <id>http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/</id>
     <published>2018-07-28T16:28:00+02:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -71,7 +71,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/"/>
     <id>http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/</id>
     <published>2018-06-29T15:43:00+02:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -142,7 +142,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/"/>
     <id>http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/</id>
     <published>2018-06-08T11:01:00+02:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -211,7 +211,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/"/>
     <id>http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/</id>
     <published>2018-05-06T12:54:00+02:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -246,7 +246,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
     <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
     <published>2018-03-17T15:14:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -280,7 +280,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
     <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
     <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -324,7 +324,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -362,7 +362,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -388,7 +388,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -426,7 +426,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
     <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
     <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -450,7 +450,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/"/>
     <id>http://hovancik.net/blog/2017/12/11/shocking-size-of-electron-apps/</id>
     <published>2017-12-11T10:29:00+01:00</published>
-    <updated>2018-07-28T21:45:07+02:00</updated>
+    <updated>2018-10-08T17:15:37+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
