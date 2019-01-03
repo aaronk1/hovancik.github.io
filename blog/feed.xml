@@ -5,16 +5,32 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2018-10-21T13:41:00+02:00</updated>
+  <updated>2019-01-03T17:13:00+01:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>DiscoverBSD on Mastodon</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/"/>
+    <id>http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/</id>
+    <published>2019-01-03T17:13:00+01:00</published>
+    <updated>2019-01-03T17:51:57+01:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;I'm really happy to announce that &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt; can now be found on Mastodon.&lt;/p&gt;
+
+&lt;p&gt;To be more precise, on &lt;a href="https://bsd.network/"&gt;bsd.network&lt;/a&gt; instance as &lt;a href="https://bsd.network/@discoverbsd"&gt;@discoverbsd&lt;/a&gt; or &lt;a href="https://bsd.network/@discoverbsd"&gt;@discoverbsd@bsd.network&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hope to talk to you there, all articles will be posted there the same as on &lt;a href="https://twitter.com/_DiscoverBSD"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.18.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/"/>
     <id>http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/</id>
     <published>2018-10-21T13:41:00+02:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -58,7 +74,7 @@ of system sleep&lt;/li&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/"/>
     <id>http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/</id>
     <published>2018-07-28T16:28:00+02:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -115,7 +131,7 @@ of system sleep&lt;/li&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/"/>
     <id>http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/</id>
     <published>2018-06-29T15:43:00+02:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -186,7 +202,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/"/>
     <id>http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/</id>
     <published>2018-06-08T11:01:00+02:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -255,7 +271,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/"/>
     <id>http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/</id>
     <published>2018-05-06T12:54:00+02:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -290,7 +306,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
     <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
     <published>2018-03-17T15:14:00+01:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -324,7 +340,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
     <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
     <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -368,7 +384,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/"/>
     <id>http://hovancik.net/blog/2018/02/20/stretchly-0-15-0-released/</id>
     <published>2018-02-20T14:22:00+01:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -406,7 +422,7 @@ Heroku
     <link rel="alternate" href="http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/"/>
     <id>http://hovancik.net/blog/2018/02/02/stretchly-accepted-to-participate-in-rgsoc-2018/</id>
     <published>2018-02-02T10:01:00+01:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -432,7 +448,7 @@ in RGSoC 2018.&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/"/>
     <id>http://hovancik.net/blog/2018/01/07/stretchly-0-14-0-released/</id>
     <published>2018-01-07T10:46:00+01:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
+    <updated>2019-01-03T17:51:57+01:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -463,30 +479,6 @@ in RGSoC 2018.&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Thanks to everyone for translations! More are coming!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.13.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/"/>
-    <id>http://hovancik.net/blog/2017/12/20/stretchly-0-13-0-released/</id>
-    <published>2017-12-20T10:46:00+01:00</published>
-    <updated>2018-10-21T13:55:25+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.13.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://github.com/hovancik/stretchly/releases/tag/v0.13.0"&gt;github&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;icons for app windows&lt;/li&gt;
-  &lt;li&gt;possibility to have interface translated&lt;/li&gt;
-  &lt;li&gt;Slovak translations for interface&lt;/li&gt;
-  &lt;li&gt;French translations for interface&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks to @laem for french translations!&lt;/p&gt;
 </content>
   </entry>
 </feed>
