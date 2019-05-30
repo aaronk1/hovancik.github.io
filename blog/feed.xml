@@ -5,16 +5,123 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2019-04-20T12:34:00+02:00</updated>
+  <updated>2019-05-30T12:54:00+02:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>You can specify chromeDriver's user data directory for electron app's tests</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
+    <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
+    <published>2019-05-30T12:54:00+02:00</published>
+    <updated>2019-05-30T14:09:25+02:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;When upgrading &lt;a href="https://hovancik.net/stretchly"&gt;stretchly&lt;/a&gt; to the version 5 of the &lt;a href="https://electronjs.org/"&gt;electron&lt;/a&gt;, I found myself fighting with failing tests testing the start of the app with specific settings. (Settings are saved as a file on disk, usually in user's data directory, and loaded on app's start.).&lt;/p&gt;
+
+&lt;h2 id="electron-v2"&gt;Electron v2&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="https://railsgirlssummerofcode.org/"&gt;RGSoC&lt;/a&gt; students working on stretchly that time, wrote this code for the tests:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;let Application = require('spectron').Application
+let electronPath = require('electron')
+const AppSettings = require('../app/utils/settings')
+
+async function modifySettings (key, value) {
+  let app
+
+  try {
+    app = new Application({
+      path: electronPath,
+      args: [
+        `${__dirname}/../app`
+      ]
+    })
+
+    await app.start()
+  } catch (err) {
+    console.log('error starting app:', err)
+    throw err
+  }
+
+  try {
+    app.client.addCommand('getUserDataPath', function () {
+      return this.execute(function () {
+        // spectron does not have the ability to "get path", so we
+        // instruct spectron to get the contents of the electron module
+        // and get the location of the settings file directory
+        // (https://github.com/electron/spectron/issues/16)
+        return require('electron').remote.app.getPath('userData')
+      })
+    })
+  } catch (err) {
+    console.log('error stubbing getUserDataPath command:', err)
+    throw err
+  }
+
+  try {
+    const path = await app.client.getUserDataPath()
+    const settingsFile = `${path.value}/config.json`
+    const settings = new AppSettings(settingsFile)
+    settings.set(key, value)
+  } catch (err) {
+    console.log('error updating settings:', err)
+    throw err
+  }
+
+  try {
+    await app.stop()
+  } catch (err) {
+    console.log('error stopping application:', err)
+    throw err
+  }
+}
+
+module.exports = {
+  modifySettings
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What it does is running the app and then setting the settings we want. For example specific key/value before each test:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;beforeEach(function () {
+  return modifySettings('isFirstRun', false)
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This was working fine (as I found out recently), because each test was running from the same location (or better said, the settings file was always in the same location).&lt;/p&gt;
+
+&lt;h2 id="electron-v5"&gt;Electron v5&lt;/h2&gt;
+
+&lt;p&gt;But this not what was happening in electron 5. Each start of the app had different user data path, thus when &lt;code&gt;modifySettings&lt;/code&gt; set some value and I run the test, the path was different already. (As each was different start of the app.)&lt;/p&gt;
+
+&lt;p&gt;Fortunately, you can specify the location of user data directory, when creating new Application like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;new Application({
+  path: electronPath,
+  args: [
+    `${__dirname}/../app`
+  ],
+  chromeDriverArgs: [
+    `--user-data-dir=${__dirname}/stretchly-test-tmp`
+  ]
+})
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And that's exactly what I did.&lt;/p&gt;
+
+&lt;p&gt;When creating Application in &lt;code&gt;modifySettings&lt;/code&gt; helper and inside of the tests, the same &lt;code&gt;user-data-dir&lt;/code&gt; is specified, thus making tests pass again.&lt;/p&gt;
+
+&lt;p&gt;I guess it's not the best idea, as running each test from different directory makes sense, but for this use-case I'm fine with it.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Your stretchly is here (for some time)</title>
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T12:34:00+02:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -38,7 +145,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
     <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
     <published>2019-02-17T10:28:00+01:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -75,7 +182,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/"/>
     <id>http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/</id>
     <published>2019-02-10T17:42:00+01:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -117,7 +224,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/"/>
     <id>http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/</id>
     <published>2019-01-03T17:13:00+01:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -133,7 +240,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/"/>
     <id>http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/</id>
     <published>2018-10-21T13:41:00+02:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -177,7 +284,7 @@ of system sleep&lt;/li&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/"/>
     <id>http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/</id>
     <published>2018-07-28T16:28:00+02:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -234,7 +341,7 @@ of system sleep&lt;/li&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/"/>
     <id>http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/</id>
     <published>2018-06-29T15:43:00+02:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -305,7 +412,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/"/>
     <id>http://hovancik.net/blog/2018/06/08/i-m-burning-out-i-figure/</id>
     <published>2018-06-08T11:01:00+02:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -374,7 +481,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/"/>
     <id>http://hovancik.net/blog/2018/05/06/stretchly-0-17-0-released/</id>
     <published>2018-05-06T12:54:00+02:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -409,7 +516,7 @@ Clicks per unique opens 15.4%&lt;/p&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/"/>
     <id>http://hovancik.net/blog/2018/03/17/stretchly-0-16-0-released/</id>
     <published>2018-03-17T15:14:00+01:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
+    <updated>2019-05-30T14:09:25+02:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -436,50 +543,6 @@ Clicks per unique opens 15.4%&lt;/p&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Thanks to everyone for support and contributions!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Updating certificates for Heroku with Cloudflare</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/"/>
-    <id>http://hovancik.net/blog/2018/03/01/updating-certificates-for-heroku-with-cloudflare/</id>
-    <published>2018-03-01T11:27:00+01:00</published>
-    <updated>2019-04-20T15:19:32+02:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Do you have a app on Heroku, DNS on Cloudflare and your SSL certificate is automatically managed by Heroku?&lt;/p&gt;
-
-&lt;p&gt;I do. And yesterday I received email like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Hi,
-
-Automated Certificate Management
-has failed for the following domains:
-
-Domain 	              Reason
-domain.sk 	
-www.domain.sk 	
-
-You should be able to find specific information
-to correct the above noted errors at:
-https://devcenter.heroku.com/articles/automated-certificate-management#troubleshooting
-
-Happy coding,
-
-Heroku
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Yep, no reason, obviously.&lt;/p&gt;
-
-&lt;p&gt;Following the link gave me something useful (as my DNS records were fine):&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;ACM is not available if your app is behind a CDN such as Cloudflare or Fastly.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;So I check my DNS again and I see that I use 'DNS and HTTP proxy (CDN)'.&lt;/p&gt;
-
-&lt;p&gt;Setting it do 'DNS only' and running &lt;code&gt;heroku certs:auto:refresh --app=myapp&lt;/code&gt; did the trick.&lt;/p&gt;
-
-&lt;p&gt;My certificate is OK and I can set 'DNS and HTTP proxy (CDN)' again.&lt;/p&gt;
 </content>
   </entry>
 </feed>
