@@ -5,16 +5,36 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2019-10-13T09:49:00+00:00</updated>
+  <updated>2019-10-15T15:15:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Some of the joys of open-source development</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
+    <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
+    <published>2019-10-15T15:15:00+00:00</published>
+    <updated>2019-10-15T15:44:18+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h3 id="some-of-the-joys-of-open-source-development"&gt;Some of the joys of open-source development&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;someone &lt;a href="https://github.com/Homebrew/homebrew-cask/pull/70736"&gt;updates&lt;/a&gt; brew cask after new release so you don't have to&lt;/li&gt;
+  &lt;li&gt;someone says &lt;a href="https://github.com/hovancik/stretchly/issues/393#issuecomment-541739614"&gt;Thanks!&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;someone is willing to &lt;a href="https://github.com/hovancik/stretchly/issues/421#issuecomment-511600463"&gt;help&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;someone says your app is &lt;a href="https://twitter.com/HarshadOak/status/1097038328321388544"&gt;changing&lt;/a&gt; their life&lt;/li&gt;
+  &lt;li&gt;someone sends some money your way ;]&lt;/li&gt;
+  &lt;li&gt;someone &lt;a href="https://github.com/hovancik/stretchly/pull/485"&gt;updates&lt;/a&gt; the translations&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>stretchly 0.21.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -61,7 +81,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -92,7 +112,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -133,7 +153,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
     <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
     <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -240,7 +260,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T10:34:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -264,7 +284,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
     <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
     <published>2019-02-17T09:28:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -301,7 +321,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/"/>
     <id>http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/</id>
     <published>2019-02-10T16:42:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -343,7 +363,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/"/>
     <id>http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/</id>
     <published>2019-01-03T16:13:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -359,7 +379,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/"/>
     <id>http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/</id>
     <published>2018-10-21T11:41:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -403,7 +423,7 @@ of system sleep&lt;/li&gt;
     <link rel="alternate" href="http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/"/>
     <id>http://hovancik.net/blog/2018/07/28/revamp-of-discoverbsd-com/</id>
     <published>2018-07-28T14:28:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
+    <updated>2019-10-15T15:44:18+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -453,77 +473,6 @@ of system sleep&lt;/li&gt;
 &lt;p&gt;And the most of all, &lt;strong&gt;please submit awesome BSD content&lt;/strong&gt; that you have found!&lt;/p&gt;
 
 &lt;p&gt;I'll see you there …&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Have you read stretchly newsletter, yet?</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/"/>
-    <id>http://hovancik.net/blog/2018/06/29/have-you-read-stretchly-newsletter-yet/</id>
-    <published>2018-06-29T13:43:00+00:00</published>
-    <updated>2019-10-13T14:59:52+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Last Sunday evening I sent out first &lt;a href="https://us11.campaign-archive.com/?u=7ce75bb5ad016b05238a9a095&amp;amp;id=7361dd6c9f"&gt;stretchly newsletter&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Or better said: &lt;em&gt;my stretchly&lt;/em&gt; newsletter, where &lt;em&gt;my stretchly&lt;/em&gt; is that &lt;em&gt;Your stretchly&lt;/em&gt; link in &lt;em&gt;stretchly&lt;/em&gt; app menu.&lt;/p&gt;
-
-&lt;p&gt;Confused yet?&lt;/p&gt;
-
-&lt;h2 id="mystretchlynet"&gt;my.stretchly.net&lt;/h2&gt;
-
-&lt;p&gt;Yes, that very confusing link links to &lt;a href="https://my.stretchly.net"&gt;https://my.stretchly.net&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The site only claims that &lt;strong&gt;Your stretchly is coming&lt;/strong&gt; and that you can subscribe to be let known when it's out.&lt;/p&gt;
-
-&lt;p&gt;So what is that about?&lt;/p&gt;
-
-&lt;p&gt;Well, &lt;a href="https://my.stretchly.net/"&gt;subscribe&lt;/a&gt;, I plan to write about it in next newsletter.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;p&gt;.&lt;br /&gt;
-.&lt;br /&gt;
-.&lt;/p&gt;
-
-&lt;p&gt;.&lt;br /&gt;
-.&lt;/p&gt;
-
-&lt;p&gt;.&lt;/p&gt;
-
-&lt;h2 id="or-read-on-here"&gt;(Or read on here.)&lt;/h2&gt;
-
-&lt;p&gt;I wont give the same info here as I plan to give in newsletter, but basically:&lt;/p&gt;
-
-&lt;p&gt;I've been testing whether people would sign up for news about some &lt;em&gt;probably-enhanced-version-of-stretchly&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;My plans then were rather unspecific and I do not remember them, but I guess that was the idea, right?&lt;/p&gt;
-
-&lt;p&gt;To see if people are interested and then do something about it. The idea would be in my head, slowly getting more shape, brain doing it's unconsciousness things.&lt;/p&gt;
-
-&lt;h2 id="interest"&gt;Interest&lt;/h2&gt;
-
-&lt;p&gt;Some time ago, Mailchimp started sending emails with changes in my audience and I noticed that I have over 200 people in stretchly list, growing about +8 weekly.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;I should do something about it&lt;/em&gt;, I figured.&lt;/p&gt;
-
-&lt;p&gt;So here I am, doing something about it.&lt;/p&gt;
-
-&lt;p&gt;All I can say, now, that I have a pretty solid idea of what &lt;em&gt;my stretchly&lt;/em&gt; should be and how I want to do it. But that's for later ;]&lt;/p&gt;
-
-&lt;h3 id="stats"&gt;Stats&lt;/h3&gt;
-&lt;p&gt;Btw, interested in first newsletter stats? (As of publishing time)&lt;/p&gt;
-
-&lt;p&gt;175 Opened&lt;br /&gt;
-Total opens 243&lt;/p&gt;
-
-&lt;p&gt;27 Clicked&lt;br /&gt;
-Total clicks 29&lt;br /&gt;
-Clicks per unique opens 15.4%&lt;/p&gt;
-
-&lt;p&gt;14 Unsubscribed&lt;/p&gt;
-
-&lt;p&gt;1 person replied&lt;/p&gt;
 </content>
   </entry>
 </feed>
