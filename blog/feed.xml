@@ -5,16 +5,64 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2019-10-19T10:16:00+00:00</updated>
+  <updated>2019-12-31T10:26:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>DiscoverBSD and BSDSec 2019 top articles</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
+    <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
+    <published>2019-12-31T10:26:00+00:00</published>
+    <updated>2019-12-31T11:01:37+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;With the 2020 upon us, let's look at the most visited articles on the &lt;a href="https://discovebsd.com"&gt;DiscoverBSD&lt;/a&gt; and &lt;a href="https://bsdsec.net"&gt;BSDSec&lt;/a&gt; websites. Date of submission doesn't matter, we are only looking at number of visits (so some of the articles might be from 2018 or earlier…).&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone who submitted to DiscoverBSD and to all the good people working on BSD security teams!&lt;/p&gt;
+
+&lt;h2 id="top-10-discoverbsd"&gt;Top 10 DiscoverBSD&lt;/h2&gt;
+
+&lt;p&gt;My subjective feeling is that the most of news submitted were FreeBSD related, but it seems that people are the most interested in OpenBSD related stuff.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href="https://www.tumfatig.net/20190208/customizing-openbsd-xenodm/"&gt;Customizing OpenBSD xenodm&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://h3artbl33d.nl/blog/nextcloud-on-openbsd"&gt;NextCloud on OpenBSD&lt;/a&gt; (offline?)&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://xigmanas.com/forums/viewtopic.php?f=4&amp;amp;t=13790/&amp;amp;utm_source=discoverbsd"&gt;NAS4Free is renamed into XigmaNAS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.h-i-r.net/2018/12/openbsd-vmm-hypervisor-part-4-running.html"&gt;OpenBSD VMM Hypervisor Part 4: Running Ubuntu (and possibly other distros)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://vermaden.wordpress.com/2018/11/20/freebsd-desktop-part-2-1-install-freebsd-12/"&gt;FreeBSD Desktop – Part 2.1 – Install FreeBSD 12&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.netgate.com/blog/pfsense-2-4-4-release-p2-now-available.html"&gt;pfSense 2.4.4-RELEASE-p2 now available&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.tumfatig.net/20190131/customized-resolution-for-openbsd-in-virtualbox/"&gt;Customized resolution for OpenBSD in VirtualBox&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.openbsd.org/65.html"&gt;OpenBSD 6.5 WIP notes are online&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.secbsd.org/"&gt;SecBSD: an UNIX-like OS for Hackers&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://www.tumfatig.net/20190215/an-openbsd-desktop-using-windowmaker/"&gt;An OpenBSD desktop using WindowMaker&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id="top-10-bsdsec"&gt;Top 10 BSDSec&lt;/h2&gt;
+
+&lt;p&gt;Similar to the DiscoverBSD's top 10, we can see that readers are mostly interested in OpenBSD stuff, with exception of FreeBSD Status Reports.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbsd-6-5-released-apr-24-2019"&gt;OpenBSD 6.5 released – Apr 24 2019&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-first-quarter-2019"&gt;FreeBSD Quarterly Status Report - First Quarter 2019&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-fourth-quarter-2018"&gt;FreeBSD Quarterly Status Report - Fourth Quarter 2018&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/libressl-3-0-0-released"&gt;LibreSSL 3.0.0 Released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-errata-notice-freebsd-en-19-18-tzdata"&gt;FreeBSD Errata Notice FreeBSD-EN-19:18.tzdata&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbsd-6-4-released-oct-18-2018"&gt;OpenBSD 6.4 released - Oct 18, 2018&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbsd-6-6-release-oct-17-2019"&gt;OpenBSD 6.6 release, Oct 17, 2019&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbgpd-6-5p0-released"&gt;OpenBGPD 6.5p0 released&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-fourth-quarter-2015"&gt;FreeBSD Quarterly Status Report - Fourth Quarter 2015&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-second-quarter-2019"&gt;FreeBSD Quarterly Status Report - Second Quarter 2019&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</content>
+  </entry>
   <entry>
     <title>The future of BSDSec</title>
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -34,7 +82,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -54,7 +102,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -101,7 +149,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -132,7 +180,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -173,7 +221,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
     <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
     <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -280,7 +328,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T10:34:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -304,7 +352,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
     <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
     <published>2019-02-17T09:28:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -341,7 +389,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/"/>
     <id>http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/</id>
     <published>2019-02-10T16:42:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -383,7 +431,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/"/>
     <id>http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/</id>
     <published>2019-01-03T16:13:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
+    <updated>2019-12-31T11:01:37+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -392,50 +440,6 @@ module.exports = {
 &lt;p&gt;To be more precise, on &lt;a href="https://bsd.network/"&gt;bsd.network&lt;/a&gt; instance as &lt;a href="https://bsd.network/@discoverbsd"&gt;@discoverbsd&lt;/a&gt; or &lt;a href="https://bsd.network/@discoverbsd"&gt;@discoverbsd@bsd.network&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Hope to talk to you there, all articles will be posted there the same as on &lt;a href="https://twitter.com/_DiscoverBSD"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.18.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/"/>
-    <id>http://hovancik.net/blog/2018/10/21/stretchly-0-18-0-released/</id>
-    <published>2018-10-21T11:41:00+00:00</published>
-    <updated>2019-10-19T12:36:15+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.18.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://hovancik.net/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Italian translations for interface&lt;/li&gt;
-  &lt;li&gt;Dutch translations for interface&lt;/li&gt;
-  &lt;li&gt;Welcome and Tutorial windows on first run and in About window&lt;/li&gt;
-  &lt;li&gt;tray menu displays the time and type of next break&lt;/li&gt;
-  &lt;li&gt;Do Not Disturb functionality for Mac &amp;amp; Windows (breaks wont happen while in DND mode)&lt;/li&gt;
-  &lt;li&gt;ability can change the default monochrome tray icon to colorful&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;User pause will no longer be removed upon suspend/resume&lt;/li&gt;
-  &lt;li&gt;User pause time will be corrected upon suspend/resume for the duration&lt;br /&gt;
-of system sleep&lt;/li&gt;
-  &lt;li&gt;better font visibility across platforms&lt;/li&gt;
-  &lt;li&gt;blocking of all workspaces on macOS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Czech translations updated&lt;/li&gt;
-  &lt;li&gt;Slovak translations updated&lt;/li&gt;
-  &lt;li&gt;default tray icon is now monochrome&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions! A special thanks goes to my team from &lt;a href="https://railsgirlssummerofcode.org/blog/2018-10-04-hurdles-of-a-beginning-developer"&gt;Rails Girls Summer of Code&lt;/a&gt;!&lt;/p&gt;
 </content>
   </entry>
 </feed>
