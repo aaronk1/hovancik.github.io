@@ -14,11 +14,11 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
-    <content type="html">&lt;p&gt;With the 2020 upon us, let's look at the most visited articles on the &lt;a href="https://discovebsd.com"&gt;DiscoverBSD&lt;/a&gt; and &lt;a href="https://bsdsec.net"&gt;BSDSec&lt;/a&gt; websites. Date of submission doesn't matter, we are only looking at number of visits (so some of the articles might be from 2018 or earlier…).&lt;/p&gt;
+    <content type="html">&lt;p&gt;With the 2020 upon us, let's look at the most visited articles on the &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt; and &lt;a href="https://bsdsec.net"&gt;BSDSec&lt;/a&gt; websites. Date of submission doesn't matter, we are only looking at number of visits (so some of the articles might be from 2018 or earlier…).&lt;/p&gt;
 
 &lt;p&gt;Thanks to everyone who submitted to DiscoverBSD and to all the good people working on BSD security teams!&lt;/p&gt;
 
@@ -62,7 +62,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -82,7 +82,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -102,7 +102,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -149,7 +149,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -180,7 +180,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -221,7 +221,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
     <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
     <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -328,7 +328,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T10:34:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -352,7 +352,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
     <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
     <published>2019-02-17T09:28:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -389,7 +389,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/"/>
     <id>http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/</id>
     <published>2019-02-10T16:42:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -431,7 +431,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/"/>
     <id>http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/</id>
     <published>2019-01-03T16:13:00+00:00</published>
-    <updated>2019-12-31T11:01:37+00:00</updated>
+    <updated>2020-01-01T13:40:40+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
