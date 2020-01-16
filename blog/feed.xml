@@ -5,16 +5,54 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2019-12-31T10:26:00+00:00</updated>
+  <updated>2020-01-16T08:00:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>stretchly 0.21.1 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
+    <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
+    <published>2020-01-16T08:00:00+00:00</published>
+    <updated>2020-01-16T11:16:47+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.21.1 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
+
+&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Italian translations updated&lt;/li&gt;
+  &lt;li&gt;break window is shown on all Workspaces in macOS&lt;/li&gt;
+  &lt;li&gt;Improved readability of English text&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;user can set volume for break sounds (set via Settings file or Contributor's settings)&lt;/li&gt;
+  &lt;li&gt;user can set time after which breaks are paused in Natural Break (set via Settings file or Contributor's settings)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;texts appearing on top of each other in Settings for Chinese&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If they are none critical problems with this release, I will start working on new &lt;em&gt;stretchly&lt;/em&gt; version that I consulted with designer, meaning: &lt;em&gt;stretchly&lt;/em&gt; will get UI/UX overhaul. It will probably become version 1.0.&lt;/p&gt;
+
+&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>DiscoverBSD and BSDSec 2019 top articles</title>
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -62,7 +100,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -82,7 +120,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -102,7 +140,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -149,7 +187,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -180,7 +218,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -221,7 +259,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
     <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
     <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -328,7 +366,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T10:34:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -352,7 +390,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
     <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
     <published>2019-02-17T09:28:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -389,7 +427,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/"/>
     <id>http://hovancik.net/blog/2019/02/10/stretchly-0-19-0-released/</id>
     <published>2019-02-10T16:42:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
+    <updated>2020-01-16T11:16:47+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -424,22 +462,6 @@ module.exports = {
 &lt;/ul&gt;
 
 &lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>DiscoverBSD on Mastodon</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/"/>
-    <id>http://hovancik.net/blog/2019/01/03/discoverbsd-on-mastodon/</id>
-    <published>2019-01-03T16:13:00+00:00</published>
-    <updated>2020-01-01T13:40:40+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;I'm really happy to announce that &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt; can now be found on Mastodon.&lt;/p&gt;
-
-&lt;p&gt;To be more precise, on &lt;a href="https://bsd.network/"&gt;bsd.network&lt;/a&gt; instance as &lt;a href="https://bsd.network/@discoverbsd"&gt;@discoverbsd&lt;/a&gt; or &lt;a href="https://bsd.network/@discoverbsd"&gt;@discoverbsd@bsd.network&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hope to talk to you there, all articles will be posted there the same as on &lt;a href="https://twitter.com/_DiscoverBSD"&gt;Twitter&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>
