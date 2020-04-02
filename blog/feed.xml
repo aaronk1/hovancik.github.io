@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -47,7 +47,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -85,7 +85,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -133,7 +133,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -153,7 +153,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -173,7 +173,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -220,7 +220,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -251,7 +251,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -292,7 +292,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
     <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
     <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -399,7 +399,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T10:34:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -423,7 +423,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
     <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
     <published>2019-02-17T09:28:00+00:00</published>
-    <updated>2020-04-02T10:09:48+00:00</updated>
+    <updated>2020-04-02T10:15:46+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
