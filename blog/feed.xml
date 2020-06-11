@@ -5,16 +5,112 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2020-01-22T08:00:00+00:00</updated>
+  <updated>2020-06-11T07:41:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Translating Stretchly</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
+    <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
+    <published>2020-06-11T07:41:00+00:00</published>
+    <updated>2020-06-11T09:35:11+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;h4 id="so-you-wanna-help-to-translate-stretchly-awesome"&gt;So you wanna help to translate Stretchly? Awesome!&lt;/h4&gt;
+
+&lt;p&gt;This guide assumes that you know your way around command line and a bit or two about NodeJS, git and Github.&lt;/p&gt;
+
+&lt;p&gt;But if you are willing to learn something, you might be just fine, I am adding some extra notes for you. I hang-out &lt;a href="https://gitter.im/stretchly/Lobby"&gt;here&lt;/a&gt; so that I can help you.&lt;/p&gt;
+
+&lt;h3 id="prerequisites"&gt;Prerequisites&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://github.com"&gt;Github&lt;/a&gt; account&lt;/li&gt;
+  &lt;li&gt;&lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="0-download-stretchly"&gt;0. Download Stretchly&lt;/h3&gt;
+&lt;p&gt;Go to &lt;a href="https://github.com/hovancik/stretchly"&gt;https://github.com/hovancik/stretchly&lt;/a&gt; and click on Fork button in top right.&lt;/p&gt;
+
+&lt;p&gt;This will create a copy of Stretchly code in your account. Then find &lt;code&gt;Clone or Download&lt;/code&gt; button in your copy and &lt;em&gt;copy&lt;/em&gt; the url.&lt;/p&gt;
+
+&lt;p&gt;Clone Stretchly code from command line (with git available) - using the url you copied a second ago:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git clone https://github.com/YOURNAME/stretchly.git&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;If you are translating current version, you're good. But if you are coming here from newsletter about translating for Stretchly 1.0, do this: (change the branch)&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;git checkout redesign&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Or possibly other branch, based on what are you trying to do :)&lt;/p&gt;
+
+&lt;h3 id="prerequisites-2"&gt;Prerequisites 2&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="https://nodejs.org/en/"&gt;Node.js&lt;/a&gt; installed (version from &lt;code&gt;package.json&lt;/code&gt; file in the code), similar to:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;"engines": {
+  "node": "12.8.1"
+},
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;If you are on Windows and installer is asking whether you wanna install extra stuff, say yes, you will save yourself some time :)&lt;/p&gt;
+
+&lt;h3 id="1-install-dependencies"&gt;1. Install dependencies&lt;/h3&gt;
+&lt;p&gt;Change to directory where Stretchly is located (the one that you just &lt;code&gt;cloned&lt;/code&gt; with git) and install deps:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;npm i&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id="2-try-running-stretchly"&gt;2. Try running Stretchly&lt;/h3&gt;
+
+&lt;p&gt;Now you should be able to start Stretchly from command line (don't forget to close running instance of Stretchly, if you have one):&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;npm run dev&lt;/code&gt; or &lt;code&gt;npm start&lt;/code&gt;&lt;/p&gt;
+
+&lt;h3 id="3-translate-"&gt;3. Translate :)&lt;/h3&gt;
+
+&lt;p&gt;Open the folder with code in your favorite text editor and you are good to go. Translations are located in folder &lt;code&gt;app/locales/&lt;/code&gt; and are named by their language code, ie &lt;code&gt;sk.json&lt;/code&gt; for Slovak.&lt;/p&gt;
+
+&lt;p&gt;Translations are in &lt;code&gt;json&lt;/code&gt; format and I've tried to divide them by their location in the UI of Stretchly.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;When you make update in translation file, you will need to close Stretchly and run it again (&lt;code&gt;npm run dev&lt;/code&gt;) to see new translation in Stretchly.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We do all this complicated stuff so that we can check that translations make sense :)&lt;/p&gt;
+
+&lt;h3 id="tips-and-tricks"&gt;Tips and tricks&lt;/h3&gt;
+&lt;h4 id="plurals"&gt;Plurals&lt;/h4&gt;
+
+&lt;p&gt;Each language handles plurals differently, thus you might see things such as &lt;code&gt;translation&lt;/code&gt;, &lt;code&gt;translation_plural&lt;/code&gt; and &lt;code&gt;translation_0&lt;/code&gt; or &lt;code&gt;translation_1&lt;/code&gt;. Go ahead to &lt;a href="https://jsfiddle.net/sm9wgLze"&gt;https://jsfiddle.net/sm9wgLze&lt;/a&gt;, input your language code and you will see examples to help you translate correctly.&lt;/p&gt;
+
+&lt;h4 id="contributor-preferences"&gt;Contributor Preferences&lt;/h4&gt;
+&lt;p&gt;If you wanna translate Contributor Preferences and you are not a Contributor, yet, open &lt;code&gt;main.js&lt;/code&gt; and change the line &lt;code&gt;isContributor: false&lt;/code&gt; to &lt;code&gt;isContributor: true&lt;/code&gt;. Restart the app and you will be able to open Contributor Preferences from &lt;code&gt;Love Stretchly&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h4 id="errors"&gt;Errors&lt;/h4&gt;
+&lt;p&gt;If your translation is not working, try checking if your formatting is fine, for example with &lt;a href="https://jsoneditoronline.org/"&gt;https://jsoneditoronline.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id="4-commit-and-pr"&gt;4. Commit and PR&lt;/h3&gt;
+
+&lt;p&gt;Once you're done with translations and everything looks fine, you can commit your code and create pull request.&lt;/p&gt;
+
+&lt;p&gt;If newbie, I would recommend using some GUI program, such as &lt;code&gt;Atom&lt;/code&gt; editor.&lt;/p&gt;
+
+&lt;p&gt;What you need to do:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;commit the translation file&lt;/li&gt;
+  &lt;li&gt;push commit to your Github repo&lt;/li&gt;
+  &lt;li&gt;create a PR in my repo to correct branch from Github&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Once your code is accepted, you will have my never-ending thanks, and a forever access to Contributor Preferences :)&lt;/strong&gt;&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Change the color of SVG image via CSS</title>
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -47,7 +143,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -85,7 +181,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -133,7 +229,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -153,7 +249,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -173,7 +269,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -220,7 +316,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -251,7 +347,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -292,7 +388,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
     <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
     <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -399,7 +495,7 @@ module.exports = {
     <link rel="alternate" href="http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/"/>
     <id>http://hovancik.net/blog/2019/04/20/your-stretchly-is-here-for-some-time/</id>
     <published>2019-04-20T10:34:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
+    <updated>2020-06-11T09:35:11+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -416,43 +512,6 @@ module.exports = {
 &lt;p&gt;Since initial announcement, I've also added authentication via Github, so anyone who contributed to &lt;em&gt;stretchly&lt;/em&gt; can use &lt;em&gt;Your stretchly&lt;/em&gt; as well.&lt;/p&gt;
 
 &lt;p&gt;Thanks for all of your support and I hope you will keep enjoying &lt;em&gt;stretchly&lt;/em&gt; and &lt;em&gt;Your stretchly&lt;/em&gt;!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.19.1 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/"/>
-    <id>http://hovancik.net/blog/2019/02/17/stretchly-0-19-1-released/</id>
-    <published>2019-02-17T09:28:00+00:00</published>
-    <updated>2020-06-04T14:20:15+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.19.1 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="https://hovancik.net/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;fullscreen mode on Windows&lt;/li&gt;
-  &lt;li&gt;ability to hide break ideas from break windows&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;more debug info (chrome, electron, nodejs versions)&lt;/li&gt;
-  &lt;li&gt;allow user to disable ability to postpone breaks&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Simplified Chinese translations updated&lt;/li&gt;
-  &lt;li&gt;Czech translations updated&lt;/li&gt;
-  &lt;li&gt;Slovak translations updated&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
 </content>
   </entry>
 </feed>
