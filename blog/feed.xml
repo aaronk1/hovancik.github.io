@@ -5,16 +5,86 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2020-06-14T18:44:00+00:00</updated>
+  <updated>2020-07-18T11:22:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Stretchly 1.0 is here!</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/"/>
+    <id>http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/</id>
+    <published>2020-07-18T11:22:00+00:00</published>
+    <updated>2020-07-19T18:32:02+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi everyone,&lt;/p&gt;
+
+&lt;p&gt;I am really happy to announce, that &lt;strong&gt;version 1.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;Stretchly&lt;/em&gt;&lt;/a&gt; is here!&lt;/strong&gt; You can download it from &lt;a href="/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/1.0.png" alt="Stretchly 1.0" /&gt;&lt;/p&gt;
+
+&lt;p&gt;Version 1.0 is big milestone for Stretchly, and getting there was huge learning experience. Thanks to everyone who contributed to Stretchly since it's birth in 2016! (Jul 10, 2016 is the date of &lt;a href="https://github.com/hovancik/stretchly/tree/1a4817679dc840716ae7694c1bbb1f357a571097"&gt;the first commit&lt;/a&gt;.) I am really happy that it has community of users and contributors.&lt;/p&gt;
+
+&lt;p&gt;Special thanks goes to &lt;a href="http://www.colinshanley.com/"&gt;Colin Shanley&lt;/a&gt; who designed the new logo and UI/UX for 1.0! He is awesome and you should hire him ;]&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So what does 1.0 mean?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;1.0 is a rework of original Stretchly mission: remind you to take breaks when working on your computer.&lt;/p&gt;
+
+&lt;p&gt;As Stretchly become bigger (in term of functionality and user-base), the issues with UI/UX become more visible and it also gained some technical debt. 1.0 is trying to remedy some of those. With help of &lt;a href="http://www.colinshanley.com/"&gt;professional designer&lt;/a&gt;, we now have better UI, UX, new awesome icons and also Dark mode. I hope you will find all aspects of Stretchly much more self-explanatory and easier to use.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/img/1.0.preferences.png" alt="Stretchly 1.0" /&gt;&lt;/p&gt;
+
+&lt;p&gt;A lot has also changed under the hood, some issues were fixed and new features added and we now also have more break ideas.&lt;/p&gt;
+
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;apk package format&lt;/li&gt;
+  &lt;li&gt;added Hungarian translation&lt;/li&gt;
+  &lt;li&gt;added ability to change the keyboard shortcuts for Skip/Postpone breaks via config.json&lt;/li&gt;
+  &lt;li&gt;show Paused icon when Breaks are paused in Natural breaks mode&lt;/li&gt;
+  &lt;li&gt;show Paused icon when Breaks are paused in Do Not Disturb mode&lt;/li&gt;
+  &lt;li&gt;Dark mode for interface&lt;/li&gt;
+  &lt;li&gt;new break ideas&lt;/li&gt;
+  &lt;li&gt;new Icon&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;changed app name from &lt;code&gt;stretchly&lt;/code&gt; to &lt;code&gt;Stretchly&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;this might change location of preferences file, so you might need to set up your preferences again or copy the file&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;don't hide dock icon on macOS&lt;/li&gt;
+  &lt;li&gt;updated some translations&lt;/li&gt;
+  &lt;li&gt;rework UI in all windows and Tray menu&lt;/li&gt;
+  &lt;li&gt;synchronized tray status messages (tooltip, menu)&lt;/li&gt;
+  &lt;li&gt;better format remaining time&lt;/li&gt;
+  &lt;li&gt;default icon to colorful&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;adds workaround for electron's Linux/Windows fullscreen issues&lt;/li&gt;
+  &lt;li&gt;notify of new version only if new version is higher then current&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="removed"&gt;Removed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;removed tutorial, now linking to Features webpage&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and &lt;a href="https://github.com/sponsors/hovancik"&gt;Github&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>SMS messages from Slovak/Czech government about COVID-19 (Feb-May 2020)</title>
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/"/>
     <id>http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/</id>
     <published>2020-06-14T18:44:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -95,7 +165,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
     <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
     <published>2020-06-11T07:41:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -191,7 +261,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -224,7 +294,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -262,7 +332,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -310,7 +380,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -330,7 +400,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -350,7 +420,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -397,7 +467,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -428,7 +498,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
     <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
     <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
+    <updated>2020-07-19T18:32:02+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -462,113 +532,6 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
 &lt;/ul&gt;
 
 &lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>You can specify chromeDriver's user data directory for electron app's tests</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/"/>
-    <id>http://hovancik.net/blog/2019/05/30/you-can-specify-chromedriver-s-user-data-directory-for-electron-app-s-tests/</id>
-    <published>2019-05-30T10:54:00+00:00</published>
-    <updated>2020-06-18T08:32:09+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;When upgrading &lt;a href="https://hovancik.net/stretchly"&gt;stretchly&lt;/a&gt; to the version 5 of the &lt;a href="https://electronjs.org/"&gt;electron&lt;/a&gt;, I found myself fighting with failing tests testing the start of the app with specific settings. (Settings are saved as a file on disk, usually in user's data directory, and loaded on app's start.).&lt;/p&gt;
-
-&lt;h2 id="electron-v2"&gt;Electron v2&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href="https://railsgirlssummerofcode.org/"&gt;RGSoC&lt;/a&gt; students working on stretchly that time, wrote this code for the tests:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;let Application = require('spectron').Application
-let electronPath = require('electron')
-const AppSettings = require('../app/utils/settings')
-
-async function modifySettings (key, value) {
-  let app
-
-  try {
-    app = new Application({
-      path: electronPath,
-      args: [
-        `${__dirname}/../app`
-      ]
-    })
-
-    await app.start()
-  } catch (err) {
-    console.log('error starting app:', err)
-    throw err
-  }
-
-  try {
-    app.client.addCommand('getUserDataPath', function () {
-      return this.execute(function () {
-        // spectron does not have the ability to "get path", so we
-        // instruct spectron to get the contents of the electron module
-        // and get the location of the settings file directory
-        // (https://github.com/electron/spectron/issues/16)
-        return require('electron').remote.app.getPath('userData')
-      })
-    })
-  } catch (err) {
-    console.log('error stubbing getUserDataPath command:', err)
-    throw err
-  }
-
-  try {
-    const path = await app.client.getUserDataPath()
-    const settingsFile = `${path.value}/config.json`
-    const settings = new AppSettings(settingsFile)
-    settings.set(key, value)
-  } catch (err) {
-    console.log('error updating settings:', err)
-    throw err
-  }
-
-  try {
-    await app.stop()
-  } catch (err) {
-    console.log('error stopping application:', err)
-    throw err
-  }
-}
-
-module.exports = {
-  modifySettings
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What it does is running the app and then setting the settings we want. For example specific key/value before each test:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;beforeEach(function () {
-  return modifySettings('isFirstRun', false)
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This was working fine (as I found out recently), because each test was running from the same location (or better said, the settings file was always in the same location).&lt;/p&gt;
-
-&lt;h2 id="electron-v5"&gt;Electron v5&lt;/h2&gt;
-
-&lt;p&gt;But this not what was happening in electron 5. Each start of the app had different user data path, thus when &lt;code&gt;modifySettings&lt;/code&gt; set some value and I run the test, the path was different already. (As each was different start of the app.)&lt;/p&gt;
-
-&lt;p&gt;Fortunately, you can specify the location of user data directory, when creating new Application like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;new Application({
-  path: electronPath,
-  args: [
-    `${__dirname}/../app`
-  ],
-  chromeDriverArgs: [
-    `--user-data-dir=${__dirname}/stretchly-test-tmp`
-  ]
-})
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And that's exactly what I did.&lt;/p&gt;
-
-&lt;p&gt;When creating Application in &lt;code&gt;modifySettings&lt;/code&gt; helper and inside of the tests, the same &lt;code&gt;user-data-dir&lt;/code&gt; is specified, thus making tests pass again.&lt;/p&gt;
-
-&lt;p&gt;I guess it's not the best idea, as running each test from different directory makes sense, but for this use-case I'm fine with it.&lt;/p&gt;
 </content>
   </entry>
 </feed>
