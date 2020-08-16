@@ -124,7 +124,7 @@
 
 <p>To make sure that all works as expected, it's always good idea to check that format of the preferences file is correct, ie. by using <a href="https://jsonformatter.curiousconcept.com/">jsonformatter</a>.</p>
 
-<p>Some of the extra settings are available in Contributor Preferences for <a href="#contributor-preferences">Contributors</a>. Those are marked by <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a> badge.</p>
+<p>Some of the extra settings are available in Contributor Preferences for <a href="#contributor-preferences">Contributors</a>. Those are marked by <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a> badge.</p>
 
 <p><strong>Note:</strong> Before 1.0, Mini Breaks and Long Breaks were called Microbreaks and Breaks, respectively. To keep the upgrade smooth they still use that name in preferences file and in code.</p>
 
@@ -133,7 +133,7 @@
 
 <p>Note that when a new <em>Stretchly</em> version with new break ideas is out, your custom ideas will not be overwritten.</p>
 
-<h4 id="editing-break-notification-interval-">Editing Break notification interval <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="editing-break-notification-interval-">Editing Break notification interval <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 
 <p>In the preferences file, change <code>breakNotificationInterval: 30000,</code> to whatever value you want. 30000 is 30 seconds. Same goes for Mini Breaks.</p>
 
@@ -146,28 +146,28 @@ E.g. if you live in Boston you would set:<br />
 <code>posLatitude: 42.3,</code><br />
 <code>posLongitude: 71</code></p>
 
-<h4 id="editing-postpone-functionality-">Editing postpone functionality <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="editing-postpone-functionality-">Editing postpone functionality <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>In the preferences file, you can edit <code>microbreakPostpone</code> and <code>breakPostpone</code> to enable or disable the ability to postpone breaks, <code>microbreakPostponeTime</code> and <code>breakPostponeTime</code> to change the postpone time in milliseconds, <code>microbreakPostponesLimit</code> and <code>breakPostponesLimit</code> to change the number of allowed postpones per break, and finally, <code>microbreakPostponableDurationPercent</code> and <code>breakPostponableDurationPercent</code> to change the percentage of the break during which the user can postpone it.</p>
 
-<h4 id="new-version-notification-">New version notification <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="new-version-notification-">New version notification <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>In the preferences file, set <code>notifyNewVersion: false,</code> to disable new version notification.</p>
 
-<h4 id="play-sound-at-the-start-of-the-break-">Play sound at the start of the Break <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="play-sound-at-the-start-of-the-break-">Play sound at the start of the Break <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>In the preferences file, set <code>microbreakStartSoundPlaying: true,</code> to start a Mini Break with a sound (The same sound will be played as at the end of the break). Same for <code>breakStartSoundPlaying</code>.</p>
 
-<h4 id="natural-breaks-inactivity-time-">Natural breaks inactivity time <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="natural-breaks-inactivity-time-">Natural breaks inactivity time <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>In the preferences file, set <code>naturalBreaksInactivityResetTime</code> to your preferred value (in milliseconds greater than than 20000ms). This is an idle time length, after which <em>Stretchly</em> timers will be cleared and will stay at 0 until the user resumes activity.</p>
 
-<h4 id="volume-for-break-sounds-">Volume for break sounds <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="volume-for-break-sounds-">Volume for break sounds <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>In the preferences file, set <code>volume</code> to your preferred value. Default value is <code>1</code>, which is 100% volume. Set it, for example, to <code>0.61</code> for 61% volume.</p>
 
 <h4 id="postponefinish-break-shortcut">Postpone/Finish Break Shortcut</h4>
 <p>In the preferences file, set <code>endBreakShortcut</code> to your preferred value. We do not validate this input, so please check <a href="https://www.electronjs.org/docs/api/accelerator">Electron's documentation</a> for available values for key and modifier.</p>
 
-<h4 id="appearance-">Appearance <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="appearance-">Appearance <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>In the preferences file, change <code>themeSource: 'system'</code> to either <code>'light'</code> or <code>'dark'</code> to always use the specified theme.</p>
 
-<h4 id="welcome-window-">Welcome window <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Prefereces-✔-success" alt="GitHub All Releases" /></a></h4>
+<h4 id="welcome-window-">Welcome window <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="GitHub All Releases" /></a></h4>
 <p>To show the Welcome window again on the next start, change <code>"isFirstRun"</code> to <code>true</code>.</p>
 
 <h2 id="contributor-preferences">Contributor Preferences</h2>
