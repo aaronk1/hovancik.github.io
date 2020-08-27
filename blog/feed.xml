@@ -5,16 +5,177 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2020-07-18T11:22:00+00:00</updated>
+  <updated>2020-08-27T17:18:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Working with firebase-tools from docker with docker-compose</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/"/>
+    <id>http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/</id>
+    <published>2020-08-27T17:18:00+00:00</published>
+    <updated>2020-08-27T18:19:21+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;&lt;code&gt;docker&lt;/code&gt; is kinda nice&lt;sup&gt;citation needed&lt;/sup&gt; and I like to use it with &lt;code&gt;docker-compose&lt;/code&gt;. So when I decided to learn how to deploy simple app to &lt;code&gt;Firebase&lt;/code&gt;, I wanted to do it with them, obviously.&lt;/p&gt;
+
+&lt;p&gt;What I wanted to do was:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;create &lt;code&gt;docker&lt;/code&gt; container&lt;/li&gt;
+  &lt;li&gt;init &lt;code&gt;Svelte&lt;/code&gt; app in it&lt;/li&gt;
+  &lt;li&gt;install &lt;code&gt;firebase-tools&lt;/code&gt; and deploy the app with them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I won't be talking about getting &lt;code&gt;Firebase&lt;/code&gt; account and all that jazz and I expect &lt;code&gt;docker&lt;/code&gt; and &lt;code&gt;docker-compose&lt;/code&gt; are all up and running.&lt;/p&gt;
+
+&lt;p&gt;Also, I am definitely not saying that this is the best way to do this, it's just something that I've tried and worked for me, so I wanna keep it for a future reference.&lt;/p&gt;
+
+&lt;h3 id="docker-container"&gt;Docker container&lt;/h3&gt;
+
+&lt;p&gt;Let's create a container first. We'll need a few files, but let's start with a empty folder, where we will put some files.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;$ mkdir rather-great-app
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And files:&lt;/p&gt;
+
+&lt;h4 id="dockerfile"&gt;Dockerfile&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM node:12.14.1
+WORKDIR /rather-great-app
+RUN npm i -g npm
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h4 id="docker-composeyml"&gt;docker-compose.yml&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;version: '3'
+services:
+  web:
+    build: .
+    volumes:
+      - .:/rather-great-app
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let's build it (and run this every time we make an update to the &lt;code&gt;docker&lt;/code&gt; stuff):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;$ docker-compose build
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="svelte-app"&gt;Svelte app&lt;/h3&gt;
+
+&lt;p&gt;If all went well, we are now ready to play. So let's init basic &lt;code&gt;Svelte&lt;/code&gt; app:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;$ docker-compose run --rm web npx degit sveltejs/template --force
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;We're using &lt;code&gt;force&lt;/code&gt; as we are not starting with empty destinantion, but that's fine. We can also install packages:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;$ docker-compose run --rm web npm i
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Let's update our docker stuff a bit more, so that we can start the app.&lt;/p&gt;
+
+&lt;h4 id="dockerfile-1"&gt;Dockerfile&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM node:12.14.1
+WORKDIR /rather-great-app
+COPY package.json package-lock.json ./
+RUN npm i -g npm
+RUN npm i
+COPY . .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id="docker-composeyml-1"&gt;docker-compose.yml&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;version: '3'
+services:
+  web:
+    build: .
+    command: npm run dev
+    volumes:
+      - .:/rather-great-app
+    ports:
+      - "5000:5000"    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id="packagejson"&gt;package.json&lt;/h4&gt;
+
+&lt;p&gt;We are in &lt;code&gt;docker&lt;/code&gt;, so we need to update how we run our &lt;code&gt;Svelte&lt;/code&gt; app (if we wanna access it outside of container). Update &lt;code&gt;start&lt;/code&gt; in &lt;code&gt;package.json&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-json"&gt;    "start": "sirv public --host"
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now we're good to go:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class="language-bash"&gt;$ docker-compose up
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In browser, on &lt;code&gt;http://localhost:5000/&lt;/code&gt; we now have our &lt;code&gt;Svelte&lt;/code&gt; Hello World app running and we can start working on deploy.&lt;/p&gt;
+
+&lt;h3 id="firebase-cli"&gt;Firebase CLI&lt;/h3&gt;
+
+&lt;p&gt;Let's make sure our container has the &lt;code&gt;firebase-tools&lt;/code&gt; installed.&lt;/p&gt;
+
+&lt;h4 id="dockerfile-2"&gt;Dockerfile&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM node:12.14.1
+WORKDIR /rather-great-app
+COPY package.json package-lock.json ./
+RUN npm i -g npm
+RUN npm i
+RUN npm install -g firebase-tools
+COPY . .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id="deploy"&gt;Deploy&lt;/h3&gt;
+
+&lt;p&gt;Here comes the fun part.&lt;/p&gt;
+
+&lt;p&gt;In short, when setting up &lt;code&gt;Firebase&lt;/code&gt;, you do &lt;code&gt;firebase login &amp;amp;&amp;amp; firebase init &amp;amp;&amp;amp; firebase deploy&lt;/code&gt;. Login takes you to a browser, which we don't have in our container, where you login and are redirected to localhost with specific port, so that &lt;code&gt;firebase-tools&lt;/code&gt; knows it's really you.&lt;/p&gt;
+
+&lt;p&gt;We make some changes to &lt;code&gt;docker&lt;/code&gt;, so that we can do all that browser thingy outside of container.&lt;/p&gt;
+
+&lt;h4 id="dockerfile-3"&gt;Dockerfile&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;FROM node:12.14.1
+WORKDIR /rather-great-app
+COPY package.json package-lock.json ./
+RUN npm i -g npm
+RUN npm i
+RUN npm install -g firebase-tools
+EXPOSE 9005
+COPY . .
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id="docker-composeyml-2"&gt;docker-compose.yml&lt;/h4&gt;
+
+&lt;pre&gt;&lt;code&gt;version: '3'
+services:
+  web:
+    build: .
+    command: npm run dev
+    volumes:
+      - .:/rather-great-app
+    ports:
+      - "5000:5000"
+      - "9005:9005"
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once this is done, we can &lt;code&gt;up&lt;/code&gt; the container, and try to log in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;docker-compose exec web firebase login
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you open the suggested link in browser and login, all should go well and &lt;code&gt;firebase-tools&lt;/code&gt; in your container should recognize you.&lt;/p&gt;
+
+&lt;p&gt;Now you can &lt;code&gt;exec&lt;/code&gt; &lt;code&gt;firebase init&lt;/code&gt; and &lt;code&gt;firebase deploy&lt;/code&gt; in similar fashion and access your app online :)&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Stretchly 1.0 is here!</title>
     <link rel="alternate" href="http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/"/>
     <id>http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/</id>
     <published>2020-07-18T11:22:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -84,7 +245,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/"/>
     <id>http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/</id>
     <published>2020-06-14T18:44:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -165,7 +326,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
     <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
     <published>2020-06-11T07:41:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -261,7 +422,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -294,7 +455,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -332,7 +493,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -380,7 +541,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -400,7 +561,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -420,7 +581,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
     <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
     <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -467,7 +628,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/"/>
     <id>http://hovancik.net/blog/2019/07/14/stretchly-0-20-1-released/</id>
     <published>2019-07-14T09:15:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
+    <updated>2020-08-27T18:19:21+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -488,47 +649,6 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
 &lt;ul&gt;
   &lt;li&gt;auto hide menu bar in app's windows&lt;/li&gt;
   &lt;li&gt;break window not always shown on top of other windows (for Windows OS)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.20.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/"/>
-    <id>http://hovancik.net/blog/2019/07/02/stretchly-0-20-0-released/</id>
-    <published>2019-07-02T16:57:00+00:00</published>
-    <updated>2020-08-16T07:38:45+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.20.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;workaround multiple screens and fullscreen (macOS)&lt;/li&gt;
-  &lt;li&gt;tray icon size on Linux&lt;/li&gt;
-  &lt;li&gt;problem with Window missing when resetting settings to defaults&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;update icons and graphic materials&lt;/li&gt;
-  &lt;li&gt;Turkish translations updated&lt;/li&gt;
-  &lt;li&gt;Hindi translations updated&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Korean translations&lt;/li&gt;
-  &lt;li&gt;more break and microbreak ideas&lt;/li&gt;
-  &lt;li&gt;more settings in Contributor's settings&lt;/li&gt;
-  &lt;li&gt;Polish translation&lt;/li&gt;
-  &lt;li&gt;start a break/microbreak with a sound (set via config file or Contributor's settings)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;

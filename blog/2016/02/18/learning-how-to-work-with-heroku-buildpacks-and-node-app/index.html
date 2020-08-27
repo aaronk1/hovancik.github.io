@@ -79,7 +79,7 @@
 <h3 id="buildpacks">Buildpacks</h3>
 <p>Going back to app files and searching for deploy brought me to <code>Gruntfile.js</code>. From their website I decided that <a href="http://gruntjs.com/">Grunt</a> is kinda like doing Rake task in Rails world.  Googling Grunt and Heroku brought me <a href="https://devcenter.heroku.com/articles/buildpacks">buildpacks</a>.  Those are basically collections of scripts that prepare your code to run on your app's dyno. Nice thing is that you can fork the default ones that Heroku prepared and customize it for your app. Colleagues to help!</p>
 
-<p>So I went with the first one containing word Grunt. Following the instructions<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup>, I created grunt task called <code>heroku:production</code><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> as that's what will run when deploying app.</p>
+<p>So I went with the first one containing word Grunt. Following the instructions<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup>, I created grunt task called <code>heroku:production</code><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup> as that's what will run when deploying app.</p>
 
 <p>Deploy.</p>
 
@@ -113,13 +113,13 @@ Total 26.5s
 
 <p>Let's not forget bash.</p>
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>Sorry, I don't remember which one it was. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>Sorry, I don't remember which one it was. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
-      <p>Task was the same as was used previously when deploying on custom server (building assets etc.), except things related to installing software on server. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>Task was the same as was used previously when deploying on custom server (building assets etc.), except things related to installing software on server. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>
