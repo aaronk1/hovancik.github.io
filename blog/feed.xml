@@ -5,16 +5,53 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2020-09-12T11:37:00+00:00</updated>
+  <updated>2020-10-03T05:30:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Stretchly 1.2.0 released</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/"/>
+    <id>http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/</id>
+    <published>2020-10-03T05:30:00+00:00</published>
+    <updated>2020-10-03T11:21:04+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi everyone,&lt;/p&gt;
+
+&lt;p&gt;I am really happy to announce, that &lt;strong&gt;version 1.2 of &lt;a href="/stretchly"&gt;&lt;em&gt;Stretchly&lt;/em&gt;&lt;/a&gt; is here!&lt;/strong&gt; You can download it from &lt;a href="/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;new break ideas&lt;/li&gt;
+  &lt;li&gt;Contributors can sync preferences&lt;/li&gt;
+  &lt;li&gt;Nepali translations&lt;/li&gt;
+  &lt;li&gt;snap package&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;disallow "Reset breaks" when in break with Strick Mode&lt;/li&gt;
+  &lt;li&gt;break window size is now dynamic (relative to screen size)&lt;/li&gt;
+  &lt;li&gt;updated Korean translation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;fullscreen breaks (Windows)&lt;/li&gt;
+  &lt;li&gt;downgraded Electron and disabled macOS dock icon to fix fullscreen issues&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and &lt;a href="https://github.com/sponsors/hovancik"&gt;Github&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Stretchly 1.1.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/"/>
     <id>http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/</id>
     <published>2020-09-12T11:37:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -46,7 +83,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/"/>
     <id>http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/</id>
     <published>2020-08-27T17:18:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -207,7 +244,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/"/>
     <id>http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/</id>
     <published>2020-07-18T11:22:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -277,7 +314,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/"/>
     <id>http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/</id>
     <published>2020-06-14T18:44:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -358,7 +395,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
     <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
     <published>2020-06-11T07:41:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -454,7 +491,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -487,7 +524,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -525,7 +562,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -573,7 +610,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -593,7 +630,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
     <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
     <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
+    <updated>2020-10-03T11:21:04+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -606,53 +643,6 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
   &lt;li&gt;someone sends some money your way ;]&lt;/li&gt;
   &lt;li&gt;someone &lt;a href="https://github.com/hovancik/stretchly/pull/485"&gt;updates&lt;/a&gt; the translations&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>stretchly 0.21.0 released</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/"/>
-    <id>http://hovancik.net/blog/2019/10/13/stretchly-0-21-0-released/</id>
-    <published>2019-10-13T09:49:00+00:00</published>
-    <updated>2020-10-03T07:29:27+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;Hi there guys, I am really happy to release version 0.21.0 of &lt;a href="/stretchly"&gt;&lt;em&gt;stretchly&lt;/em&gt;&lt;/a&gt;. You can download it from &lt;a href="/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;stretchly&lt;/em&gt; is cross-platform open source app that reminds you to take breaks when working with computer.&lt;/p&gt;
-
-&lt;p&gt;If you enjoy &lt;em&gt;stretchly&lt;/em&gt;, consider becoming patron at &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;checkbox labels are clickable as well&lt;/li&gt;
-  &lt;li&gt;tray menu link for update to website, instead of github&lt;/li&gt;
-  &lt;li&gt;Chinese (Taiwan) translations updated&lt;/li&gt;
-  &lt;li&gt;German translations updated&lt;/li&gt;
-  &lt;li&gt;no notification is shown after system resume/unlock&lt;/li&gt;
-  &lt;li&gt;no notification is shown after manual resume of pause from tray menu&lt;/li&gt;
-  &lt;li&gt;keep the focus on active window during breaks&lt;/li&gt;
-  &lt;li&gt;smaller font size for longer microbreak ideas&lt;/li&gt;
-  &lt;li&gt;Improved grammar of microbreak ideas&lt;/li&gt;
-  &lt;li&gt;display checkbox list vertically in settings screen 3&lt;/li&gt;
-  &lt;li&gt;Dutch translations updated&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;Ctrl+X global shortcut not being released after &lt;code&gt;Reset breaks&lt;/code&gt; and &lt;code&gt;Skip to&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="added"&gt;Added&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;new break ideas&lt;/li&gt;
-  &lt;li&gt;pause breaks when screen is locked (Windows, macOS)&lt;/li&gt;
-  &lt;li&gt;change tray icon when stretchly is paused&lt;/li&gt;
-  &lt;li&gt;allow to use inverted (white) monochrome tray icon (Linux, Windows)&lt;/li&gt;
-  &lt;li&gt;Danish translations&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
 </content>
   </entry>
 </feed>
