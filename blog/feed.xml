@@ -5,16 +5,34 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2020-10-03T05:30:00+00:00</updated>
+  <updated>2020-10-03T11:29:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Stretchly is now available in Snap Store</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-is-now-available-in-snap-store/"/>
+    <id>http://hovancik.net/blog/2020/10/03/stretchly-is-now-available-in-snap-store/</id>
+    <published>2020-10-03T11:29:00+00:00</published>
+    <updated>2020-10-03T11:50:26+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi everyone,&lt;/p&gt;
+
+&lt;p&gt;even though I personally don't like snaps and I am not using them, Stretchly is now available in &lt;a href="https://snapcraft.io/stretchly"&gt;Snap Store&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If nothing breaks, I'll keep posting new versions there as I release them.&lt;/p&gt;
+
+&lt;p&gt;Enjoy.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Stretchly 1.2.0 released</title>
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/"/>
     <id>http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/</id>
     <published>2020-10-03T05:30:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -51,7 +69,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/"/>
     <id>http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/</id>
     <published>2020-09-12T11:37:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -83,7 +101,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/"/>
     <id>http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/</id>
     <published>2020-08-27T17:18:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -244,7 +262,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/"/>
     <id>http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/</id>
     <published>2020-07-18T11:22:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -314,7 +332,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/"/>
     <id>http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/</id>
     <published>2020-06-14T18:44:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -395,7 +413,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
     <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
     <published>2020-06-11T07:41:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -491,7 +509,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -524,7 +542,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -562,7 +580,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -610,7 +628,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/"/>
     <id>http://hovancik.net/blog/2019/10/19/the-future-of-bsdsec/</id>
     <published>2019-10-19T10:16:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
+    <updated>2020-10-03T11:50:26+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -623,26 +641,6 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
 &lt;p&gt;As it goes hand-in-hand with DiscoverBSD, I am thinking to reuse the design of DiscoverBSD (but change the primary color to some different one) and somehow connect them (probably as menu items).&lt;/p&gt;
 
 &lt;p&gt;Let's see…&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Some of the joys of open-source development</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/"/>
-    <id>http://hovancik.net/blog/2019/10/15/some-of-the-joys-of-open-source-development/</id>
-    <published>2019-10-15T15:15:00+00:00</published>
-    <updated>2020-10-03T11:21:04+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;h3 id="some-of-the-joys-of-open-source-development"&gt;Some of the joys of open-source development&lt;/h3&gt;
-&lt;ul&gt;
-  &lt;li&gt;someone &lt;a href="https://github.com/Homebrew/homebrew-cask/pull/70736"&gt;updates&lt;/a&gt; brew cask after new release so you don't have to&lt;/li&gt;
-  &lt;li&gt;someone says &lt;a href="https://github.com/hovancik/stretchly/issues/393#issuecomment-541739614"&gt;Thanks!&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;someone is willing to &lt;a href="https://github.com/hovancik/stretchly/issues/421#issuecomment-511600463"&gt;help&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;someone says your app is &lt;a href="https://twitter.com/HarshadOak/status/1097038328321388544"&gt;changing&lt;/a&gt; their life&lt;/li&gt;
-  &lt;li&gt;someone sends some money your way ;]&lt;/li&gt;
-  &lt;li&gt;someone &lt;a href="https://github.com/hovancik/stretchly/pull/485"&gt;updates&lt;/a&gt; the translations&lt;/li&gt;
-&lt;/ul&gt;
 </content>
   </entry>
 </feed>
