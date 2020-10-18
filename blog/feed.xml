@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/12/few-things-i-learned-in-first-3-months-as-a-proxy-product-owner/"/>
     <id>http://hovancik.net/blog/2020/10/12/few-things-i-learned-in-first-3-months-as-a-proxy-product-owner/</id>
     <published>2020-10-12T16:08:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -60,7 +60,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-is-now-available-in-snap-store/"/>
     <id>http://hovancik.net/blog/2020/10/03/stretchly-is-now-available-in-snap-store/</id>
     <published>2020-10-03T11:29:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -78,7 +78,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/"/>
     <id>http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/</id>
     <published>2020-10-03T05:30:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -115,7 +115,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/"/>
     <id>http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/</id>
     <published>2020-09-12T11:37:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -147,7 +147,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/"/>
     <id>http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/</id>
     <published>2020-08-27T17:18:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -308,7 +308,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/"/>
     <id>http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/</id>
     <published>2020-07-18T11:22:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -378,7 +378,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/"/>
     <id>http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/</id>
     <published>2020-06-14T18:44:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -459,7 +459,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
     <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
     <published>2020-06-11T07:41:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -555,7 +555,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -588,7 +588,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -626,7 +626,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
     <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
     <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-10-12T16:53:19+00:00</updated>
+    <updated>2020-10-18T08:57:42+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
