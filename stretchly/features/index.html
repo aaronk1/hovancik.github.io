@@ -108,6 +108,12 @@
 
 <p><img src="../img/dark.png" style="height:500px;" /></p>
 
+<h3 id="interact-with-stretchly-from-command-line">Interact with stretchly from command line</h3>
+
+<p>When a Stretchly instance is running, the <code>stretchly</code> command can be use to interact with it from the command line.</p>
+
+<p>Type <code>stretchly help</code> to get a list of all commands and options available as well as some examples.</p>
+
 <h2 id="preferences">Preferences</h2>
 
 <p>Most of the preferences can be customized by clicking on the "Preferences" item in the tray menu.</p>
@@ -178,6 +184,9 @@ E.g. if you live in Boston you would set:<br />
 <h4 id="break-window-size-">Break window size <a href="#contributor-preferences"><img src="https://img.shields.io/badge/Contributor_Preferences-✔-success" alt="Contributor Preferences" /></a></h4>
 <p>To specify the size of the break window, set the value of <code>breakWindowHeight</code> and <code>breakWindowWidth</code> from <code>0</code> to <code>0.99</code> (which is in turn 0 to 99% of the size of the screen). Don't set 100% as that's fullscreen.</p>
 
+<h4 id="check-for-new-version">Check for new version</h4>
+<p>If you don't want to ever check for new version, set <code>checkNewVersion</code> to <code>false</code>.</p>
+
 <h2 id="contributor-preferences">Contributor Preferences</h2>
 <p><em>Stretchly</em> is free but you can support it by contributing code, translations or money. You will be rewarded by getting access to <strong>Contributor Preferences</strong>, ability to <strong>Sync Preferences</strong>, chat on <strong>Discord</strong> and more!</p>
 
@@ -212,6 +221,22 @@ You won't be able to chat on Discord.</em></p>
 <p>Feel free to join in the <a href="https://github.com/hovancik/stretchly/blob/master/CONTRIBUTING.md">development</a> of this app via Issues and Pull Requests.</p>
 
 <p><strong>Before implementing a feature, please open an Issue first, so we can be sure that no one else is working on it and that the changes will be accepted. It is important do discuss changes before implementing them (Why should we add it? How should it work? How should it look? Where will it be? …).</strong></p>
+
+<h3 id="pre-requisites">Pre-requisites</h3>
+<ul>
+  <li><a href="https://nodejs.org/">Node.js</a> (please use version specified in <code>package.json</code>)
+    <ul>
+      <li>Linux/MacOS - you might want to use <a href="https://github.com/nvm-sh/nvm">Node Version Manager</a> to install specific version</li>
+      <li>Windows - download <a href="https://nodejs.org/en/download/">installer</a> for specific version; during installation <em>check</em> “Install Additional Tools for Node.js”</li>
+    </ul>
+  </li>
+  <li><a href="https://git-scm.com/">git</a></li>
+  <li><a href="https://github.com/">Github account</a>, if you'd like to upstream your changes</li>
+</ul>
+
+<p>Now you can clone the repo with <code>git clone https://github.com/hovancik/stretchly.git</code>. Change to the new created directory and run <code>npm i</code> to install node packages needed.</p>
+
+<p>Read on.</p>
 
 <h3 id="debugging">Debugging</h3>
 <p>If you start <em>Stretchly</em> in development mode with the <code>npm run dev</code> command, it makes it possible to debug the application in your browser on <code>http://localhost:9222</code>.</p>
@@ -325,6 +350,8 @@ Format as following:</p>
   <li>https://github.com/CognirelTech/Quillpad-Server</li>
   <li>https://www.webmd.com/fitness-exercise/a-z/seven-minute-workout</li>
   <li>https://www.nutritiousmovement.com/dynamic-at-home-work-and-school-spaces/</li>
+  <li>https://www.onhealth.com/content/1/eye_exercises_and_stretches</li>
+  <li>https://www.webmd.com/pain-management/exercises-carpal-tunnel-syndrome</li>
 </ul>
 
 <h4 id="sounds-credits">Sounds credits</h4>

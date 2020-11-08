@@ -5,16 +5,55 @@
   <id>http://hovancik.net/blog</id>
   <link href="http://hovancik.net/blog"/>
   <link href="http://hovancik.net/blog/feed.xml" rel="self"/>
-  <updated>2020-10-12T16:08:00+00:00</updated>
+  <updated>2020-11-08T08:00:00+00:00</updated>
   <author>
     <name>Jan Hovancik</name>
   </author>
+  <entry>
+    <title>Stretchly 1.3.0 is now available</title>
+    <link rel="alternate" href="http://hovancik.net/blog/2020/11/08/stretchly-1-3-0-is-now-available/"/>
+    <id>http://hovancik.net/blog/2020/11/08/stretchly-1-3-0-is-now-available/</id>
+    <published>2020-11-08T08:00:00+00:00</published>
+    <updated>2020-11-08T09:19:24+00:00</updated>
+    <author>
+      <name>Jan Hovancik</name>
+    </author>
+    <content type="html">&lt;p&gt;Hi everyone,&lt;/p&gt;
+
+&lt;p&gt;I am really happy to announce, that &lt;strong&gt;version 1.3 of &lt;a href="/stretchly"&gt;&lt;em&gt;Stretchly&lt;/em&gt;&lt;/a&gt; is here!&lt;/strong&gt; You can download it from &lt;a href="/stretchly/downloads"&gt;downloads&lt;/a&gt; page.&lt;/p&gt;
+
+&lt;h3 id="added"&gt;Added&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;control a running instance from command line&lt;/li&gt;
+  &lt;li&gt;advanced option to disable check for new version&lt;/li&gt;
+  &lt;li&gt;new break ideas&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="changed"&gt;Changed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Updated Italian translations&lt;/li&gt;
+  &lt;li&gt;Updated Spanish translations&lt;/li&gt;
+  &lt;li&gt;Updated German translations&lt;/li&gt;
+  &lt;li&gt;prevent redundant title notification on Windows 10 (20H2 Update)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id="fixed"&gt;Fixed&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;problem with DoNotDisturb being ignored when resuming breaks&lt;/li&gt;
+  &lt;li&gt;taskbar visibility issue on Windows&lt;/li&gt;
+  &lt;li&gt;issue with idle time and breaks causing negative timers&lt;/li&gt;
+  &lt;li&gt;issue with Pause until morning in some timezones&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thanks to everyone for support on &lt;a href="https://github.com/sponsors/hovancik"&gt;Github&lt;/a&gt; and  &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt;!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Few things I learned in first 3 months as a Proxy Product Owner</title>
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/12/few-things-i-learned-in-first-3-months-as-a-proxy-product-owner/"/>
     <id>http://hovancik.net/blog/2020/10/12/few-things-i-learned-in-first-3-months-as-a-proxy-product-owner/</id>
     <published>2020-10-12T16:08:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -60,7 +99,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-is-now-available-in-snap-store/"/>
     <id>http://hovancik.net/blog/2020/10/03/stretchly-is-now-available-in-snap-store/</id>
     <published>2020-10-03T11:29:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -78,7 +117,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/"/>
     <id>http://hovancik.net/blog/2020/10/03/stretchly-1-2-0-released/</id>
     <published>2020-10-03T05:30:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -115,7 +154,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/"/>
     <id>http://hovancik.net/blog/2020/09/12/stretchly-1-1-0-released/</id>
     <published>2020-09-12T11:37:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -147,7 +186,7 @@
     <link rel="alternate" href="http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/"/>
     <id>http://hovancik.net/blog/2020/08/27/working-with-firebase-tools-from-docker-with-docker-compose/</id>
     <published>2020-08-27T17:18:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -308,7 +347,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/"/>
     <id>http://hovancik.net/blog/2020/07/18/stretchly-1-0-is-here/</id>
     <published>2020-07-18T11:22:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -378,7 +417,7 @@ services:
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/"/>
     <id>http://hovancik.net/blog/2020/06/14/sms-messages-from-slovak-czech-government-about-covid-19-feb-may-2020/</id>
     <published>2020-06-14T18:44:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -459,7 +498,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/06/11/translating-stretchly/"/>
     <id>http://hovancik.net/blog/2020/06/11/translating-stretchly/</id>
     <published>2020-06-11T07:41:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -555,7 +594,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/"/>
     <id>http://hovancik.net/blog/2020/01/22/change-the-color-of-svg-image-via-css/</id>
     <published>2020-01-22T08:00:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -588,7 +627,7 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
     <link rel="alternate" href="http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/"/>
     <id>http://hovancik.net/blog/2020/01/16/stretchly-0-21-1-released/</id>
     <published>2020-01-16T08:00:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
+    <updated>2020-11-08T09:19:24+00:00</updated>
     <author>
       <name>Jan Hovancik</name>
     </author>
@@ -619,54 +658,6 @@ Sdeleni Vlady CR: Kvuli sireni koronaviru je do 24.3. omezen volny pohyb osob s 
 &lt;p&gt;If they are none critical problems with this release, I will start working on new &lt;em&gt;stretchly&lt;/em&gt; version that I consulted with designer, meaning: &lt;em&gt;stretchly&lt;/em&gt; will get UI/UX overhaul. It will probably become version 1.0.&lt;/p&gt;
 
 &lt;p&gt;Thanks to everyone for support on &lt;a href="https://www.patreon.com/hovancik"&gt;Patreon&lt;/a&gt; and code contributions!&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>DiscoverBSD and BSDSec 2019 top articles</title>
-    <link rel="alternate" href="http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/"/>
-    <id>http://hovancik.net/blog/2019/12/31/discoverbsd-and-bsdsec-2019-top-articles/</id>
-    <published>2019-12-31T10:26:00+00:00</published>
-    <updated>2020-10-18T08:57:42+00:00</updated>
-    <author>
-      <name>Jan Hovancik</name>
-    </author>
-    <content type="html">&lt;p&gt;With the 2020 upon us, let's look at the most visited articles on the &lt;a href="https://discoverbsd.com"&gt;DiscoverBSD&lt;/a&gt; and &lt;a href="https://bsdsec.net"&gt;BSDSec&lt;/a&gt; websites. Date of submission doesn't matter, we are only looking at number of visits (so some of the articles might be from 2018 or earlier…).&lt;/p&gt;
-
-&lt;p&gt;Thanks to everyone who submitted to DiscoverBSD and to all the good people working on BSD security teams!&lt;/p&gt;
-
-&lt;h2 id="top-10-discoverbsd"&gt;Top 10 DiscoverBSD&lt;/h2&gt;
-
-&lt;p&gt;My subjective feeling is that the most of news submitted were FreeBSD related, but it seems that people are the most interested in OpenBSD related stuff.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href="https://www.tumfatig.net/20190208/customizing-openbsd-xenodm/"&gt;Customizing OpenBSD xenodm&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://h3artbl33d.nl/blog/nextcloud-on-openbsd"&gt;NextCloud on OpenBSD&lt;/a&gt; (offline?)&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://xigmanas.com/forums/viewtopic.php?f=4&amp;amp;t=13790/&amp;amp;utm_source=discoverbsd"&gt;NAS4Free is renamed into XigmaNAS&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.h-i-r.net/2018/12/openbsd-vmm-hypervisor-part-4-running.html"&gt;OpenBSD VMM Hypervisor Part 4: Running Ubuntu (and possibly other distros)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://vermaden.wordpress.com/2018/11/20/freebsd-desktop-part-2-1-install-freebsd-12/"&gt;FreeBSD Desktop – Part 2.1 – Install FreeBSD 12&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.netgate.com/blog/pfsense-2-4-4-release-p2-now-available.html"&gt;pfSense 2.4.4-RELEASE-p2 now available&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.tumfatig.net/20190131/customized-resolution-for-openbsd-in-virtualbox/"&gt;Customized resolution for OpenBSD in VirtualBox&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.openbsd.org/65.html"&gt;OpenBSD 6.5 WIP notes are online&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.secbsd.org/"&gt;SecBSD: an UNIX-like OS for Hackers&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://www.tumfatig.net/20190215/an-openbsd-desktop-using-windowmaker/"&gt;An OpenBSD desktop using WindowMaker&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id="top-10-bsdsec"&gt;Top 10 BSDSec&lt;/h2&gt;
-
-&lt;p&gt;Similar to the DiscoverBSD's top 10, we can see that readers are mostly interested in OpenBSD stuff, with exception of FreeBSD Status Reports.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbsd-6-5-released-apr-24-2019"&gt;OpenBSD 6.5 released – Apr 24 2019&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-first-quarter-2019"&gt;FreeBSD Quarterly Status Report - First Quarter 2019&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-fourth-quarter-2018"&gt;FreeBSD Quarterly Status Report - Fourth Quarter 2018&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/libressl-3-0-0-released"&gt;LibreSSL 3.0.0 Released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-errata-notice-freebsd-en-19-18-tzdata"&gt;FreeBSD Errata Notice FreeBSD-EN-19:18.tzdata&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbsd-6-4-released-oct-18-2018"&gt;OpenBSD 6.4 released - Oct 18, 2018&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbsd-6-6-release-oct-17-2019"&gt;OpenBSD 6.6 release, Oct 17, 2019&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/openbgpd-6-5p0-released"&gt;OpenBGPD 6.5p0 released&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-fourth-quarter-2015"&gt;FreeBSD Quarterly Status Report - Fourth Quarter 2015&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href="https://bsdsec.net/articles/freebsd-announce-freebsd-quarterly-status-report-second-quarter-2019"&gt;FreeBSD Quarterly Status Report - Second Quarter 2019&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
 </content>
   </entry>
 </feed>
